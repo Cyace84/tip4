@@ -1,0 +1,59 @@
+{
+  "hash": "d0f5c79a",
+  "browserHash": "e22b10bc",
+  "optimized": {
+    "vue": {
+      "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "2e11dd2b",
+      "needsInterop": false
+    },
+    "vitepress > @vue/devtools-api": {
+      "src": "../../../node_modules/@vue/devtools-api/lib/esm/index.js",
+      "file": "vitepress___@vue_devtools-api.js",
+      "fileHash": "78085c07",
+      "needsInterop": false
+    },
+    "vitepress > minisearch": {
+      "src": "../../../node_modules/minisearch/dist/es/index.js",
+      "file": "vitepress___minisearch.js",
+      "fileHash": "53248888",
+      "needsInterop": false
+    },
+    "vue-toastification": {
+      "src": "../../../node_modules/vue-toastification/dist/index.mjs",
+      "file": "vue-toastification.js",
+      "fileHash": "de93efa9",
+      "needsInterop": false
+    },
+    "vue-toastification/dist/index.mjs": {
+      "src": "../../../node_modules/vue-toastification/dist/index.mjs",
+      "file": "vue-toastification_dist_index__mjs.js",
+      "fileHash": "96217cd3",
+      "needsInterop": false
+    },
+    "everscale-inpage-provider": {
+      "src": "../../../node_modules/everscale-inpage-provider/dist/index.js",
+      "file": "everscale-inpage-provider.js",
+      "fileHash": "1df8fad0",
+      "needsInterop": true
+    },
+    "dotenv": {
+      "src": "../../../node_modules/dotenv/lib/main.js",
+      "file": "dotenv.js",
+      "fileHash": "eb3aa9ad",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-5GLLYDXQ": {
+      "file": "chunk-5GLLYDXQ.js"
+    },
+    "chunk-G3CMYKT2": {
+      "file": "chunk-G3CMYKT2.js"
+    },
+    "chunk-76J2PTFD": {
+      "file": "chunk-76J2PTFD.js"
+    }
+  }
+}

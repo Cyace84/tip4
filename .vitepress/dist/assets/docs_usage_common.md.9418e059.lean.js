@@ -1,0 +1,1 @@
+import{_ as e,c as o,o as t}from"./chunks/framework.ab3d0493.js";const i=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"docs/usage/common.md","filePath":"docs/usage/common.md"}'),a={name:"docs/usage/common.md"};function c(s,n,r,m,d,p){return t(),o("div")}const f=e(a,[["render",c]]);export{i as __pageData,f as default};
