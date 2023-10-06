@@ -15,8 +15,8 @@ Besides the expected functionalities from a NFT standard which are:
 
 TIP-4 offers more practical functionalities such as:
 - [On-Chain Indexing](/docs/specifications/43.md)
-- [On-chain Storage](/docs/specifications/45.md)
-- [Upgradeability](/docs/specifications/47.md)
+- [On-chain Storage](/docs/specifications/44.md)
+- [Upgradeability](/docs/specifications/45.md)
 
 
 
