@@ -60,9 +60,14 @@ module.exports = {
         link: "/docs/specifications/ToC.md",
         items: [
           {
-            text: "Performance Contracts",
+            text: "Collection",
             collapsable: false,
-            link: "/docs/specifications/performance.md",
+            link: "/docs/specifications/collection.md",
+          },
+          {
+            text: "NFT",
+            collapsable: false,
+            link: "/docs/specifications/NFT.md",
           },
           {
             text: "4.1 Non-Fungible Token",
