@@ -105,7 +105,7 @@ module.exports = {
             link: "/docs/specifications/46.md",
           },
           {
-            text: "TIP-6",
+            text: "TIP-6.1",
             collapsable: false,
             link: "/docs/specifications/6.md",
           },
@@ -114,41 +114,76 @@ module.exports = {
       {
         text: "Getting Started",
         collapsable: false,
-        link: "/docs/QuickStart/ToC.md",
+        link: "/docs/gettingStarted/ToC.md",
         items: [
           {
             text: "Setup",
             collapsable: false,
             items: [
               {
-                text: "Prerequisites",
-                collapsable: false,
-                link: "/docs/gettingStarted/prerequisites.md",
-              },
-              {
                 text: "Basic Project Setup",
                 collapsable: false,
-                link: "/docs/gettingStarted/basicProjectSetup.md",
+                link: "/docs/gettingStarted/BasicProjectSetup.md",
+              },
+              {
+                text: "Locklift Config Setup",
+                collapsable: false,
+                link: "/docs/gettingStarted/LockliftConfigSetting.md",
               },
             ],
+          },
+          {
+            text: "Local Environment",
+            collapsable: false,
+            link: "/docs/gettingStarted/HelperScripts.md",
+          },
+          {
+            text: "Deploy Account",
+            collapsable: false,
+            link: "/docs/gettingStarted/DeployAccount.md",
           },
         ],
       },
       {
-        text: "Usage",
+        text: "Usage and Deployment",
         collapsable: false,
         items: [
-          { text: "Typical Usage", collapsable: false, link: "" },
+          {
+            text: "Typical Deployment",
+            collapsable: false,
+            link: "/docs/usage/typical/ToC.md",
+            items: [
+              {
+                text: "TIP4_1 Non-Fungible Token ",
+                collapsable: false,
+                link: "/docs/usage/typical/1.md",
+              },
+              {
+                text: "TIP4_2 NFT with Metadata ",
+                collapsable: false,
+                link: "/docs/usage/typical/2.md",
+              },
+              {
+                text: "NFT with Royalty ",
+                collapsable: false,
+                link: "/docs/usage/typical/royalty.md",
+              },
+            ],
+          },
           {
             text: "Advanced Usage",
             collapsable: false,
             items: [
-              { text: " Indexing", collapsable: false, link: "" },
-              { text: "on-chain Metadata ", collapsable: false, link: "" },
+              { text: "TIP4_3 NFT with Index", collapsable: false, link: "" },
+              { text: "TIP4_4 NFT with Storage", collapsable: false, link: "" },
+              {
+                text: "TIP4_5 NFT Licensing",
+                collapsable: false,
+                link: "",
+              },
+              { text: "TIP4_6 Upgradable NFT", collapsable: false, link: "" },
             ],
           },
-          { text: "Enable Upgradeability", collapsable: false, link: "" },
-          { text: "Licensing(Don't Be Evil)", collapsable: false, link: "" },
         ],
         link: "",
       },
