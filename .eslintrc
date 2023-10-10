@@ -58,7 +58,7 @@
         "functions": "never"
       }
     ],
-    "camelcase": "error",
+    "camelcase": "off",
     "import/no-default-export": "off",
     "import/default": "off",
     "no-restricted-exports": ["error", { "restrictedNamedExports": ["default"] }],
@@ -81,6 +81,7 @@
     "@typescript-eslint/require-array-sort-compare": "error",
     "@typescript-eslint/ban-ts-comment": "warn",
     "no-restricted-imports": "error",
-    "vue/no-v-html": "off"
+    "vue/no-v-html": "off",
+    "sonarjs/no-duplicate-string": "off"
   }
 }

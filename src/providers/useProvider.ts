@@ -1,5 +1,15 @@
 /* eslint-disable */
-import { createApp, h, inject, nextTick, provide, reactive, ref, shallowRef, watch } from 'vue';
+import {
+  createApp,
+  h,
+  inject,
+  nextTick,
+  provide,
+  reactive,
+  ref,
+  shallowRef,
+  watch,
+} from "vue";
 
 import {
   Permissions,
@@ -12,11 +22,11 @@ import {
   RawProviderApiResponse,
   RawProviderEventData,
   Address,
-} from 'everscale-inpage-provider';
+} from "everscale-inpage-provider";
 
-import { testContract } from './../helpers';
+import { testContract } from "./../helpers";
 
-import ProviderSelector from './../../.vitepress/theme/components/ProviderSelector.vue';
+import ProviderSelector from "./../../.vitepress/theme/components/ProviderSelector.vue";
 
 type ConnectorWallet = {
   title: string;
@@ -33,12 +43,12 @@ type ConnectorParams = {
 
 let ensurePageLoaded: Promise<void>;
 
-if (typeof document !== 'undefined' && typeof window !== 'undefined') {
-  if (document.readyState === 'complete') {
+if (typeof document !== "undefined" && typeof window !== "undefined") {
+  if (document.readyState === "complete") {
     ensurePageLoaded = Promise.resolve();
   } else {
-    ensurePageLoaded = new Promise<void>(resolve => {
-      window.addEventListener('load', () => {
+    ensurePageLoaded = new Promise<void>((resolve) => {
+      window.addEventListener("load", () => {
         resolve();
       });
     });
@@ -127,7 +137,7 @@ class Connector {
   public asProviderFallback(): () => Promise<Provider> {
     return () => {
       if (!this.providerPromise) {
-        this.providerPromise = new Promise<Provider>(resolve => {
+        this.providerPromise = new Promise<Provider>((resolve) => {
           this.providerResolve = resolve;
 
           const savedProviderKey = getSavedProviderKey();
@@ -165,7 +175,7 @@ class Connector {
         this.providerResolve = undefined;
         const providerKey = this.getKeyByProvider(provider);
         if (providerKey) {
-          this.setCookie('savedProviderKey', providerKey, 7);
+          this.setCookie("savedProviderKey", providerKey, 7);
         }
       };
 
@@ -174,11 +184,11 @@ class Connector {
           if (!this.selectProvider(onSelect)) {
             for (const { injected } of this.params.supportedWallets) {
               if (
-                typeof injected.flag !== 'undefined' &&
-                typeof injected.event !== 'undefined' &&
+                typeof injected.flag !== "undefined" &&
+                typeof injected.event !== "undefined" &&
                 (window as any)[injected.flag] === true
               ) {
-                window.addEventListener(injected.event, _ => {
+                window.addEventListener(injected.event, (_) => {
                   this.selectProvider(onSelect);
                 });
               }
@@ -190,7 +200,7 @@ class Connector {
   }
 
   getProviderByKey(key: string): Provider | undefined {
-    const wallet = this.params.supportedWallets.find(w => w.title === key);
+    const wallet = this.params.supportedWallets.find((w) => w.title === key);
 
     if (wallet) {
       return (window as any)[wallet.injected.object];
@@ -201,7 +211,7 @@ class Connector {
 
   getKeyByProvider(provider: Provider): string | undefined {
     const wallet = this.params.supportedWallets.find(
-      w => (window as any)[w.injected.object] === provider
+      (w) => (window as any)[w.injected.object] === provider
     );
     if (wallet) {
       return wallet.title;
@@ -253,14 +263,14 @@ class Connector {
     });
 
     nextTick(() => {
-      if (typeof document === 'undefined') {
+      if (typeof document === "undefined") {
         return;
       }
 
-      let appContainer = document.getElementById('app');
+      let appContainer = document.getElementById("app");
 
       if (appContainer) {
-        modal.value = document.createElement('div');
+        modal.value = document.createElement("div");
         document.body.appendChild(modal.value);
         selector.mount(modal.value);
       }
@@ -270,9 +280,12 @@ class Connector {
   }
 
   getProviders(): { provider: Provider; wallet: ConnectorWallet }[] {
-    const providers = new Array<{ provider: Provider; wallet: ConnectorWallet }>();
+    const providers = new Array<{
+      provider: Provider;
+      wallet: ConnectorWallet;
+    }>();
 
-    if (typeof window === 'undefined') {
+    if (typeof window === "undefined") {
       return providers;
     }
 
@@ -291,24 +304,24 @@ class Connector {
   }
 
   setCookie(name: string, value: string, days: number) {
-    if (typeof document === 'undefined') {
+    if (typeof document === "undefined") {
       return;
     }
 
-    let expires = '';
+    let expires = "";
     if (days) {
       let date = new Date();
       date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
-      expires = '; expires=' + date.toUTCString();
+      expires = "; expires=" + date.toUTCString();
     }
-    document.cookie = name + '=' + (value || '') + expires + '; path=/';
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
   }
 
   deleteCookie(name: string) {
-    if (typeof document === 'undefined') {
+    if (typeof document === "undefined") {
       return;
     }
-    document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/';
+    document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
   }
 
   disconnectProvider() {
@@ -316,38 +329,38 @@ class Connector {
 
     this.providerPromise = undefined;
 
-    this.deleteCookie('savedProviderKey');
+    this.deleteCookie("savedProviderKey");
   }
 }
 
 const connector = new Connector({
   supportedWallets: [
     {
-      title: 'EVER Wallet',
+      title: "EVER Wallet",
       injected: {
-        object: '__ever',
-        event: 'ever#initialized',
+        object: "__ever",
+        event: "ever#initialized",
       },
     },
     {
-      title: 'VENOM Wallet',
+      title: "VENOM Wallet",
       injected: {
-        object: '__venom',
+        object: "__venom",
       },
     },
   ],
 });
 
-export const getSavedProviderKey = (name: string = 'savedProviderKey') => {
-  if (typeof document === 'undefined') {
+export const getSavedProviderKey = (name: string = "savedProviderKey") => {
+  if (typeof document === "undefined") {
     return null;
   }
 
-  let nameEQ = name + '=';
-  let ca = document.cookie.split(';');
+  let nameEQ = name + "=";
+  let ca = document.cookie.split(";");
   for (let i = 0; i < ca.length; i++) {
     let c = ca[i];
-    while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+    while (c.charAt(0) == " ") c = c.substring(1, c.length);
     if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
   }
   return null;
@@ -367,7 +380,7 @@ const connectToWallet = async () => {
   });
 
   await provider.requestPermissions({
-    permissions: ['basic', 'accountInteraction'],
+    permissions: ["basic", "accountInteraction"],
   });
 };
 
@@ -383,11 +396,11 @@ const disconnect = async () => {
 };
 
 const hasProvider = ref(false);
-const selectedAccount = shallowRef<Permissions['accountInteraction']>();
+const selectedAccount = shallowRef<Permissions["accountInteraction"]>();
 const selectedAccountBalance = ref<string>();
 const selectedNetwork = ref<string>();
 
-provider.hasProvider().then(async hasTonProvider => {
+provider.hasProvider().then(async (hasTonProvider) => {
   if (!hasTonProvider) {
     return;
   }
@@ -395,11 +408,11 @@ provider.hasProvider().then(async hasTonProvider => {
 
   await provider.ensureInitialized();
 
-  (await provider.subscribe('permissionsChanged')).on('data', event => {
+  (await provider.subscribe("permissionsChanged")).on("data", (event) => {
     selectedAccount.value = event.permissions.accountInteraction;
   });
 
-  (await provider.subscribe('networkChanged')).on('data', event => {
+  (await provider.subscribe("networkChanged")).on("data", (event) => {
     selectedNetwork.value = event.networkId.toString();
   });
 
@@ -426,10 +439,12 @@ watch(
     }
     selectedAccountBalance.value = state?.balance;
 
-    const subscription = await provider.subscribe('contractStateChanged', { address });
+    const subscription = await provider.subscribe("contractStateChanged", {
+      address,
+    });
     onCleanup(() => subscription.unsubscribe().catch(console.error));
 
-    subscription.on('data', event => {
+    subscription.on("data", (event) => {
       if (event.address.equals(selectedAccount?.address)) {
         selectedAccountBalance.value = event.state.balance;
       }

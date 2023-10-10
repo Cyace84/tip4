@@ -1,34 +1,33 @@
 
-# Deployment Using Account
-In this section, we will explore the utilization of **Account** smart contracts to deploy TIP-3 standard smart contracts and interact with them.
+# Typical deployment
+
+In this section we will explore through deploying the typical parts of the TIP4 standard.
+This parts are represented by other NFT standards and are not alien to the NFT users but in this case we will learn how the distributed version of these features are deployed and used on TVM(Ton Virtual Machine) based blockchains.
 
 ::: danger
-It is crucial to exercise caution and carefully manage the numbers and amounts associated with the transactions in this section. Avoid simply copying and pasting the code without thorough review and understanding.
+- It is crucial to exercise caution and carefully manage the numbers and amounts associated with the transactions in this section. Avoid simply copying and pasting the code without thorough review and understanding.
+
+- Kindly be aware that you are signing a transaction on the mainnet (this is not a testnet).
+
 :::
 
-## Code Samples
+## Topics
 <div class="sections-container">
   <div class="bridge-section-row">
-    <a href="/Deployments/External/TokenRoot.html">
-      <span class="bridge-section">Deploy Token Root</span>
+    <a href="/docs/usage/typical/1.html">
+      <span class="bridge-section">Deploy TIP4_1 (NFT)</span>
     </a>
-    <a href="/Deployments/External/TokenWallet.html">
-      <span class="bridge-section">Deploy Token Wallet</span>
+    <a href="/docs/usage/typical/2.html">
+      <span class="bridge-section">Deploy TIP4_2 (NFT metadata)</span>
     </a>
   </div>
   <div class="bridge-section-row">
-    <a href="/Deployments/External/Mint.html">
-      <span class="bridge-section">Mint TIP-3 Tokens</span>
+    <a href="/docs/usage/typical/royalty.html">
+      <span class="bridge-section">Deploy NFt with Royalty</span>
     </a>
-    <a href="/Deployments/External/Transfer.html">
-      <span class="bridge-section">Transfer TIP-3 Tokens</span>
-    </a>
+
   </div>
-    <div class="bridge-section-row">
-    <a href="/Deployments/External/burn.html">
-      <span class="bridge-section">Burn TIP-3 Tokens</span>
-    </a>
-  </div>
+
 </div>
 
 <style>
@@ -54,7 +53,7 @@ It is crucial to exercise caution and carefully manage the numbers and amounts a
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   text-align: left;
   margin-bottom: 0.5rem;
 }

@@ -149,6 +149,11 @@ module.exports = {
         collapsable: false,
         items: [
           {
+            text: "Prerequisites",
+            collapsable: false,
+            link: "/docs/usage/pre.md",
+          },
+          {
             text: "Typical Deployment",
             collapsable: false,
             link: "/docs/usage/typical/ToC.md",
