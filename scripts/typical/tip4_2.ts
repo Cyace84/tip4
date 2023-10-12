@@ -19,8 +19,7 @@ import { useProviderInfo } from "../helpers/useProviders";
 const defaultNft: string = JSON.stringify({
   type: "Basic NFT",
   name: "Daemon #1",
-  description:
-    "A curated collection of 10,000 Agents from the Venom blockchain deployed on a mission to take over Web3",
+  description: "The red daemons from hell",
   preview: {
     source:
       "https://images.pexels.com/photos/16115934/pexels-photo-16115934/free-photo-of-spooky-traditional-figurine.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -36,20 +35,19 @@ const defaultNft: string = JSON.stringify({
   external_url: "https://images.pexels.com",
   image: "/1.jpeg",
   attributes: [
-    { trait_type: "Background", value: "Orange 2" },
-    { trait_type: "Skin Color", value: "Lightskin 2" },
-    { trait_type: "Apparel", value: "Vest" },
-    { trait_type: "Eyes", value: "Werewolf" },
-    { trait_type: "Mask", value: "Villain" },
-    { trait_type: "Hair", value: "Prettyboy 2" },
-    { trait_type: "Rarity Rank", value: 6001, display_type: "number" },
+    { trait_type: "Background", value: "hell" },
+    { trait_type: "Skin Color", value: "red" },
+    { trait_type: "teeth", value: "sharp white" },
+    { trait_type: "nationality", value: "utbvir" },
+    { trait_type: "jewelry", value: "fire water fire" },
+    { trait_type: "crown", value: "golden" },
+    { trait_type: "Rarity Rank", value: 1 },
   ],
 });
 const defaultCollection: string = JSON.stringify({
   type: "Basic NFT",
-  name: "Revolt Agents",
-  description:
-    "A curated collection of 10,000 Agents from the Venom blockchain deployed on a mission to take over Web3",
+  name: "hell bite",
+  description: "The red daemons from hell",
   preview: {
     source:
       "https://images.pexels.com/photos/16115934/pexels-photo-16115934/free-photo-of-spooky-traditional-figurine.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -62,7 +60,7 @@ const defaultCollection: string = JSON.stringify({
       mimetype: "image/JPEG",
     },
   ],
-  external_url: "https://venom.network",
+  external_url: "https://images.pexels.com",
 });
 export async function deployTip4_2Collection(
   jsonObj: string = defaultCollection
