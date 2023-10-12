@@ -159,17 +159,17 @@ module.exports = {
             link: "/docs/usage/typical/ToC.md",
             items: [
               {
-                text: "TIP4_1 Non-Fungible Token ",
+                text: "TIP4_1 NFT",
                 collapsable: false,
                 link: "/docs/usage/typical/1.md",
               },
               {
-                text: "TIP4_2 NFT with Metadata ",
+                text: "TIP4_2 Metadata ",
                 collapsable: false,
                 link: "/docs/usage/typical/2.md",
               },
               {
-                text: "NFT with Royalty ",
+                text: "Royalty ",
                 collapsable: false,
                 link: "/docs/usage/typical/royalty.md",
               },
