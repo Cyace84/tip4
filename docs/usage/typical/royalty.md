@@ -1,8 +1,18 @@
-# TIP4_Royalty
+# TIP4_Royalty Deployment
 
 <div class="deployToken">
 
 This section presents the implementation of the royalty feature in the `TIP-4` NFT standard. This implementation allows users of the NFT to fetch royalty information for a specific NFT ID and enables NFT marketplaces to apply royalty rules and payments within their platforms.
+
+::: tip
+
+You can see the implementation of this part collection and nft contracts at:
+
+https://github.com/broxus/tip4/blob/master/contracts/TIP4_royalty/TIP4_royaltyCollection.tsol
+
+https://github.com/broxus/tip4/blob/master/contracts/TIP4_royalty/TIP4_royaltyNft.tsol
+
+:::
 
 ## Step 1: Prepare the Contracts
 
@@ -487,11 +497,14 @@ return {
 
 </script>
 
+
 <style>
+
 textarea{
  width:100%;
  height: 400px;
 }
+
 .action{
     display:inline-block;
 }
@@ -500,7 +513,7 @@ textarea{
     font-size: .9rem;
 }
 
-.deployTokenBut, .switcherContainer, .codeBlockContainer, .Ain, details
+.deployTokenBut, .Ain, details
 {
   background-color: var(--vp-c-bg-mute);
   transition: background-color 0.1s;
@@ -517,7 +530,6 @@ details{
     padding-left : 10px;
     margin : 0;
 }
-
 .deployTokenBut{
     cursor:pointer;
     padding: 5px 12px;
@@ -536,61 +548,15 @@ details{
     border: 1px solid var(--vp-c-divider);
     }
 
-.text{padding-left: 5px;font-size:1rem;}
-
-.switcherContainer{
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    display: flex;
-    border: none;
-    padding: 0px;
-}
-.switcherContainer > p{
-    margin: 0px;
-    padding : 0px;
-}
-.codeBlockContainer{
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    padding: 8px 12px;
-}
 .cbShow{
     display: block;
 }
 .cbHide{
     display: none;
 }
-.llSwitcher{
-    padding: 5px 10px;
-    border:  0 solid var(--vp-c-divider);
-    border-width: 1px ;
-    border-color: var(--vp-c-divider);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    font-weight: 600;
-    transition: all ease .2s;
-}
-.eipSwitcher{
-    padding: 5px 10px;
-    border:  0 solid var(--vp-c-divider);
-    border-width: 1px ;
-    border-color: var(--vp-c-divider);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    font-weight: 600;
-    transition: all ease .2s;
-}
-.llSwitcher:hover, .eipSwitcher:hover{
-      border-color: var(--light-color-ts-class);
-}
+
 .eipAction{
     font-weight: 600;
-}
-.on{
-    color : var(--light-color-ts-class);
-}
-.off{
-    color : var(--vp-c-bg-mute);
 }
 
 * {box-sizing: border-box;}

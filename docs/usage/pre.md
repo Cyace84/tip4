@@ -49,29 +49,39 @@ Create a file named `useProvider.ts`.
 Add the following script to the file you just made:
 
 ````typescript
-
-// Import the required libraries
 import { ProviderRpcClient, Address } from "everscale-inpage-provider";
 
-// Initialize the provider
-const provider: ProviderRpcClient = new ProviderRpcClient();
+import { useProvider } from "../../src/providers/useProvider";
+/**
+ * Fetches the data about the EVER Wallet
+ * @returns Either the Tvm provider, Tvm wallet address or undefined
+ */
+export async function useProviderInfo(): Promise<[ProviderRpcClient, Address]> {
+  try {
+    // Initialize the provider
+    const provider: ProviderRpcClient = new ProviderRpcClient();
 
-// Make sure the provider is initialized.
-await provider.ensureInitialized();
+    // Make sure the provider is initialized.
+    await provider.ensureInitialized();
 
-// Request permissions from the user to execute API
-await provider.requestPermissions({
-  permissions: ["basic", "accountInteraction"],
-});
+    // Request permissions from the user to execute API
+    await provider.requestPermissions({
+      permissions: ["basic", "accountInteraction"],
+    });
 
-// setting the ever sender address
-const providerAddress: Address = (await provider.getProviderState())
-.permissions.accountInteraction!.address;
+    // setting the ever sender address
+    const providerAddress: Address = (await provider.getProviderState())
+      .permissions.accountInteraction!.address;
 
-export {provider,  providerAddress};
+    return [provider, providerAddress];
+  } catch (e: any) {
+    throw new Error(e.message);
+  }
+}
+
 ````
 
-From now we can use the provider object and the provider address in our scripts by just simply importing them.
+From now we can use the provider object and the provider address in our scripts by just simply importing and initiating this function.
 
 ::: tip
 You can also refer to the Documentation of the everscale-inpage-provider.

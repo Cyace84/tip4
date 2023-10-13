@@ -5,43 +5,43 @@
     "vue": {
       "src": "../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "2e11dd2b",
+      "fileHash": "7acd063b",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../node_modules/@vue/devtools-api/lib/esm/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "78085c07",
+      "fileHash": "9ed2a18a",
       "needsInterop": false
     },
     "vitepress > minisearch": {
       "src": "../../../node_modules/minisearch/dist/es/index.js",
       "file": "vitepress___minisearch.js",
-      "fileHash": "53248888",
+      "fileHash": "0ca5de08",
       "needsInterop": false
     },
     "vue-toastification": {
       "src": "../../../node_modules/vue-toastification/dist/index.mjs",
       "file": "vue-toastification.js",
-      "fileHash": "de93efa9",
+      "fileHash": "668a039f",
       "needsInterop": false
     },
     "vue-toastification/dist/index.mjs": {
       "src": "../../../node_modules/vue-toastification/dist/index.mjs",
       "file": "vue-toastification_dist_index__mjs.js",
-      "fileHash": "96217cd3",
+      "fileHash": "82c8a119",
       "needsInterop": false
     },
     "everscale-inpage-provider": {
       "src": "../../../node_modules/everscale-inpage-provider/dist/index.js",
       "file": "everscale-inpage-provider.js",
-      "fileHash": "1df8fad0",
+      "fileHash": "d06ed9ed",
       "needsInterop": true
     },
     "dotenv": {
       "src": "../../../node_modules/dotenv/lib/main.js",
       "file": "dotenv.js",
-      "fileHash": "eb3aa9ad",
+      "fileHash": "a7b2eb7c",
       "needsInterop": true
     }
   },

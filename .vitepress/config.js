@@ -30,7 +30,6 @@ const NAV = [
 module.exports = {
   title: "TIP-4 Docs",
   base: "/",
-  title: "TIP-4 Docs",
 
   plugins: [vue()],
   themeConfig: {
@@ -60,14 +59,14 @@ module.exports = {
         link: "/docs/specifications/ToC.md",
         items: [
           {
-            text: "Collection",
+            text: "Base Collection",
             collapsable: false,
-            link: "/docs/specifications/collection.md",
+            link: "/docs/specifications/baseCollection.md",
           },
           {
-            text: "NFT",
+            text: "Base NFT",
             collapsable: false,
-            link: "/docs/specifications/NFT.md",
+            link: "/docs/specifications/baseNFT.md",
           },
           {
             text: "TIP4-1 Non-Fungible Token",
@@ -154,40 +153,34 @@ module.exports = {
             link: "/docs/usage/pre.md",
           },
           {
-            text: "Typical Deployment",
+            text: "Deploying Collection",
             collapsable: false,
-            link: "/docs/usage/typical/ToC.md",
-            items: [
-              {
-                text: "TIP4_1 NFT",
-                collapsable: false,
-                link: "/docs/usage/typical/1.md",
-              },
-              {
-                text: "TIP4_2 Metadata ",
-                collapsable: false,
-                link: "/docs/usage/typical/2.md",
-              },
-              {
-                text: "Royalty ",
-                collapsable: false,
-                link: "/docs/usage/typical/royalty.md",
-              },
-            ],
+            link: "/docs/usage/deployingCollection.md",
           },
           {
-            text: "Advanced Usage",
+            text: "Minting Nft",
             collapsable: false,
-            items: [
-              { text: "TIP4_3 NFT with Index", collapsable: false, link: "" },
-              { text: "TIP4_4 NFT with Storage", collapsable: false, link: "" },
-              {
-                text: "TIP4_5 NFT Licensing",
-                collapsable: false,
-                link: "",
-              },
-              { text: "TIP4_6 Upgradable NFT", collapsable: false, link: "" },
-            ],
+            link: "/docs/usage/typical/ToC.md",
+          },
+          {
+            text: "Finding Nft by Indexes",
+            collapsable: false,
+            link: "/docs/usage/typical/ToC.md",
+          },
+          {
+            text: "Transferring Nft",
+            collapsable: false,
+            link: "/docs/usage/typical/ToC.md",
+          },
+          {
+            text: "Burning Nft",
+            collapsable: false,
+            link: "/docs/usage/typical/ToC.md",
+          },
+          {
+            text: "Upgradeable Nft",
+            collapsable: false,
+            link: "/docs/usage/typical/ToC.md",
           },
         ],
         link: "",
