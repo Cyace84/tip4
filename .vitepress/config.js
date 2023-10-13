@@ -160,7 +160,7 @@ module.exports = {
           {
             text: "Minting Nft",
             collapsable: false,
-            link: "/docs/usage/typical/ToC.md",
+            link: "/docs/usage/mintingNft.md",
           },
           {
             text: "Finding Nft by Indexes",

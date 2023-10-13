@@ -368,7 +368,7 @@ import {
 import { factorySource, FactorySource } from "./artifacts/build/factorySource"; // copied build folder
 import { useProviderInfo } from "./helpers/useProviders";
 
-const defaultCollection: string = JSON.stringify({
+const collectionJsonMetadata: string = JSON.stringify({
   type: "Basic NFT",
   name: "hell bite",
   description: "The red daemons from hell",
@@ -388,7 +388,7 @@ const defaultCollection: string = JSON.stringify({
 });
 
 export async function main(
-  json: string = defaultCollection
+  json: string = collectionJsonMetadata
 ): Promise<string> {
   try {
 
@@ -523,9 +523,6 @@ Congratulations, you have successfully deployed collection contract using the TI
 </div>
 
 <div :class="eipAction" >
-
-### Deploy TIP4_1 Collection
-
 
 <label class="container collectionMetaCheck"> Use default metadata
 <input class="checkboxInput" ref="actionCollectionMetaDefault" type="checkbox" @click="defaultMetaHandler" checked="true">

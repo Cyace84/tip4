@@ -12,7 +12,7 @@ import { factorySource, FactorySource } from "./artifacts/build/factorySource";
 import { useProviderInfo } from "./helpers/useProviders";
 import { toast } from "../src/helpers/toast";
 
-const defaultCollection: string = JSON.stringify({
+const defaultCollectionMetadata: string = JSON.stringify({
   type: "Basic NFT",
   name: "hell bite",
   description: "The red daemons from hell",
@@ -32,7 +32,7 @@ const defaultCollection: string = JSON.stringify({
 });
 
 export async function deployBaseCollection(
-  json: string = defaultCollection
+  json: string = defaultCollectionMetadata
 ): Promise<string> {
   try {
     // let provider: ProviderRpcClient, providerAddress: Address;
@@ -145,78 +145,3 @@ export async function deployBaseCollection(
     return err.message;
   }
 }
-
-// export async function deployTip4_1Nft(CollectionAddr: string): Promise<string> {
-//   try {
-//     const [provider, providerAddress]: [ProviderRpcClient, Address] =
-//       await useProviderInfo();
-
-//     if (!isValidEverAddress(provider, CollectionAddr)) {
-//       toast("Please enter a valid collection address !", 0);
-
-//       return "Failed";
-//     }
-//     // Collection and the Nft contracts abis
-//     const collectionAbi: FactorySource["Collection"] =
-//       factorySource["Collection"];
-//     const nftAbi: FactorySource["Nft"] = factorySource["Nft"];
-
-//     const collectionContract: Contract<FactorySource["Collection"]> =
-//       new provider.Contract(collectionAbi, new Address(CollectionAddr));
-//     collectionContract.getFullState;
-//     // deploying an nft from the collection contract
-//     const totalSupply = Number(
-//       (await collectionContract.methods.totalSupply({ answerId: 0 }).call())
-//         .count
-//     );
-//     const mintRes: Transaction = await collectionContract.methods
-//       .mintNft({})
-//       .send({
-//         from: providerAddress,
-//         amount: String(2 * 10 ** 9),
-//         bounce: true,
-//       });
-
-//     if (mintRes.aborted) {
-//       return `minting Nft failed ${(mintRes.exitCode, mintRes.resultCode)}`;
-//     }
-
-//     const nftAddr: Address = (
-//       await collectionContract.methods
-//         .nftAddress({
-//           answerId: 0,
-//           id: totalSupply,
-//         })
-//         .call()
-//     ).nft;
-
-//     // fetching the newly deployed nft contract
-//     const nftContract: Contract<FactorySource["Nft"]> = new provider.Contract(
-//       nftAbi,
-//       nftAddr
-//     );
-
-//     // fetching
-//     const nftContractData = await nftContract.methods
-//       .getInfo({ answerId: 0 })
-//       .call();
-
-//     if (nftContractData.collection.toString() == CollectionAddr.toString()) {
-//       toast(`Nft number ${nftContractData.id} Minted successfully`, 1);
-
-//       return `Nft number ${
-//         nftContractData.id
-//       } deployed to ${nftAddr.toString()}`;
-//     } else {
-//       toast("Minting Nft failed", 0);
-
-//       return `TIP4_1 Nft deployment failed ! ${
-//         (mintRes.exitCode, mintRes.resultCode)
-//       }`;
-//     }
-//   } catch (err: any) {
-//     toast(err.message, 0);
-
-//     return err.message;
-//   }
-// }
