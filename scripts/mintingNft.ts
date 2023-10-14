@@ -6,7 +6,7 @@ import {
   Transaction,
 } from "everscale-inpage-provider";
 
-import { factorySource, FactorySource } from "./artifacts/build/factorySource";
+import { factorySource, FactorySource } from "./build/factorySource";
 import isValidEverAddress from "./helpers/isValideverAddress";
 import { useProviderInfo } from "./helpers/useProviders";
 import { toast } from "../src/helpers/toast";
@@ -44,18 +44,24 @@ const defaultNftMetadata: string = JSON.stringify({
 interface IRoyaltyStructure {
   numerator: string | number;
   denominator: string | number;
-  receiver: Address;
+  receiver: string;
 }
-export async function deployTip4_1Nft(
+
+export async function mintNft(
   CollectionAddr: string,
-  json: string = defaultNftMetadata,
-  royalty: IRoyaltyStructure
+  royalty: IRoyaltyStructure,
+  json: string = defaultNftMetadata
 ): Promise<string> {
   try {
     const [provider, providerAddress]: [ProviderRpcClient, Address] =
       await useProviderInfo();
 
     if (!isValidEverAddress(provider, CollectionAddr)) {
+      toast("Please enter a valid collection address !", 0);
+
+      return "Failed";
+    }
+    if (!isValidEverAddress(provider, royalty.receiver)) {
       toast("Please enter a valid collection address !", 0);
 
       return "Failed";
@@ -73,8 +79,13 @@ export async function deployTip4_1Nft(
       (await collectionContract.methods.totalSupply({ answerId: 0 }).call())
         .count
     );
+    const royaltyInfo = {
+      numerator: royalty.numerator,
+      denominator: royalty.denominator,
+      receiver: new Address(royalty.receiver),
+    };
     const mintRes: Transaction = await collectionContract.methods
-      .mintNft({ json: json, royalty: royalty })
+      .mintNft({ json: json, royalty: royaltyInfo })
       .send({
         from: providerAddress,
         amount: String(2 * 10 ** 9),
@@ -114,7 +125,7 @@ export async function deployTip4_1Nft(
     } else {
       toast("Minting Nft failed", 0);
 
-      return `TIP4_1 Nft deployment failed ! ${
+      return `Nft deployment failed ! ${
         (mintRes.exitCode, mintRes.resultCode)
       }`;
     }

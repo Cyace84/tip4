@@ -14,9 +14,9 @@ Please note that the deployable NFT contract inherits from the `TIP4_3Nft`, resu
 
 <span  :class="LLdis"  >
 
-The code sample below utilizes the state of the previously written script in the base collection deployment and the Locklift tool to provide us with the NFT minting functionality.
+The code sample below utilizes the state of the previously written script in the base collection deployment section and the Locklift tool to provide us with the NFT minting functionality.
 
-add the following lines of code to the [previously written script](./deployingCollection.md#step-2-write-deployment-script) on the deploying the base collection contract section.
+add the following lines of code to the [previously written script](./deployingCollection.md#step-2-write-deployment-script) on deploying the base collection contract section.
 
 ::: info
 Before we start to write our scripts we need to make sure that there is a file named `02-mint-nft.ts` in the `script` folder in the project root.
@@ -26,9 +26,9 @@ Before we start to write our scripts we need to make sure that there is a file n
 
 <span :class="EIPdis"  >
 
-The code sample below is utilized to deploy the base collection contract using `everscale-inpage-provider` tool.
+The code sample below is utilized to mint the nfts using `everscale-inpage-provider` tool.
 
-add the following lines of code to the [previously written script](./deployingCollection.md#step-2-write-deployment-script) on the deploying the base collection contract section.
+add the following lines of code to the [previously written script](./deployingCollection.md#step-2-write-deployment-script) on deploying the base collection contract section.
 
 </span>
 
@@ -200,7 +200,7 @@ if (nftContractData.collection.toString() == CollectionAddr.toString()) {
 
 <div :class="llAction">
 
-Use this command to deploy base collection contract:
+Use this command to mint an nft:
 
 ```shell
 npx locklift run -s ./scripts/02-mint-nft.ts -n local
@@ -247,7 +247,7 @@ import { defineComponent, ref, onMounted } from "vue";
 import {toast} from "/src/helpers/toast";
 import ImgContainer from "../../.vitepress/theme/components/shared/BKDImgContainer.vue"
 import loading from "../../.vitepress/theme/components/shared/BKDLoading.vue"
-import {deployTip4_RoyaltyCollection, deployTip4_RoyaltyNft} from "../../scripts/typical/tip4_royalty";
+import { mintNft } from "../../scripts/mintingNft";
 import { IRoyaltyStructure } from "../../scripts/types";
 
 export default defineComponent({
@@ -265,7 +265,7 @@ export default defineComponent({
         collMeta: "cbHide",
         nftMeta: "cbHide",
         loadingText: " ",
-        loadingText2: " "
+        loadingText: " "
         }
   },
   setup() {
@@ -293,13 +293,13 @@ export default defineComponent({
 
     }
    async function deployNft(){
-          this.loadingText2 = ""
+          this.loadingText = ""
         if (
             this.$refs.actionCollectionAddress.value == ''
 
         ){
             toast("collection address field is required !", 0)
-            this.loadingText2 = "Failed"
+            this.loadingText = "Failed"
             return
         }
         if (
@@ -308,14 +308,14 @@ export default defineComponent({
 
         ){
             toast("Nft metadata field is required !", 0)
-            this.loadingText2 = "Failed"
+            this.loadingText = "Failed"
             return
         }
         if (
             isNaN(Number(this.$refs.actionRoyaltyPercent.value))
         ){
             toast("Royalty percentage field is required !", 0)
-            this.loadingText2 = "Failed"
+            this.loadingText = "Failed"
             return
         }
         if (
@@ -323,7 +323,7 @@ export default defineComponent({
 
         ){
             toast("Royalty receiver address field is required !", 0)
-            this.loadingText2 = "Failed"
+            this.loadingText = "Failed"
             return
         }
         let deployTokenRes;
@@ -334,12 +334,12 @@ export default defineComponent({
             receiver: this.$refs.actionRoyaltyReceiverAddress.value
         }
         if(this.$refs.actionNftMetaDefault.checked){
-            deployTokenRes = await deployTip4_RoyaltyNft(
+            deployTokenRes = await mintNft(
                 this.$refs.actionCollectionAddress.value,
                 royalty
             )
         }else{
-            deployTokenRes = await deployTip4_RoyaltyNft(
+            deployTokenRes = await mintNft(
                 this.$refs.actionCollectionAddress.value,
                 this.$refs.actionNftMeta.value,
                 royalty
@@ -347,7 +347,7 @@ export default defineComponent({
         }
         // Rendering the output
         deployTokenRes = !deployTokenRes ? "Failed" :  deployTokenRes;
-        this.loadingText2 = deployTokenRes;
+        this.loadingText = deployTokenRes;
   }
   async function codeBlockSwitchHandler(e){
      if(e.target.innerHTML.includes("everscale-inpage-provider")){

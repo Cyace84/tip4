@@ -8,7 +8,7 @@ import {
   ProviderRpcClient,
 } from "everscale-inpage-provider";
 
-import { factorySource, FactorySource } from "./artifacts/build/factorySource";
+import { factorySource, FactorySource } from "./build/factorySource";
 import { useProviderInfo } from "./helpers/useProviders";
 import { toast } from "../src/helpers/toast";
 
@@ -57,17 +57,17 @@ export async function deployBaseCollection(
 
     // Fetching the tvc and the code of the nft contract
     const collectionTvc: string = await (
-      await fetch("/scripts/artifacts/build/Collection.base64")
+      await fetch("/scripts/build/Collection.base64")
     ).text();
-    const nftTvc: string = await (
-      await fetch("/scripts/artifacts/build/Nft.base64")
-    ).text();
-    const indexTvc: string = await (
-      await fetch("/scripts/artifacts/build/Index.base64")
-    ).text();
-    const indexBasisTvc: string = await (
-      await fetch("/scripts/artifacts/build/IndexBasis.base64")
-    ).text();
+    const nftTvc: string = (
+      await (await fetch("/scripts/build/Nft.base64")).text()
+    ).replace(/\r?\n|\r/g, "");
+    const indexTvc: string = (
+      await (await fetch("/scripts/build/Index.base64")).text()
+    ).replace(/\r?\n|\r/g, "");
+    const indexBasisTvc: string = (
+      await (await fetch("/scripts/build/IndexBasis.base64")).text()
+    ).replace(/\r?\n|\r/g, "");
     const nftCode: string = (await provider.splitTvc(nftTvc)).code!;
     const indexCode: string = (await provider.splitTvc(indexTvc)).code!;
     const indexBasisCode: string = (await provider.splitTvc(indexBasisTvc))

@@ -165,7 +165,7 @@ module.exports = {
           {
             text: "Finding Nft by Indexes",
             collapsable: false,
-            link: "/docs/usage/typical/ToC.md",
+            link: "/docs/usage/findingNftByIndexes.md",
           },
           {
             text: "Transferring Nft",

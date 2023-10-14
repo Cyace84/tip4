@@ -546,7 +546,7 @@ import { defineComponent, ref, onMounted } from "vue";
 import {toast} from "/src/helpers/toast";
 import ImgContainer from "../../.vitepress/theme/components/shared/BKDImgContainer.vue"
 import loading from "../../.vitepress/theme/components/shared/BKDLoading.vue"
-import {deployTip4_RoyaltyCollection, deployTip4_RoyaltyNft} from "../../scripts/typical/tip4_royalty";
+import {deployBaseCollection} from "../../scripts/deployingBaseCollection";
 import { IRoyaltyStructure } from "../../scripts/types";
 
 export default defineComponent({
@@ -604,10 +604,10 @@ export default defineComponent({
         }
         let deployTokenRes;
         if(this.$refs.actionCollectionMetaDefault.checked){
-            deployTokenRes = await deployTip4_RoyaltyCollection()
+            deployTokenRes = await deployBaseCollection()
 
         }else{
-            deployTokenRes = await deployTip4_RoyaltyCollection(this.$refs.actionCollectionMeta.value)
+            deployTokenRes = await deployBaseCollection(this.$refs.actionCollectionMeta.value)
         }
           // Rendering the output
           deployTokenRes = !deployTokenRes ? "Failed" :  deployTokenRes;
