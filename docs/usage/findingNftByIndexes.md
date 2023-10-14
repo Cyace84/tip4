@@ -111,7 +111,7 @@ Before we start to write our scripts we need to make sure that there is a file n
 
 <span :class="EIPdis"  >
 
-The code sample below is utilized to deploy the base collection contract using `everscale-inpage-provider` tool.
+The code sample below is utilized to perform the mentioned operations using `everscale-inpage-provider` tool.
 
 add the following lines of code to the [previously written script](./mintingNft.md#step-2-write-minting-script) on deploying the base collection contract section.
 

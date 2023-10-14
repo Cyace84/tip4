@@ -35,7 +35,7 @@ export async function findNfts(
     ).replace(/\r?\n|\r/g, "");
     const indexCode: string = (await provider.splitTvc(indexTvc)).code!;
 
-    let nfts: string[] = [];
+    const nfts: string[] = [];
 
     // for (let collection in fetchedCollections) {
     // Building the salt cell for IndexBasis
@@ -69,7 +69,6 @@ export async function findNfts(
     ).accounts;
 
     for (const index of indexContracts) {
-      console.log(index);
       const tempIndex: Contract<FactorySource["Index"]> = new provider.Contract(
         factorySource.Index,
         index
@@ -78,8 +77,6 @@ export async function findNfts(
         (await tempIndex.methods.getInfo({ answerId: 0 }).call()).nft.toString()
       );
     }
-
-    console.log(nfts);
 
     if (nfts.length > 0) {
       toast(`Found ${nfts.length} nfts`, 1);

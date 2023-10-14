@@ -170,7 +170,7 @@ module.exports = {
           {
             text: "Transferring Nft",
             collapsable: false,
-            link: "/docs/usage/typical/ToC.md",
+            link: "/docs/usage/transferringNft.md",
           },
           {
             text: "Burning Nft",

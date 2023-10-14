@@ -265,7 +265,6 @@ export default defineComponent({
         collMeta: "cbHide",
         nftMeta: "cbHide",
         loadingText: " ",
-        loadingText: " "
         }
   },
   setup() {
