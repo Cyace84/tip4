@@ -186,11 +186,11 @@ add the following lines of code to the [previously written script](./mintingNft.
 
   indexContracts = (await locklift.provider.getAccountsByCodeHash({ codeHash: indexCodeHash })).accounts;
 
-  indexContracts.forEach(async index => {
+  for (const index of indexContracts) {
     let tempIndex = locklift.factory.getDeployedContract("Index", index);
     NftsFromCollection.push((await tempIndex.methods.getInfo({ answerId: 0 }).call()).nft.toString());
-    console.log("Users Nft's from the collection: ", NftsFromCollection);
-  });
+  }
+  console.log("Users Nft's from the collection: ", NftsFromCollection);
 
 ````
 
@@ -236,7 +236,8 @@ add the following lines of code to the [previously written script](./mintingNft.
       })
     ).accounts;
 
-    indexContracts.forEach(async (index) => {
+    for (const index of indexContracts) {
+      console.log(index);
       const tempIndex: Contract<FactorySource["Index"]> = new provider.Contract(
         factorySource.Index,
         index
@@ -244,7 +245,7 @@ add the following lines of code to the [previously written script](./mintingNft.
       nfts.push(
         (await tempIndex.methods.getInfo({ answerId: 0 }).call()).nft.toString()
       );
-    });
+    }
 
     console.log("every thing passed");
     if (nfts.length > 0) {
