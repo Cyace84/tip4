@@ -146,6 +146,7 @@ module.exports = {
       {
         text: "Usage and Deployment",
         collapsable: false,
+        link: "/docs/usage/toc.md",
         items: [
           {
             text: "Prerequisites",
@@ -183,7 +184,6 @@ module.exports = {
             link: "/docs/usage/upgradeableNft.md",
           },
         ],
-        link: "",
       },
       { text: "FAQ", collapsable: false, link: "" },
       { text: "API Reference", collapsable: false, link: "" },
