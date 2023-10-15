@@ -4,9 +4,7 @@ In this section we will learn how to use the TIP-4 contracts inside of our lockl
 
 ## Step 1: Add the External Contracts
 
-We must specify for the compiler that we have some external contracts, in this case the Index, IndexBasis, TIP-4_1Collection, TIP4_1Nft, OwnableExternal and Account contracts are needed.
-
-Account contract artifacts are also needed for deploying and using an account in the next section. Thus, we will include the path to these artifacts.
+We must specify for the compiler that we have some external contracts in our `node_modules` folder, in this case the `Index`, `IndexBasis`, `TIP-4_1Collection`, `TIP4_1Nft`, `OwnableExternal` and `Account` contracts are needed to be specified.
 
 Add this line to locklift.config.ts/compiler
 
@@ -28,7 +26,7 @@ version: "0.61.2",
 
 ## Step 3: Build the Artifacts
 
-To generate the necessary artifacts for these three contracts, including .abi.json, .tvc, .code, and .base64 files, execute the following command in your shell.
+To generate the necessary artifacts for these contracts, including .abi.json, .tvc, .code, and .base64 files, execute the following command in your shell.
 
 ::: warning
 Please note that the `Index` and `INdexBasis` contracts are precompiled so **"DO NOT REBUILD `Index` AND `IndexBasis` CONTRACTS ARTIFACTS!"**

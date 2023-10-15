@@ -1,7 +1,7 @@
 # Getting Started
-In this section we will walk through on how to deploy an Account smart contract and how to set up a basic project for the TIP-3 contracts.
+In this section we will walk through on how to deploy an Account smart contract and how to set up a basic project for the TIP-4 contracts.
 
-**Here you can find the mentioned topics in this section:**
+**Here are the mentioned topics in this section:**
 
 <div class="sections-container">
   <div class="bridge-section-row">

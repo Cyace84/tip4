@@ -1,7 +1,7 @@
 # Setup of TIP-4 Contracts in a Project
 
 This guide will walk you through the process of setting up a project with TIP-4 contracts.
-Although the TIP4 standard already has couple of implementations such as [itgoldio](https://github.com/itgoldio/everscale-tip) or [grandbazar](https://github.com/grandbazar-io/everscale-tip4-contracts) implementations, we prefer to implement the TIP4 Collection and Nft contracts ourselves and see what will happened under the hood.
+Although the TIP4 standard already has couple of implementations such as [itgoldio](https://github.com/itgoldio/everscale-tip) or [grandbazar](https://github.com/grandbazar-io/everscale-tip4-contracts) implementations, we prefer to implement the TIP4 `BaseCollection` and `BaseNft` contracts ourselves and understand what happens under the hood.
 
 ## Prerequisites
 First, make sure you have the nodeJs and npm installed on your machine.
@@ -19,7 +19,7 @@ cd TIP4Implementation
 
 ## Step 2: Initialize a Locklift Project
 
-Locklift is a tool that simplifies the development and management of smart contracts. We can initialize a locklift project in our new directory. This command will also install locklift if it's not already installed.
+Locklift is a tool that simplifies the development and management of smart contracts in the nodejs environment. We can initialize a locklift project in our new directory. This command will also install locklift if it's not already installed.
 
 ``` shell
 npx locklift init
