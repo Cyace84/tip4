@@ -1,5 +1,7 @@
 # Standard Specification
 
+The specifications section of this documentation involves describing each part of the standard, including their core description, usage examples, and visual guides illustrating the workflow for each component.
+
 **Here you can find the descriptions related to each part of the standard.**
 <div class="sections-container">
   <div class="bridge-section-row">

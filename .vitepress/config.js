@@ -54,7 +54,7 @@ module.exports = {
         ],
       },
       {
-        text: "Specifications",
+        text: "Specification",
         collapsable: false,
         link: "/docs/specifications/ToC.md",
         items: [
