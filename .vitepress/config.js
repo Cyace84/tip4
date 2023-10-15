@@ -175,12 +175,12 @@ module.exports = {
           {
             text: "Burning Nft",
             collapsable: false,
-            link: "/docs/usage/typical/ToC.md",
+            link: "/docs/usage/burningNft.md",
           },
           {
             text: "Upgradeable Nft",
             collapsable: false,
-            link: "/docs/usage/typical/ToC.md",
+            link: "/docs/usage/upgradeableNft.md",
           },
         ],
         link: "",
