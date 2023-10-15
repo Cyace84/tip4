@@ -123,7 +123,7 @@ contract Nft is TIP4_2Nft, TIP4_3Nft, TIP4_royaltyNft {
 
 ### Collection Contract
 
-As mentioned earlier, the base collection contract also inherits from other parts of the standard collection contracts. The base collection contract must import them and feed their constructors. It also must manage the process of deploying the NFT contract as well.
+As mentioned earlier, the base collection contract also inherits from other parts of the standard collection contracts. The base collection contract must import them and feed their constructors. It also must manage the process of minting and burning the NFT contract as well.
 
 Additionally, some functions of the other collection contracts must be re-implemented and overwritten by the base collection. The contract code below will provide us with the expected functionality:
 
@@ -137,6 +137,8 @@ pragma AbiHeader expire;
 pragma AbiHeader time;
 pragma AbiHeader pubkey;
 
+import "@broxus/tip4/contracts/interfaces/IAcceptNftBurnCallback.tsol";
+import "@broxus/tip4/contracts/interfaces/IBurnableCollection.tsol";
 
 import '@broxus/tip4/contracts/access/OwnableExternal.tsol';
 import '@broxus/tip4/contracts/TIP4_2/TIP4_2Collection.tsol';
@@ -144,7 +146,7 @@ import '@broxus/tip4/contracts/TIP4_3/TIP4_3Collection.tsol';
 import '@broxus/tip4/contracts/TIP4_royalty/structures/IRoyaltyStructure.tsol';
 import './Nft.tsol';
 
-contract Collection is TIP4_2Collection, TIP4_3Collection, OwnableExternal, IRoyaltyStructure {
+contract Collection is TIP4_2Collection, TIP4_3Collection, OwnableExternal, IRoyaltyStructure, IBurnableCollection {
 
     uint32 static _randomNonce;
 
@@ -231,8 +233,42 @@ contract Collection is TIP4_2Collection, TIP4_3Collection, OwnableExternal, IRoy
         });
     }
 
-}
+	function acceptNftBurn(
+		uint256 _id,
+		address _owner,
+		address _manager,
+		address _sendGasTo,
+		address _callbackTo,
+		TvmCell _callbackPayload
+	) external override {
+		require(msg.sender.value != 0 && _resolveNft(_id) == msg.sender, 100);
 
+		_totalSupply--;
+		emit NftBurned(_id, msg.sender, _owner, _manager);
+
+		if (_callbackTo.value != 0) {
+			IAcceptNftBurnCallback(_callbackTo).onAcceptNftBurn{
+				value: 0,
+				flag: 64 + 2,
+				bounce: false
+			}(
+				address(this),
+				_id,
+				msg.sender,
+				_owner,
+				_manager,
+				_sendGasTo,
+				_callbackPayload
+			);
+		} else {
+			_sendGasTo.transfer({
+				value: 0,
+				flag: 64 + 2,
+				bounce: false
+			});
+		}
+	}
+}
 ````
 </details>
 
@@ -346,7 +382,7 @@ main()
     process.exit(0);
   })
   .catch(err => {
-    console.log(err);
+    console.log(err.message);
     process.exit(1);
   });
 

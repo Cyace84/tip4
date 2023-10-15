@@ -3,27 +3,27 @@
     "00be5c16907fd1864907804fac094a98213ba45fd6c5707d11c83d9244f9c4f0": {
       "0": {
         "filename": "Collection.code",
-        "line": 816
+        "line": 968
       },
       "8": {
         "filename": "Collection.code",
-        "line": 817
+        "line": 969
       },
       "24": {
         "filename": "Collection.code",
-        "line": 818
+        "line": 970
       },
       "48": {
         "filename": "Collection.code",
-        "line": 819
+        "line": 971
       },
       "64": {
         "filename": "Collection.code",
-        "line": 820
+        "line": 972
       },
       "72": {
         "filename": "Collection.code",
-        "line": 821
+        "line": 973
       },
       "88": {
         "filename": "../node_modules/@broxus/tip4/contracts/TIP4_3/TIP4_3Collection.tsol",
@@ -51,219 +51,219 @@
       },
       "168": {
         "filename": "Collection.code",
-        "line": 832
+        "line": 984
       },
       "184": {
         "filename": "Collection.code",
-        "line": 835
+        "line": 987
       },
       "192": {
         "filename": "Collection.code",
-        "line": 836
+        "line": 988
       },
       "208": {
         "filename": "Collection.code",
-        "line": 837
+        "line": 989
       },
       "216": {
         "filename": "Collection.code",
-        "line": 838
+        "line": 990
       },
       "224": {
         "filename": "Collection.code",
-        "line": 839
+        "line": 991
       },
       "240": {
         "filename": "Collection.code",
-        "line": 840
+        "line": 992
       },
       "256": {
         "filename": "Collection.code",
-        "line": 841
+        "line": 993
       },
       "264": {
         "filename": "Collection.code",
-        "line": 842
+        "line": 994
       },
       "272": {
         "filename": "Collection.code",
-        "line": 843
+        "line": 995
       },
       "280": {
         "filename": "Collection.code",
-        "line": 844
+        "line": 996
       },
       "304": {
         "filename": "Collection.code",
-        "line": 845
+        "line": 997
       },
       "312": {
         "filename": "Collection.code",
-        "line": 846
+        "line": 998
       },
       "320": {
         "filename": "Collection.code",
-        "line": 847
+        "line": 999
       },
       "344": {
         "filename": "Collection.code",
-        "line": 848
+        "line": 1000
       },
       "352": {
         "filename": "Collection.code",
-        "line": 849
+        "line": 1001
       },
       "360": {
         "filename": "Collection.code",
-        "line": 850
+        "line": 1002
       },
       "408": {
         "filename": "Collection.code",
-        "line": 851
+        "line": 1003
       },
       "416": {
         "filename": "Collection.code",
-        "line": 852
+        "line": 1004
       },
       "424": {
         "filename": "Collection.code",
-        "line": 853
+        "line": 1005
       },
       "432": {
         "filename": "Collection.code",
-        "line": 854
+        "line": 1006
       },
       "440": {
         "filename": "Collection.code",
-        "line": 856
+        "line": 1008
       },
       "456": {
         "filename": "Collection.code",
-        "line": 857
+        "line": 1009
       },
       "472": {
         "filename": "Collection.code",
-        "line": 858
+        "line": 1010
       },
       "480": {
         "filename": "Collection.code",
-        "line": 859
+        "line": 1011
       },
       "496": {
         "filename": "Collection.code",
-        "line": 860
+        "line": 1012
       },
       "504": {
         "filename": "Collection.code",
-        "line": 861
+        "line": 1013
       },
       "520": {
         "filename": "Collection.code",
-        "line": 862
+        "line": 1014
       },
       "536": {
         "filename": "Collection.code",
-        "line": 863
+        "line": 1015
       },
       "552": {
         "filename": "Collection.code",
-        "line": 864
+        "line": 1016
       },
       "568": {
         "filename": "Collection.code",
-        "line": 865
+        "line": 1017
       },
       "576": {
         "filename": "Collection.code",
-        "line": 866
+        "line": 1018
       },
       "600": {
         "filename": "Collection.code",
-        "line": 867
+        "line": 1019
       },
       "616": {
         "filename": "Collection.code",
-        "line": 868
+        "line": 1020
       },
       "640": {
         "filename": "Collection.code",
-        "line": 869
+        "line": 1021
       },
       "648": {
         "filename": "Collection.code",
-        "line": 870
+        "line": 1022
       },
       "656": {
         "filename": "Collection.code",
-        "line": 871
+        "line": 1023
       },
       "672": {
         "filename": "Collection.code",
-        "line": 872
+        "line": 1024
       },
       "688": {
         "filename": "Collection.code",
-        "line": 873
+        "line": 1025
       },
       "696": {
         "filename": "Collection.code",
-        "line": 874
+        "line": 1026
       },
       "720": {
         "filename": "Collection.code",
-        "line": 875
+        "line": 1027
       },
       "728": {
         "filename": "Collection.code",
-        "line": 876
+        "line": 1028
       },
       "736": {
         "filename": "Collection.code",
-        "line": 877
+        "line": 1029
       },
       "752": {
         "filename": "Collection.code",
-        "line": 878
+        "line": 1030
       },
       "768": {
         "filename": "Collection.code",
-        "line": 879
+        "line": 1031
       },
       "792": {
         "filename": "Collection.code",
-        "line": 880
+        "line": 1032
       },
       "800": {
         "filename": "Collection.code",
-        "line": 881
+        "line": 1033
       },
       "808": {
         "filename": "Collection.code",
-        "line": 882
+        "line": 1034
       },
       "816": {
         "filename": "Collection.code",
-        "line": 883
+        "line": 1035
       },
       "832": {
         "filename": "Collection.code",
-        "line": 884
+        "line": 1036
       },
       "848": {
         "filename": "Collection.code",
-        "line": 886
+        "line": 1038
       },
       "856": {
         "filename": "Collection.code",
-        "line": 887
+        "line": 1039
       },
       "872": {
         "filename": "Collection.code",
-        "line": 888
+        "line": 1040
       },
       "888": {
         "filename": "Collection.code",
-        "line": 891
+        "line": 1043
       }
     },
     "01f4d4141e0b4ddd2ab60ef6e181df8d464119411a33932d5f8440b59a5e8db5": {
@@ -306,72 +306,6 @@
       "128": {
         "filename": "../node_modules/@broxus/tip4/contracts/TIP4_3/TIP4_3Collection.tsol",
         "line": 121
-      }
-    },
-    "0209738508e21eb27b6649b04a48504bf592e7e46a8ecb936bc112bd08d54ca3": {
-      "0": {
-        "filename": "Collection.code",
-        "line": 2520
-      },
-      "8": {
-        "filename": "Collection.code",
-        "line": 2521
-      },
-      "56": {
-        "filename": "Collection.code",
-        "line": 2522
-      },
-      "64": {
-        "filename": "Collection.code",
-        "line": 2523
-      },
-      "80": {
-        "filename": "Collection.code",
-        "line": 2526
-      },
-      "88": {
-        "filename": "Collection.code",
-        "line": 2527
-      },
-      "136": {
-        "filename": "Collection.code",
-        "line": 2528
-      },
-      "144": {
-        "filename": "Collection.code",
-        "line": 2529
-      },
-      "160": {
-        "filename": "Collection.code",
-        "line": 2532
-      },
-      "168": {
-        "filename": "Collection.code",
-        "line": 2533
-      },
-      "216": {
-        "filename": "Collection.code",
-        "line": 2534
-      },
-      "224": {
-        "filename": "Collection.code",
-        "line": 2535
-      },
-      "240": {
-        "filename": "Collection.code",
-        "line": 2538
-      },
-      "248": {
-        "filename": "Collection.code",
-        "line": 2539
-      },
-      "296": {
-        "filename": "Collection.code",
-        "line": 2540
-      },
-      "304": {
-        "filename": "Collection.code",
-        "line": 2541
       }
     },
     "042e638ae447ec97d8d0695f89e27a87695bdfc4d93dd9b66cd1c7c25a04b125": {
@@ -420,142 +354,206 @@
         "line": 55
       }
     },
-    "08ad7e263d0c1dc290304b61011909c0d0e0587fd655a7e3393112eafb2268f3": {
+    "077b6284c59aea747f1a9dc94a602eef78cd09a37402f52fd5351c5495e58c25": {
       "0": {
-        "filename": "Collection.code",
-        "line": 2355
+        "filename": "../contracts/Collection.tsol",
+        "line": 116
       },
       "16": {
-        "filename": "Collection.code",
-        "line": 2356
-      },
-      "24": {
-        "filename": "Collection.code",
-        "line": 2357
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
       "40": {
-        "filename": "Collection.code",
-        "line": 2358
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
-      "56": {
-        "filename": "Collection.code",
-        "line": 2359
+      "48": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
+      },
+      "64": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
       "72": {
-        "filename": "Collection.code",
-        "line": 2360
-      },
-      "80": {
-        "filename": "Collection.code",
-        "line": 2361
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
       "88": {
-        "filename": "Collection.code",
-        "line": 2362
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
+      },
+      "96": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
       "104": {
-        "filename": "Collection.code",
-        "line": 2363
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
-      "120": {
-        "filename": "Collection.code",
-        "line": 2364
+      "112": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
-      "128": {
-        "filename": "Collection.code",
-        "line": 2365
+      "136": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
-      "144": {
-        "filename": "Collection.code",
-        "line": 2366
+      "152": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
-      "168": {
-        "filename": "Collection.code",
-        "line": 2367
+      "176": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
       "184": {
-        "filename": "Collection.code",
-        "line": 2368
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
       "192": {
-        "filename": "Collection.code",
-        "line": 2369
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
-      "208": {
-        "filename": "Collection.code",
-        "line": 2370
+      "216": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
-      "248": {
-        "filename": "Collection.code",
-        "line": 2371
+      "232": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
-      "264": {
-        "filename": "Collection.code",
-        "line": 2372
-      },
-      "272": {
-        "filename": "Collection.code",
-        "line": 2373
+      "240": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
       "288": {
-        "filename": "Collection.code",
-        "line": 2374
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
       "296": {
-        "filename": "Collection.code",
-        "line": 2375
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
       "312": {
-        "filename": "Collection.code",
-        "line": 2376
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
       "328": {
-        "filename": "Collection.code",
-        "line": 2377
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
       "336": {
-        "filename": "Collection.code",
-        "line": 2378
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
       "344": {
-        "filename": "Collection.code",
-        "line": 2379
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
       "360": {
-        "filename": "Collection.code",
-        "line": 2380
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
+      },
+      "368": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
       "376": {
-        "filename": "Collection.code",
-        "line": 2384
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
-      "384": {
-        "filename": "Collection.code",
-        "line": 2385
+      "392": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
+      },
+      "400": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
       "408": {
-        "filename": "Collection.code",
-        "line": 2386
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
+      },
+      "416": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
       "424": {
-        "filename": "Collection.code",
-        "line": 2387
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
       "432": {
-        "filename": "Collection.code",
-        "line": 2388
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
+      },
+      "440": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
       "448": {
-        "filename": "Collection.code",
-        "line": 2392
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
       "456": {
-        "filename": "Collection.code",
-        "line": 2393
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
+      },
+      "464": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
       },
       "472": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
+      },
+      "480": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 117
+      },
+      "488": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 131
+      },
+      "496": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 131
+      },
+      "504": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 131
+      },
+      "528": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 131
+      },
+      "536": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 131
+      },
+      "552": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 131
+      },
+      "568": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 131
+      },
+      "576": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 131
+      },
+      "584": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 131
+      },
+      "600": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 131
+      },
+      "616": {
         "filename": "Collection.code",
-        "line": 2396
+        "line": 544
       }
     },
     "08d692fd60662aa05834027ffd765e303eb4018b32b1c574a97b454af01e1722": {
@@ -712,210 +710,144 @@
         "line": 68
       }
     },
-    "0b344a9030aa01e2fc3b5258c3f1220d009f0e6a3610978c974cc18004bd8d63": {
-      "0": {
-        "filename": "Collection.code",
-        "line": 2458
-      },
-      "8": {
-        "filename": "Collection.code",
-        "line": 2459
-      },
-      "56": {
-        "filename": "Collection.code",
-        "line": 2460
-      },
-      "64": {
-        "filename": "Collection.code",
-        "line": 2461
-      },
-      "80": {
-        "filename": "Collection.code",
-        "line": 2487
-      },
-      "88": {
-        "filename": "Collection.code",
-        "line": 2488
-      },
-      "136": {
-        "filename": "Collection.code",
-        "line": 2489
-      },
-      "144": {
-        "filename": "Collection.code",
-        "line": 2490
-      },
-      "160": {
-        "filename": "Collection.code",
-        "line": 2516
-      },
-      "168": {
-        "filename": "Collection.code",
-        "line": 2517
-      },
-      "216": {
-        "filename": "Collection.code",
-        "line": 2518
-      },
-      "224": {
-        "filename": "Collection.code",
-        "line": 2519
-      },
-      "240": {
-        "filename": "Collection.code",
-        "line": 2545
-      },
-      "248": {
-        "filename": "Collection.code",
-        "line": 2546
-      },
-      "296": {
-        "filename": "Collection.code",
-        "line": 2547
-      },
-      "304": {
-        "filename": "Collection.code",
-        "line": 2548
-      }
-    },
     "0f4cfcc7d57124e786378f076ec4fc8c1f5a764756eea3fa9fffd031f2af05c9": {
       "0": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       },
       "16": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       },
       "32": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       },
       "48": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       },
       "56": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       },
       "176": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       },
       "184": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       },
       "192": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       },
       "208": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       },
       "216": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       },
       "264": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       },
       "280": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       },
       "288": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       },
       "304": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       },
       "312": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       },
       "320": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       },
       "328": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       },
       "336": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       },
       "344": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       },
       "352": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       },
       "360": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       },
       "368": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       },
       "376": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       },
       "384": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       },
       "392": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       },
       "400": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       },
       "408": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       },
       "416": {
         "filename": "../contracts/Collection.tsol",
-        "line": 71
+        "line": 73
       }
     },
     "10a2e883030cac36782132ff3af83d069bdd64572e1767e7cc7adb2e2ed98b8b": {
       "0": {
         "filename": "Collection.code",
-        "line": 1729
+        "line": 1881
       },
       "8": {
         "filename": "Collection.code",
-        "line": 1730
+        "line": 1882
       },
       "24": {
         "filename": "Collection.code",
-        "line": 1731
+        "line": 1883
       },
       "48": {
         "filename": "Collection.code",
-        "line": 1732
+        "line": 1884
       },
       "64": {
         "filename": "Collection.code",
-        "line": 1733
+        "line": 1885
       },
       "72": {
         "filename": "Collection.code",
-        "line": 1734
+        "line": 1886
       },
       "88": {
         "filename": "../node_modules/@broxus/tip4/contracts/TIP4_1/TIP4_1Collection.tsol",
@@ -943,203 +875,269 @@
       },
       "168": {
         "filename": "Collection.code",
-        "line": 1745
+        "line": 1897
       },
       "184": {
         "filename": "Collection.code",
-        "line": 1748
+        "line": 1900
       },
       "192": {
         "filename": "Collection.code",
-        "line": 1749
+        "line": 1901
       },
       "208": {
         "filename": "Collection.code",
-        "line": 1750
+        "line": 1902
       },
       "216": {
         "filename": "Collection.code",
-        "line": 1751
+        "line": 1903
       },
       "224": {
         "filename": "Collection.code",
-        "line": 1752
+        "line": 1904
       },
       "240": {
         "filename": "Collection.code",
-        "line": 1753
+        "line": 1905
       },
       "256": {
         "filename": "Collection.code",
-        "line": 1754
+        "line": 1906
       },
       "264": {
         "filename": "Collection.code",
-        "line": 1755
+        "line": 1907
       },
       "272": {
         "filename": "Collection.code",
-        "line": 1756
+        "line": 1908
       },
       "280": {
         "filename": "Collection.code",
-        "line": 1757
+        "line": 1909
       },
       "304": {
         "filename": "Collection.code",
-        "line": 1758
+        "line": 1910
       },
       "312": {
         "filename": "Collection.code",
-        "line": 1759
+        "line": 1911
       },
       "360": {
         "filename": "Collection.code",
-        "line": 1760
+        "line": 1912
       },
       "384": {
         "filename": "Collection.code",
-        "line": 1761
+        "line": 1913
       },
       "400": {
         "filename": "Collection.code",
-        "line": 1762
+        "line": 1914
       },
       "408": {
         "filename": "Collection.code",
-        "line": 1763
+        "line": 1915
       },
       "416": {
         "filename": "Collection.code",
-        "line": 1765
+        "line": 1917
       },
       "432": {
         "filename": "Collection.code",
-        "line": 1766
+        "line": 1918
       },
       "448": {
         "filename": "Collection.code",
-        "line": 1767
+        "line": 1919
       },
       "456": {
         "filename": "Collection.code",
-        "line": 1768
+        "line": 1920
       },
       "472": {
         "filename": "Collection.code",
-        "line": 1769
+        "line": 1921
       },
       "480": {
         "filename": "Collection.code",
-        "line": 1770
+        "line": 1922
       },
       "496": {
         "filename": "Collection.code",
-        "line": 1771
+        "line": 1923
       },
       "512": {
         "filename": "Collection.code",
-        "line": 1772
+        "line": 1924
       },
       "528": {
         "filename": "Collection.code",
-        "line": 1773
+        "line": 1925
       },
       "544": {
         "filename": "Collection.code",
-        "line": 1774
+        "line": 1926
       },
       "552": {
         "filename": "Collection.code",
-        "line": 1775
+        "line": 1927
       },
       "576": {
         "filename": "Collection.code",
-        "line": 1776
+        "line": 1928
       },
       "592": {
         "filename": "Collection.code",
-        "line": 1777
+        "line": 1929
       },
       "616": {
         "filename": "Collection.code",
-        "line": 1778
+        "line": 1930
       },
       "624": {
         "filename": "Collection.code",
-        "line": 1779
+        "line": 1931
       },
       "632": {
         "filename": "Collection.code",
-        "line": 1780
+        "line": 1932
       },
       "648": {
         "filename": "Collection.code",
-        "line": 1781
+        "line": 1933
       },
       "664": {
         "filename": "Collection.code",
-        "line": 1782
+        "line": 1934
       },
       "672": {
         "filename": "Collection.code",
-        "line": 1783
+        "line": 1935
       },
       "696": {
         "filename": "Collection.code",
-        "line": 1784
+        "line": 1936
       },
       "704": {
         "filename": "Collection.code",
-        "line": 1785
+        "line": 1937
       },
       "712": {
         "filename": "Collection.code",
-        "line": 1786
+        "line": 1938
       },
       "728": {
         "filename": "Collection.code",
-        "line": 1787
+        "line": 1939
       },
       "744": {
         "filename": "Collection.code",
-        "line": 1788
+        "line": 1940
       },
       "768": {
         "filename": "Collection.code",
-        "line": 1789
+        "line": 1941
       },
       "784": {
         "filename": "Collection.code",
-        "line": 1790
+        "line": 1942
       },
       "792": {
         "filename": "Collection.code",
-        "line": 1791
+        "line": 1943
       },
       "800": {
         "filename": "Collection.code",
-        "line": 1792
+        "line": 1944
       },
       "816": {
         "filename": "Collection.code",
-        "line": 1793
+        "line": 1945
       },
       "832": {
         "filename": "Collection.code",
-        "line": 1795
+        "line": 1947
       },
       "840": {
         "filename": "Collection.code",
-        "line": 1796
+        "line": 1948
       },
       "856": {
         "filename": "Collection.code",
-        "line": 1797
+        "line": 1949
       },
       "872": {
         "filename": "Collection.code",
-        "line": 1800
+        "line": 1952
+      }
+    },
+    "1119b01e9cc88bda679d4246949ae1e5f9871ebd04387ff17fe7508c8bca2ea7": {
+      "0": {
+        "filename": "Collection.code",
+        "line": 2647
+      },
+      "8": {
+        "filename": "Collection.code",
+        "line": 2648
+      },
+      "56": {
+        "filename": "Collection.code",
+        "line": 2649
+      },
+      "64": {
+        "filename": "Collection.code",
+        "line": 2650
+      },
+      "80": {
+        "filename": "Collection.code",
+        "line": 2653
+      },
+      "88": {
+        "filename": "Collection.code",
+        "line": 2654
+      },
+      "136": {
+        "filename": "Collection.code",
+        "line": 2655
+      },
+      "144": {
+        "filename": "Collection.code",
+        "line": 2656
+      },
+      "160": {
+        "filename": "Collection.code",
+        "line": 2659
+      },
+      "168": {
+        "filename": "Collection.code",
+        "line": 2660
+      },
+      "216": {
+        "filename": "Collection.code",
+        "line": 2661
+      },
+      "224": {
+        "filename": "Collection.code",
+        "line": 2662
+      },
+      "240": {
+        "filename": "Collection.code",
+        "line": 2665
+      },
+      "248": {
+        "filename": "Collection.code",
+        "line": 2666
+      },
+      "296": {
+        "filename": "Collection.code",
+        "line": 2667
+      },
+      "304": {
+        "filename": "Collection.code",
+        "line": 2668
       }
     },
     "14244789b95b8c5d057b57dc23d431dd1607d3cd2da21241dc9bed112f12da6a": {
@@ -1273,75 +1271,141 @@
     "167cbcddb50e29cce7c28a14df73bae947a561cc10d9c38c298a1e02278eb4e6": {
       "0": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "8": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "24": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "32": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "40": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "56": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "64": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "72": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "88": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "96": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "104": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "120": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "128": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "136": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "152": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "168": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "184": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "192": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
+      }
+    },
+    "1921ee84de518969326316ddf3e7c7c66fda047db89c43c7d66fcb32a7cec436": {
+      "0": {
+        "filename": "Collection.code",
+        "line": 2705
+      },
+      "8": {
+        "filename": "Collection.code",
+        "line": 2706
+      },
+      "56": {
+        "filename": "Collection.code",
+        "line": 2707
+      },
+      "64": {
+        "filename": "Collection.code",
+        "line": 2708
+      },
+      "80": {
+        "filename": "Collection.code",
+        "line": 2711
+      },
+      "88": {
+        "filename": "Collection.code",
+        "line": 2712
+      },
+      "136": {
+        "filename": "Collection.code",
+        "line": 2713
+      },
+      "144": {
+        "filename": "Collection.code",
+        "line": 2714
+      },
+      "160": {
+        "filename": "Collection.code",
+        "line": 2717
+      },
+      "168": {
+        "filename": "Collection.code",
+        "line": 2718
+      },
+      "216": {
+        "filename": "Collection.code",
+        "line": 2719
+      },
+      "224": {
+        "filename": "Collection.code",
+        "line": 2720
+      },
+      "240": {
+        "filename": "Collection.code",
+        "line": 2723
+      },
+      "248": {
+        "filename": "Collection.code",
+        "line": 2724
+      },
+      "296": {
+        "filename": "Collection.code",
+        "line": 2725
+      },
+      "304": {
+        "filename": "Collection.code",
+        "line": 2726
       }
     },
     "1ac49498d12f47bf89b85a41f266fbe28847dda9ed6319f0727d7bf5aead6a81": {
@@ -1376,72 +1440,6 @@
       "64": {
         "filename": "../node_modules/@broxus/tip4/contracts/TIP4_3/TIP4_3Collection.tsol",
         "line": 96
-      }
-    },
-    "1ae486348af3a858a5330058b760d7d14ce9d1fda60e0db9896975a960ae128c": {
-      "0": {
-        "filename": "Collection.code",
-        "line": 2491
-      },
-      "8": {
-        "filename": "Collection.code",
-        "line": 2492
-      },
-      "56": {
-        "filename": "Collection.code",
-        "line": 2493
-      },
-      "64": {
-        "filename": "Collection.code",
-        "line": 2494
-      },
-      "80": {
-        "filename": "Collection.code",
-        "line": 2497
-      },
-      "88": {
-        "filename": "Collection.code",
-        "line": 2498
-      },
-      "136": {
-        "filename": "Collection.code",
-        "line": 2499
-      },
-      "144": {
-        "filename": "Collection.code",
-        "line": 2500
-      },
-      "160": {
-        "filename": "Collection.code",
-        "line": 2503
-      },
-      "168": {
-        "filename": "Collection.code",
-        "line": 2504
-      },
-      "216": {
-        "filename": "Collection.code",
-        "line": 2505
-      },
-      "224": {
-        "filename": "Collection.code",
-        "line": 2506
-      },
-      "240": {
-        "filename": "Collection.code",
-        "line": 2509
-      },
-      "248": {
-        "filename": "Collection.code",
-        "line": 2510
-      },
-      "296": {
-        "filename": "Collection.code",
-        "line": 2511
-      },
-      "304": {
-        "filename": "Collection.code",
-        "line": 2512
       }
     },
     "2c66d84e87af9ffa8789d2e0e045f6c3ceaa3f46b2a434d54bb796c43c22c997": {
@@ -1491,125 +1489,125 @@
     "330f93bf08f57d3c5e8d77220d00a2fd83e454a0384dd9d8d036e876b24bb445": {
       "0": {
         "filename": "../contracts/Collection.tsol",
-        "line": 94
+        "line": 96
       },
       "8": {
         "filename": "../contracts/Collection.tsol",
-        "line": 94
+        "line": 96
       },
       "16": {
         "filename": "../contracts/Collection.tsol",
-        "line": 94
+        "line": 96
       },
       "32": {
         "filename": "../contracts/Collection.tsol",
-        "line": 94
+        "line": 96
       },
       "40": {
         "filename": "../contracts/Collection.tsol",
-        "line": 94
+        "line": 96
       },
       "48": {
         "filename": "../contracts/Collection.tsol",
-        "line": 94
+        "line": 96
       },
       "64": {
         "filename": "../contracts/Collection.tsol",
-        "line": 94
+        "line": 96
       },
       "80": {
         "filename": "../contracts/Collection.tsol",
-        "line": 94
+        "line": 96
       },
       "88": {
         "filename": "../contracts/Collection.tsol",
-        "line": 94
+        "line": 96
       },
       "96": {
         "filename": "../contracts/Collection.tsol",
-        "line": 94
+        "line": 96
       },
       "112": {
         "filename": "../contracts/Collection.tsol",
-        "line": 94
+        "line": 96
       },
       "120": {
         "filename": "../contracts/Collection.tsol",
-        "line": 94
+        "line": 96
       },
       "128": {
         "filename": "../contracts/Collection.tsol",
-        "line": 94
+        "line": 96
       },
       "144": {
         "filename": "../contracts/Collection.tsol",
-        "line": 94
+        "line": 96
       },
       "160": {
         "filename": "../contracts/Collection.tsol",
-        "line": 94
+        "line": 96
       },
       "168": {
         "filename": "../contracts/Collection.tsol",
-        "line": 94
+        "line": 96
       },
       "184": {
         "filename": "../contracts/Collection.tsol",
-        "line": 94
+        "line": 96
       },
       "192": {
         "filename": "../contracts/Collection.tsol",
-        "line": 94
+        "line": 96
       },
       "200": {
         "filename": "../contracts/Collection.tsol",
-        "line": 94
+        "line": 96
       },
       "208": {
         "filename": "../contracts/Collection.tsol",
-        "line": 94
+        "line": 96
       },
       "232": {
         "filename": "../contracts/Collection.tsol",
-        "line": 94
+        "line": 96
       },
       "248": {
         "filename": "../contracts/Collection.tsol",
-        "line": 94
+        "line": 96
       },
       "264": {
         "filename": "../contracts/Collection.tsol",
-        "line": 94
+        "line": 96
       },
       "280": {
         "filename": "../contracts/Collection.tsol",
-        "line": 94
+        "line": 96
       }
     },
     "3a4421d88b728cd26e38e10de8128024d28cf3fb5a381e91502309b96a876b28": {
       "0": {
         "filename": "Collection.code",
-        "line": 2111
+        "line": 2263
       },
       "8": {
         "filename": "Collection.code",
-        "line": 2112
+        "line": 2264
       },
       "24": {
         "filename": "Collection.code",
-        "line": 2113
+        "line": 2265
       },
       "48": {
         "filename": "Collection.code",
-        "line": 2114
+        "line": 2266
       },
       "64": {
         "filename": "Collection.code",
-        "line": 2115
+        "line": 2267
       },
       "72": {
         "filename": "Collection.code",
-        "line": 2116
+        "line": 2268
       },
       "88": {
         "filename": "../node_modules/@broxus/tip4/contracts/TIP6/TIP6.tsol",
@@ -1641,217 +1639,251 @@
       },
       "184": {
         "filename": "Collection.code",
-        "line": 2128
+        "line": 2280
       },
       "200": {
         "filename": "Collection.code",
-        "line": 2131
+        "line": 2283
       },
       "208": {
         "filename": "Collection.code",
-        "line": 2132
+        "line": 2284
       },
       "224": {
         "filename": "Collection.code",
-        "line": 2133
+        "line": 2285
       },
       "232": {
         "filename": "Collection.code",
-        "line": 2134
+        "line": 2286
       },
       "240": {
         "filename": "Collection.code",
-        "line": 2135
+        "line": 2287
       },
       "256": {
         "filename": "Collection.code",
-        "line": 2136
+        "line": 2288
       },
       "272": {
         "filename": "Collection.code",
-        "line": 2137
+        "line": 2289
       },
       "280": {
         "filename": "Collection.code",
-        "line": 2138
+        "line": 2290
       },
       "288": {
         "filename": "Collection.code",
-        "line": 2139
+        "line": 2291
       },
       "296": {
         "filename": "Collection.code",
-        "line": 2140
+        "line": 2292
       },
       "320": {
         "filename": "Collection.code",
-        "line": 2141
+        "line": 2293
       },
       "328": {
         "filename": "Collection.code",
-        "line": 2142
+        "line": 2294
       },
       "376": {
         "filename": "Collection.code",
-        "line": 2143
+        "line": 2295
       },
       "400": {
         "filename": "Collection.code",
-        "line": 2144
+        "line": 2296
       },
       "416": {
         "filename": "Collection.code",
-        "line": 2145
+        "line": 2297
       },
       "424": {
         "filename": "Collection.code",
-        "line": 2146
+        "line": 2298
       },
       "432": {
         "filename": "Collection.code",
-        "line": 2148
+        "line": 2300
       },
       "448": {
         "filename": "Collection.code",
-        "line": 2149
+        "line": 2301
       },
       "464": {
         "filename": "Collection.code",
-        "line": 2150
+        "line": 2302
       },
       "472": {
         "filename": "Collection.code",
-        "line": 2151
+        "line": 2303
       },
       "488": {
         "filename": "Collection.code",
-        "line": 2152
+        "line": 2304
       },
       "496": {
         "filename": "Collection.code",
-        "line": 2153
+        "line": 2305
       },
       "512": {
         "filename": "Collection.code",
-        "line": 2154
+        "line": 2306
       },
       "528": {
         "filename": "Collection.code",
-        "line": 2155
+        "line": 2307
       },
       "544": {
         "filename": "Collection.code",
-        "line": 2156
+        "line": 2308
       },
       "560": {
         "filename": "Collection.code",
-        "line": 2157
+        "line": 2309
       },
       "568": {
         "filename": "Collection.code",
-        "line": 2158
+        "line": 2310
       },
       "592": {
         "filename": "Collection.code",
-        "line": 2159
+        "line": 2311
       },
       "608": {
         "filename": "Collection.code",
-        "line": 2160
+        "line": 2312
       },
       "632": {
         "filename": "Collection.code",
-        "line": 2161
+        "line": 2313
       },
       "640": {
         "filename": "Collection.code",
-        "line": 2162
+        "line": 2314
       },
       "648": {
         "filename": "Collection.code",
-        "line": 2163
+        "line": 2315
       },
       "664": {
         "filename": "Collection.code",
-        "line": 2164
+        "line": 2316
       },
       "680": {
         "filename": "Collection.code",
-        "line": 2165
+        "line": 2317
       },
       "696": {
         "filename": "Collection.code",
-        "line": 2166
+        "line": 2318
       },
       "712": {
         "filename": "Collection.code",
-        "line": 2167
+        "line": 2319
       },
       "728": {
         "filename": "Collection.code",
-        "line": 2168
+        "line": 2320
       },
       "744": {
         "filename": "Collection.code",
-        "line": 2169
+        "line": 2321
       },
       "768": {
         "filename": "Collection.code",
-        "line": 2170
+        "line": 2322
       },
       "784": {
         "filename": "Collection.code",
-        "line": 2171
+        "line": 2323
       },
       "792": {
         "filename": "Collection.code",
-        "line": 2172
+        "line": 2324
       },
       "808": {
         "filename": "Collection.code",
-        "line": 2173
+        "line": 2325
       },
       "824": {
         "filename": "Collection.code",
-        "line": 2175
+        "line": 2327
       },
       "832": {
         "filename": "Collection.code",
-        "line": 2176
+        "line": 2328
       },
       "848": {
         "filename": "Collection.code",
-        "line": 2177
+        "line": 2329
       },
       "864": {
         "filename": "Collection.code",
-        "line": 2180
+        "line": 2332
+      }
+    },
+    "3e1ca0445bc5f538116dbe125503cf5d0d21abbef709e72147398a2b321f5181": {
+      "0": {
+        "filename": "Collection.code",
+        "line": 2610
+      },
+      "8": {
+        "filename": "Collection.code",
+        "line": 2611
+      },
+      "56": {
+        "filename": "Collection.code",
+        "line": 2612
+      },
+      "64": {
+        "filename": "Collection.code",
+        "line": 2613
+      },
+      "80": {
+        "filename": "Collection.code",
+        "line": 2731
+      },
+      "88": {
+        "filename": "Collection.code",
+        "line": 2732
+      },
+      "136": {
+        "filename": "Collection.code",
+        "line": 2733
+      },
+      "144": {
+        "filename": "Collection.code",
+        "line": 2734
       }
     },
     "4816598bcfac689d1996004e9c9cf4cd63c8ba751ae896cb24cf8e2f1a80d2f5": {
       "0": {
         "filename": "Collection.code",
-        "line": 726
+        "line": 878
       },
       "8": {
         "filename": "Collection.code",
-        "line": 727
+        "line": 879
       },
       "24": {
         "filename": "Collection.code",
-        "line": 728
+        "line": 880
       },
       "48": {
         "filename": "Collection.code",
-        "line": 729
+        "line": 881
       },
       "64": {
         "filename": "Collection.code",
-        "line": 730
+        "line": 882
       },
       "72": {
         "filename": "Collection.code",
-        "line": 731
+        "line": 883
       },
       "88": {
         "filename": "../node_modules/@broxus/tip4/contracts/TIP4_3/TIP4_3Collection.tsol",
@@ -1879,229 +1911,309 @@
       },
       "168": {
         "filename": "Collection.code",
-        "line": 742
+        "line": 894
       },
       "184": {
         "filename": "Collection.code",
-        "line": 745
+        "line": 897
       },
       "192": {
         "filename": "Collection.code",
-        "line": 746
+        "line": 898
       },
       "208": {
         "filename": "Collection.code",
-        "line": 747
+        "line": 899
       },
       "216": {
         "filename": "Collection.code",
-        "line": 748
+        "line": 900
       },
       "224": {
         "filename": "Collection.code",
-        "line": 749
+        "line": 901
       },
       "240": {
         "filename": "Collection.code",
-        "line": 750
+        "line": 902
       },
       "256": {
         "filename": "Collection.code",
-        "line": 751
+        "line": 903
       },
       "264": {
         "filename": "Collection.code",
-        "line": 752
+        "line": 904
       },
       "272": {
         "filename": "Collection.code",
-        "line": 753
+        "line": 905
       },
       "280": {
         "filename": "Collection.code",
-        "line": 754
+        "line": 906
       },
       "304": {
         "filename": "Collection.code",
-        "line": 755
+        "line": 907
       },
       "312": {
         "filename": "Collection.code",
-        "line": 756
+        "line": 908
       },
       "360": {
         "filename": "Collection.code",
-        "line": 757
+        "line": 909
       },
       "384": {
         "filename": "Collection.code",
-        "line": 758
+        "line": 910
       },
       "400": {
         "filename": "Collection.code",
-        "line": 759
+        "line": 911
       },
       "408": {
         "filename": "Collection.code",
-        "line": 760
+        "line": 912
       },
       "416": {
         "filename": "Collection.code",
-        "line": 762
+        "line": 914
       },
       "432": {
         "filename": "Collection.code",
-        "line": 763
+        "line": 915
       },
       "448": {
         "filename": "Collection.code",
-        "line": 764
+        "line": 916
       },
       "456": {
         "filename": "Collection.code",
-        "line": 765
+        "line": 917
       },
       "472": {
         "filename": "Collection.code",
-        "line": 766
+        "line": 918
       },
       "480": {
         "filename": "Collection.code",
-        "line": 767
+        "line": 919
       },
       "496": {
         "filename": "Collection.code",
-        "line": 768
+        "line": 920
       },
       "512": {
         "filename": "Collection.code",
-        "line": 769
+        "line": 921
       },
       "528": {
         "filename": "Collection.code",
-        "line": 770
+        "line": 922
       },
       "544": {
         "filename": "Collection.code",
-        "line": 771
+        "line": 923
       },
       "552": {
         "filename": "Collection.code",
-        "line": 772
+        "line": 924
       },
       "576": {
         "filename": "Collection.code",
-        "line": 773
+        "line": 925
       },
       "592": {
         "filename": "Collection.code",
-        "line": 774
+        "line": 926
       },
       "616": {
         "filename": "Collection.code",
-        "line": 775
+        "line": 927
       },
       "624": {
         "filename": "Collection.code",
-        "line": 776
+        "line": 928
       },
       "632": {
         "filename": "Collection.code",
-        "line": 777
+        "line": 929
       },
       "648": {
         "filename": "Collection.code",
-        "line": 778
+        "line": 930
       },
       "664": {
         "filename": "Collection.code",
-        "line": 779
+        "line": 931
       },
       "672": {
         "filename": "Collection.code",
-        "line": 780
+        "line": 932
       },
       "696": {
         "filename": "Collection.code",
-        "line": 781
+        "line": 933
       },
       "704": {
         "filename": "Collection.code",
-        "line": 782
+        "line": 934
       },
       "712": {
         "filename": "Collection.code",
-        "line": 783
+        "line": 935
       },
       "728": {
         "filename": "Collection.code",
-        "line": 784
+        "line": 936
       },
       "744": {
         "filename": "Collection.code",
-        "line": 785
+        "line": 937
       },
       "768": {
         "filename": "Collection.code",
-        "line": 786
+        "line": 938
       },
       "784": {
         "filename": "Collection.code",
-        "line": 787
+        "line": 939
       },
       "792": {
         "filename": "Collection.code",
-        "line": 788
+        "line": 940
       },
       "800": {
         "filename": "Collection.code",
-        "line": 789
+        "line": 941
       },
       "816": {
         "filename": "Collection.code",
-        "line": 790
+        "line": 942
       },
       "832": {
         "filename": "Collection.code",
-        "line": 792
+        "line": 944
       },
       "840": {
         "filename": "Collection.code",
-        "line": 793
+        "line": 945
       },
       "856": {
         "filename": "Collection.code",
-        "line": 794
+        "line": 946
       },
       "872": {
         "filename": "Collection.code",
-        "line": 797
+        "line": 949
+      }
+    },
+    "50ed92a7568fef10fcfd25bd33c49f5e47c1f487a73e02b47dd353ee4398eaa5": {
+      "0": {
+        "filename": "Collection.code",
+        "line": 2618
+      },
+      "8": {
+        "filename": "Collection.code",
+        "line": 2619
+      },
+      "48": {
+        "filename": "Collection.code",
+        "line": 2620
+      },
+      "56": {
+        "filename": "Collection.code",
+        "line": 2621
+      },
+      "72": {
+        "filename": "Collection.code",
+        "line": 2624
+      },
+      "80": {
+        "filename": "Collection.code",
+        "line": 2625
+      },
+      "128": {
+        "filename": "Collection.code",
+        "line": 2626
+      },
+      "136": {
+        "filename": "Collection.code",
+        "line": 2627
+      },
+      "152": {
+        "filename": "Collection.code",
+        "line": 2630
+      },
+      "160": {
+        "filename": "Collection.code",
+        "line": 2631
+      },
+      "208": {
+        "filename": "Collection.code",
+        "line": 2632
+      },
+      "216": {
+        "filename": "Collection.code",
+        "line": 2633
+      },
+      "232": {
+        "filename": "Collection.code",
+        "line": 2636
+      },
+      "240": {
+        "filename": "Collection.code",
+        "line": 2637
+      },
+      "288": {
+        "filename": "Collection.code",
+        "line": 2638
+      },
+      "296": {
+        "filename": "Collection.code",
+        "line": 2639
+      }
+    },
+    "5441564c00483e8dbff1fa2d02436754fb4f8b9408acfce3bfb9cc8d65a56f43": {
+      "0": {
+        "filename": "Collection.code",
+        "line": 2603
+      },
+      "8": {
+        "filename": "Collection.code",
+        "line": 2604
+      },
+      "24": {
+        "filename": "Collection.code",
+        "line": 2607
       }
     },
     "55300527094b9fb1fc93506e27499387adc2f9a1e8e771c0a51fe86d45bb7573": {
       "0": {
         "filename": "Collection.code",
-        "line": 1080
+        "line": 1232
       },
       "8": {
         "filename": "Collection.code",
-        "line": 1081
+        "line": 1233
       },
       "24": {
         "filename": "Collection.code",
-        "line": 1082
+        "line": 1234
       },
       "48": {
         "filename": "Collection.code",
-        "line": 1083
+        "line": 1235
       },
       "64": {
         "filename": "Collection.code",
-        "line": 1084
+        "line": 1236
       },
       "72": {
         "filename": "Collection.code",
-        "line": 1085
+        "line": 1237
       },
       "88": {
         "filename": "../node_modules/@broxus/tip4/contracts/TIP4_3/TIP4_3Collection.tsol",
@@ -2129,217 +2241,283 @@
       },
       "168": {
         "filename": "Collection.code",
-        "line": 1096
+        "line": 1248
       },
       "184": {
         "filename": "Collection.code",
-        "line": 1099
+        "line": 1251
       },
       "192": {
         "filename": "Collection.code",
-        "line": 1100
+        "line": 1252
       },
       "208": {
         "filename": "Collection.code",
-        "line": 1101
+        "line": 1253
       },
       "216": {
         "filename": "Collection.code",
-        "line": 1102
+        "line": 1254
       },
       "224": {
         "filename": "Collection.code",
-        "line": 1103
+        "line": 1255
       },
       "240": {
         "filename": "Collection.code",
-        "line": 1104
+        "line": 1256
       },
       "256": {
         "filename": "Collection.code",
-        "line": 1105
+        "line": 1257
       },
       "264": {
         "filename": "Collection.code",
-        "line": 1106
+        "line": 1258
       },
       "272": {
         "filename": "Collection.code",
-        "line": 1107
+        "line": 1259
       },
       "280": {
         "filename": "Collection.code",
-        "line": 1108
+        "line": 1260
       },
       "304": {
         "filename": "Collection.code",
-        "line": 1109
+        "line": 1261
       },
       "312": {
         "filename": "Collection.code",
-        "line": 1110
+        "line": 1262
       },
       "360": {
         "filename": "Collection.code",
-        "line": 1111
+        "line": 1263
       },
       "384": {
         "filename": "Collection.code",
-        "line": 1112
+        "line": 1264
       },
       "392": {
         "filename": "Collection.code",
-        "line": 1113
+        "line": 1265
       },
       "400": {
         "filename": "Collection.code",
-        "line": 1114
+        "line": 1266
       },
       "408": {
         "filename": "Collection.code",
-        "line": 1116
+        "line": 1268
       },
       "424": {
         "filename": "Collection.code",
-        "line": 1117
+        "line": 1269
       },
       "440": {
         "filename": "Collection.code",
-        "line": 1118
+        "line": 1270
       },
       "448": {
         "filename": "Collection.code",
-        "line": 1119
+        "line": 1271
       },
       "464": {
         "filename": "Collection.code",
-        "line": 1120
+        "line": 1272
       },
       "472": {
         "filename": "Collection.code",
-        "line": 1121
+        "line": 1273
       },
       "488": {
         "filename": "Collection.code",
-        "line": 1122
+        "line": 1274
       },
       "504": {
         "filename": "Collection.code",
-        "line": 1123
+        "line": 1275
       },
       "520": {
         "filename": "Collection.code",
-        "line": 1124
+        "line": 1276
       },
       "536": {
         "filename": "Collection.code",
-        "line": 1125
+        "line": 1277
       },
       "544": {
         "filename": "Collection.code",
-        "line": 1126
+        "line": 1278
       },
       "568": {
         "filename": "Collection.code",
-        "line": 1127
+        "line": 1279
       },
       "584": {
         "filename": "Collection.code",
-        "line": 1128
+        "line": 1280
       },
       "608": {
         "filename": "Collection.code",
-        "line": 1129
+        "line": 1281
       },
       "616": {
         "filename": "Collection.code",
-        "line": 1130
+        "line": 1282
       },
       "624": {
         "filename": "Collection.code",
-        "line": 1131
+        "line": 1283
       },
       "640": {
         "filename": "Collection.code",
-        "line": 1132
+        "line": 1284
       },
       "656": {
         "filename": "Collection.code",
-        "line": 1133
+        "line": 1285
       },
       "672": {
         "filename": "Collection.code",
-        "line": 1134
+        "line": 1286
       },
       "688": {
         "filename": "Collection.code",
-        "line": 1135
+        "line": 1287
       },
       "704": {
         "filename": "Collection.code",
-        "line": 1136
+        "line": 1288
       },
       "720": {
         "filename": "Collection.code",
-        "line": 1137
+        "line": 1289
       },
       "744": {
         "filename": "Collection.code",
-        "line": 1138
+        "line": 1290
       },
       "752": {
         "filename": "Collection.code",
-        "line": 1139
+        "line": 1291
       },
       "760": {
         "filename": "Collection.code",
-        "line": 1140
+        "line": 1292
       },
       "776": {
         "filename": "Collection.code",
-        "line": 1141
+        "line": 1293
       },
       "792": {
         "filename": "Collection.code",
-        "line": 1143
+        "line": 1295
       },
       "800": {
         "filename": "Collection.code",
-        "line": 1144
+        "line": 1296
       },
       "816": {
         "filename": "Collection.code",
-        "line": 1145
+        "line": 1297
       },
       "832": {
         "filename": "Collection.code",
-        "line": 1148
+        "line": 1300
+      }
+    },
+    "55663bfa82ebcd3e897142cadcdecaa8a43972284b6857d6cfafb55df10581dd": {
+      "0": {
+        "filename": "Collection.code",
+        "line": 2676
+      },
+      "8": {
+        "filename": "Collection.code",
+        "line": 2677
+      },
+      "56": {
+        "filename": "Collection.code",
+        "line": 2678
+      },
+      "64": {
+        "filename": "Collection.code",
+        "line": 2679
+      },
+      "80": {
+        "filename": "Collection.code",
+        "line": 2682
+      },
+      "88": {
+        "filename": "Collection.code",
+        "line": 2683
+      },
+      "136": {
+        "filename": "Collection.code",
+        "line": 2684
+      },
+      "144": {
+        "filename": "Collection.code",
+        "line": 2685
+      },
+      "160": {
+        "filename": "Collection.code",
+        "line": 2688
+      },
+      "168": {
+        "filename": "Collection.code",
+        "line": 2689
+      },
+      "216": {
+        "filename": "Collection.code",
+        "line": 2690
+      },
+      "224": {
+        "filename": "Collection.code",
+        "line": 2691
+      },
+      "240": {
+        "filename": "Collection.code",
+        "line": 2694
+      },
+      "248": {
+        "filename": "Collection.code",
+        "line": 2695
+      },
+      "296": {
+        "filename": "Collection.code",
+        "line": 2696
+      },
+      "304": {
+        "filename": "Collection.code",
+        "line": 2697
       }
     },
     "58bc683087273b62c2a36f77fcc183ab52a72b03e6be1413fdd5cf56be786e07": {
       "0": {
         "filename": "Collection.code",
-        "line": 1442
+        "line": 1594
       },
       "8": {
         "filename": "Collection.code",
-        "line": 1443
+        "line": 1595
       },
       "24": {
         "filename": "Collection.code",
-        "line": 1444
+        "line": 1596
       },
       "48": {
         "filename": "Collection.code",
-        "line": 1445
+        "line": 1597
       },
       "64": {
         "filename": "Collection.code",
-        "line": 1446
+        "line": 1598
       },
       "72": {
         "filename": "Collection.code",
-        "line": 1447
+        "line": 1599
       },
       "88": {
         "filename": "../node_modules/@broxus/tip4/contracts/TIP4_2/TIP4_2Collection.tsol",
@@ -2367,191 +2545,191 @@
       },
       "168": {
         "filename": "Collection.code",
-        "line": 1458
+        "line": 1610
       },
       "184": {
         "filename": "Collection.code",
-        "line": 1461
+        "line": 1613
       },
       "192": {
         "filename": "Collection.code",
-        "line": 1462
+        "line": 1614
       },
       "208": {
         "filename": "Collection.code",
-        "line": 1463
+        "line": 1615
       },
       "216": {
         "filename": "Collection.code",
-        "line": 1464
+        "line": 1616
       },
       "224": {
         "filename": "Collection.code",
-        "line": 1465
+        "line": 1617
       },
       "240": {
         "filename": "Collection.code",
-        "line": 1466
+        "line": 1618
       },
       "256": {
         "filename": "Collection.code",
-        "line": 1467
+        "line": 1619
       },
       "264": {
         "filename": "Collection.code",
-        "line": 1468
+        "line": 1620
       },
       "272": {
         "filename": "Collection.code",
-        "line": 1469
+        "line": 1621
       },
       "280": {
         "filename": "Collection.code",
-        "line": 1470
+        "line": 1622
       },
       "304": {
         "filename": "Collection.code",
-        "line": 1471
+        "line": 1623
       },
       "312": {
         "filename": "Collection.code",
-        "line": 1472
+        "line": 1624
       },
       "360": {
         "filename": "Collection.code",
-        "line": 1473
+        "line": 1625
       },
       "384": {
         "filename": "Collection.code",
-        "line": 1474
+        "line": 1626
       },
       "392": {
         "filename": "Collection.code",
-        "line": 1475
+        "line": 1627
       },
       "400": {
         "filename": "Collection.code",
-        "line": 1476
+        "line": 1628
       },
       "408": {
         "filename": "Collection.code",
-        "line": 1478
+        "line": 1630
       },
       "424": {
         "filename": "Collection.code",
-        "line": 1479
+        "line": 1631
       },
       "440": {
         "filename": "Collection.code",
-        "line": 1480
+        "line": 1632
       },
       "448": {
         "filename": "Collection.code",
-        "line": 1481
+        "line": 1633
       },
       "464": {
         "filename": "Collection.code",
-        "line": 1482
+        "line": 1634
       },
       "472": {
         "filename": "Collection.code",
-        "line": 1483
+        "line": 1635
       },
       "488": {
         "filename": "Collection.code",
-        "line": 1484
+        "line": 1636
       },
       "504": {
         "filename": "Collection.code",
-        "line": 1485
+        "line": 1637
       },
       "520": {
         "filename": "Collection.code",
-        "line": 1486
+        "line": 1638
       },
       "536": {
         "filename": "Collection.code",
-        "line": 1487
+        "line": 1639
       },
       "544": {
         "filename": "Collection.code",
-        "line": 1488
+        "line": 1640
       },
       "568": {
         "filename": "Collection.code",
-        "line": 1489
+        "line": 1641
       },
       "584": {
         "filename": "Collection.code",
-        "line": 1490
+        "line": 1642
       },
       "608": {
         "filename": "Collection.code",
-        "line": 1491
+        "line": 1643
       },
       "616": {
         "filename": "Collection.code",
-        "line": 1492
+        "line": 1644
       },
       "624": {
         "filename": "Collection.code",
-        "line": 1493
+        "line": 1645
       },
       "640": {
         "filename": "Collection.code",
-        "line": 1494
+        "line": 1646
       },
       "656": {
         "filename": "Collection.code",
-        "line": 1495
+        "line": 1647
       },
       "672": {
         "filename": "Collection.code",
-        "line": 1496
+        "line": 1648
       },
       "688": {
         "filename": "Collection.code",
-        "line": 1497
+        "line": 1649
       },
       "704": {
         "filename": "Collection.code",
-        "line": 1498
+        "line": 1650
       },
       "720": {
         "filename": "Collection.code",
-        "line": 1499
+        "line": 1651
       },
       "744": {
         "filename": "Collection.code",
-        "line": 1500
+        "line": 1652
       },
       "752": {
         "filename": "Collection.code",
-        "line": 1501
+        "line": 1653
       },
       "760": {
         "filename": "Collection.code",
-        "line": 1502
+        "line": 1654
       },
       "776": {
         "filename": "Collection.code",
-        "line": 1503
+        "line": 1655
       },
       "792": {
         "filename": "Collection.code",
-        "line": 1505
+        "line": 1657
       },
       "800": {
         "filename": "Collection.code",
-        "line": 1506
+        "line": 1658
       },
       "816": {
         "filename": "Collection.code",
-        "line": 1507
+        "line": 1659
       },
       "832": {
         "filename": "Collection.code",
-        "line": 1510
+        "line": 1662
       }
     },
     "59408759535868653296d809fecb7d7753d22864ed42d014f9628ed711e4c16a": {
@@ -2806,72 +2984,6 @@
         "line": 86
       }
     },
-    "699bbdb9630107dc35244088dcf7aed99729b6ab40f980b13e2c12f4fa82c650": {
-      "0": {
-        "filename": "Collection.code",
-        "line": 2549
-      },
-      "8": {
-        "filename": "Collection.code",
-        "line": 2550
-      },
-      "56": {
-        "filename": "Collection.code",
-        "line": 2551
-      },
-      "64": {
-        "filename": "Collection.code",
-        "line": 2552
-      },
-      "80": {
-        "filename": "Collection.code",
-        "line": 2555
-      },
-      "88": {
-        "filename": "Collection.code",
-        "line": 2556
-      },
-      "136": {
-        "filename": "Collection.code",
-        "line": 2557
-      },
-      "144": {
-        "filename": "Collection.code",
-        "line": 2558
-      },
-      "160": {
-        "filename": "Collection.code",
-        "line": 2561
-      },
-      "168": {
-        "filename": "Collection.code",
-        "line": 2562
-      },
-      "216": {
-        "filename": "Collection.code",
-        "line": 2563
-      },
-      "224": {
-        "filename": "Collection.code",
-        "line": 2564
-      },
-      "240": {
-        "filename": "Collection.code",
-        "line": 2567
-      },
-      "248": {
-        "filename": "Collection.code",
-        "line": 2568
-      },
-      "296": {
-        "filename": "Collection.code",
-        "line": 2569
-      },
-      "304": {
-        "filename": "Collection.code",
-        "line": 2570
-      }
-    },
     "69a5a08a5100ed969fab78209c7a38bf44133665ae3193c80660d229b452511b": {
       "0": {
         "filename": "../node_modules/@broxus/tip4/contracts/TIP4_3/TIP4_3Collection.tsol",
@@ -2993,7 +3105,7 @@
       },
       "416": {
         "filename": "../contracts/Collection.tsol",
-        "line": 45
+        "line": 47
       },
       "432": {
         "filename": "Collection.code",
@@ -3044,6 +3156,136 @@
       "128": {
         "filename": "../node_modules/@broxus/tip4/contracts/TIP4_3/TIP4_3Collection.tsol",
         "line": 78
+      }
+    },
+    "74e2831eb88c83693c83eca45b4c4cb2d4bbd27d654e6026238c25e298a87c60": {
+      "0": {
+        "filename": "Collection.code",
+        "line": 395
+      },
+      "8": {
+        "filename": "Collection.code",
+        "line": 396
+      },
+      "24": {
+        "filename": "Collection.code",
+        "line": 397
+      },
+      "48": {
+        "filename": "Collection.code",
+        "line": 398
+      },
+      "64": {
+        "filename": "Collection.code",
+        "line": 399
+      },
+      "72": {
+        "filename": "Collection.code",
+        "line": 400
+      },
+      "88": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 103
+      },
+      "96": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 103
+      },
+      "104": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 103
+      },
+      "112": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 103
+      },
+      "120": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 103
+      },
+      "128": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 103
+      },
+      "136": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 103
+      },
+      "152": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 103
+      },
+      "168": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 103
+      },
+      "176": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 103
+      },
+      "184": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 103
+      },
+      "192": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 103
+      },
+      "208": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 103
+      },
+      "216": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 103
+      },
+      "224": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 103
+      },
+      "232": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 103
+      },
+      "248": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 103
+      },
+      "256": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 103
+      },
+      "264": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 103
+      },
+      "272": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 103
+      },
+      "288": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 103
+      },
+      "296": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 103
+      },
+      "304": {
+        "filename": "Collection.code",
+        "line": 428
+      },
+      "320": {
+        "filename": "Collection.code",
+        "line": 431
+      },
+      "328": {
+        "filename": "Collection.code",
+        "line": 432
+      },
+      "344": {
+        "filename": "Collection.code",
+        "line": 435
       }
     },
     "77a8b71a65efd77165d32c9605b155eb1a5561c1e05392162c9b8671c04c84cb": {
@@ -3121,299 +3363,299 @@
     "80856e2a18e862270aac865066ad770943c5bc7e4bccb82aa84e00ff127e1df1": {
       "0": {
         "filename": "../contracts/Collection.tsol",
-        "line": 49
+        "line": 51
       },
       "8": {
         "filename": "../contracts/Collection.tsol",
-        "line": 49
+        "line": 51
       },
       "24": {
         "filename": "../contracts/Collection.tsol",
-        "line": 49
+        "line": 51
       },
       "32": {
         "filename": "../contracts/Collection.tsol",
-        "line": 49
+        "line": 51
       },
       "48": {
         "filename": "../contracts/Collection.tsol",
-        "line": 49
+        "line": 51
       },
       "96": {
         "filename": "../contracts/Collection.tsol",
-        "line": 49
+        "line": 51
       },
       "104": {
         "filename": "../contracts/Collection.tsol",
-        "line": 49
+        "line": 51
       },
       "120": {
         "filename": "../contracts/Collection.tsol",
-        "line": 49
+        "line": 51
       },
       "128": {
         "filename": "../contracts/Collection.tsol",
-        "line": 49
+        "line": 51
       },
       "152": {
         "filename": "../contracts/Collection.tsol",
-        "line": 50
+        "line": 52
       },
       "160": {
         "filename": "../contracts/Collection.tsol",
-        "line": 50
+        "line": 52
       },
       "168": {
         "filename": "../contracts/Collection.tsol",
-        "line": 50
+        "line": 52
       },
       "184": {
         "filename": "../contracts/Collection.tsol",
-        "line": 52
+        "line": 54
       },
       "200": {
         "filename": "../contracts/Collection.tsol",
-        "line": 52
+        "line": 54
       },
       "208": {
         "filename": "../contracts/Collection.tsol",
-        "line": 53
+        "line": 55
       },
       "216": {
         "filename": "../contracts/Collection.tsol",
-        "line": 53
+        "line": 55
       },
       "232": {
         "filename": "../contracts/Collection.tsol",
-        "line": 53
+        "line": 55
       },
       "248": {
         "filename": "../contracts/Collection.tsol",
-        "line": 54
+        "line": 56
       },
       "264": {
         "filename": "../contracts/Collection.tsol",
-        "line": 54
+        "line": 56
       },
       "280": {
         "filename": "../contracts/Collection.tsol",
-        "line": 55
+        "line": 57
       },
       "288": {
         "filename": "../contracts/Collection.tsol",
-        "line": 55
+        "line": 57
       },
       "304": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "320": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "336": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "352": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "368": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "376": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "392": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "408": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "416": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "432": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "440": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "456": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "464": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "496": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "512": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "520": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "528": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "544": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "552": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "560": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "584": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "592": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "600": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "624": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "632": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "648": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "656": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "672": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "688": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "696": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "744": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "752": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "768": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "776": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "784": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "800": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "808": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "816": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "832": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "848": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "864": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "880": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "896": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "904": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "912": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "928": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "944": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "952": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "960": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "968": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "976": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "984": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       },
       "1000": {
         "filename": "../contracts/Collection.tsol",
-        "line": 56
+        "line": 58
       }
     },
     "81693db6976c4696c5e2638687665f700eed80a6863f1cefdd8f12ce8249975b": {
@@ -3474,6 +3716,52 @@
         "line": 76
       }
     },
+    "83bae5061e3e3bf8111c908ed41b2e7b289d1a35f4ecf1e67daaf7d789d22880": {
+      "0": {
+        "filename": "<entry-selector>",
+        "line": 1
+      },
+      "8": {
+        "filename": "<entry-selector>",
+        "line": 2
+      },
+      "24": {
+        "filename": "<entry-selector>",
+        "line": 3
+      },
+      "32": {
+        "filename": "<entry-selector>",
+        "line": 4
+      },
+      "48": {
+        "filename": "<entry-selector>",
+        "line": 5
+      },
+      "56": {
+        "filename": "<entry-selector>",
+        "line": 6
+      },
+      "72": {
+        "filename": "<entry-selector>",
+        "line": 7
+      },
+      "88": {
+        "filename": "<entry-selector>",
+        "line": 8
+      },
+      "96": {
+        "filename": "<entry-selector>",
+        "line": 9
+      },
+      "112": {
+        "filename": "<entry-selector>",
+        "line": 10
+      },
+      "128": {
+        "filename": "<entry-selector>",
+        "line": 11
+      }
+    },
     "852bbef13cc6680b274aee7130bcb9b51b1911db3bfa7cd568634cc48fbd4f61": {
       "0": {
         "filename": "../node_modules/@broxus/tip4/contracts/access/OwnableExternal.tsol",
@@ -3532,6 +3820,168 @@
         "line": 21
       }
     },
+    "870f3d279add5164ed78ef64c70ef6fc81d1e53fdcfbcb9f180f1fb5fda700cf": {
+      "0": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 111
+      },
+      "16": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 111
+      },
+      "32": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 111
+      },
+      "48": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 111
+      },
+      "72": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 111
+      },
+      "88": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 111
+      },
+      "96": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 111
+      },
+      "112": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 111
+      },
+      "120": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 111
+      },
+      "144": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 113
+      },
+      "160": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 113
+      },
+      "168": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 113
+      },
+      "184": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 113
+      },
+      "200": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 114
+      },
+      "216": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 114
+      },
+      "232": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 114
+      },
+      "240": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 114
+      },
+      "360": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 114
+      },
+      "368": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 114
+      },
+      "376": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 114
+      },
+      "392": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 114
+      },
+      "400": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 114
+      },
+      "448": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 114
+      },
+      "464": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 114
+      },
+      "472": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 114
+      },
+      "480": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 114
+      },
+      "488": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 114
+      },
+      "496": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 114
+      },
+      "504": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 114
+      },
+      "512": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 114
+      },
+      "520": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 114
+      },
+      "528": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 114
+      },
+      "536": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 114
+      },
+      "544": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 114
+      },
+      "552": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 114
+      },
+      "560": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 114
+      },
+      "576": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 116
+      },
+      "584": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 116
+      },
+      "600": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 116
+      },
+      "616": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 116
+      }
+    },
     "8741af65cdcaafd76a6ef7bc934957520725c7451e3525ca03507b365039dc55": {
       "0": {
         "filename": "../node_modules/@broxus/tip4/contracts/access/OwnableExternal.tsol",
@@ -3581,27 +4031,27 @@
     "8b6c6252b1e66713f966557c40b729453fba5634114359bbc7adf5c888e56fb3": {
       "0": {
         "filename": "Collection.code",
-        "line": 486
+        "line": 638
       },
       "8": {
         "filename": "Collection.code",
-        "line": 487
+        "line": 639
       },
       "24": {
         "filename": "Collection.code",
-        "line": 488
+        "line": 640
       },
       "48": {
         "filename": "Collection.code",
-        "line": 489
+        "line": 641
       },
       "64": {
         "filename": "Collection.code",
-        "line": 490
+        "line": 642
       },
       "72": {
         "filename": "Collection.code",
-        "line": 491
+        "line": 643
       },
       "88": {
         "filename": "../node_modules/@broxus/tip4/contracts/access/OwnableExternal.tsol",
@@ -3637,45 +4087,45 @@
       },
       "160": {
         "filename": "Collection.code",
-        "line": 505
+        "line": 657
       },
       "176": {
         "filename": "Collection.code",
-        "line": 508
+        "line": 660
       },
       "184": {
         "filename": "Collection.code",
-        "line": 509
+        "line": 661
       },
       "200": {
         "filename": "Collection.code",
-        "line": 512
+        "line": 664
       }
     },
     "90a3efac99c906d3e569272cda268b320d15d040b6aa866bfcb928a06b23f517": {
       "0": {
         "filename": "Collection.code",
-        "line": 1164
+        "line": 1316
       },
       "8": {
         "filename": "Collection.code",
-        "line": 1165
+        "line": 1317
       },
       "24": {
         "filename": "Collection.code",
-        "line": 1166
+        "line": 1318
       },
       "48": {
         "filename": "Collection.code",
-        "line": 1167
+        "line": 1319
       },
       "64": {
         "filename": "Collection.code",
-        "line": 1168
+        "line": 1320
       },
       "72": {
         "filename": "Collection.code",
-        "line": 1169
+        "line": 1321
       },
       "88": {
         "filename": "../node_modules/@broxus/tip4/contracts/TIP4_3/TIP4_3Collection.tsol",
@@ -3703,203 +4153,203 @@
       },
       "168": {
         "filename": "Collection.code",
-        "line": 1180
+        "line": 1332
       },
       "184": {
         "filename": "Collection.code",
-        "line": 1183
+        "line": 1335
       },
       "192": {
         "filename": "Collection.code",
-        "line": 1184
+        "line": 1336
       },
       "208": {
         "filename": "Collection.code",
-        "line": 1185
+        "line": 1337
       },
       "216": {
         "filename": "Collection.code",
-        "line": 1186
+        "line": 1338
       },
       "224": {
         "filename": "Collection.code",
-        "line": 1187
+        "line": 1339
       },
       "240": {
         "filename": "Collection.code",
-        "line": 1188
+        "line": 1340
       },
       "256": {
         "filename": "Collection.code",
-        "line": 1189
+        "line": 1341
       },
       "264": {
         "filename": "Collection.code",
-        "line": 1190
+        "line": 1342
       },
       "272": {
         "filename": "Collection.code",
-        "line": 1191
+        "line": 1343
       },
       "280": {
         "filename": "Collection.code",
-        "line": 1192
+        "line": 1344
       },
       "304": {
         "filename": "Collection.code",
-        "line": 1193
+        "line": 1345
       },
       "312": {
         "filename": "Collection.code",
-        "line": 1194
+        "line": 1346
       },
       "360": {
         "filename": "Collection.code",
-        "line": 1195
+        "line": 1347
       },
       "384": {
         "filename": "Collection.code",
-        "line": 1196
+        "line": 1348
       },
       "400": {
         "filename": "Collection.code",
-        "line": 1197
+        "line": 1349
       },
       "408": {
         "filename": "Collection.code",
-        "line": 1198
+        "line": 1350
       },
       "416": {
         "filename": "Collection.code",
-        "line": 1200
+        "line": 1352
       },
       "432": {
         "filename": "Collection.code",
-        "line": 1201
+        "line": 1353
       },
       "448": {
         "filename": "Collection.code",
-        "line": 1202
+        "line": 1354
       },
       "456": {
         "filename": "Collection.code",
-        "line": 1203
+        "line": 1355
       },
       "472": {
         "filename": "Collection.code",
-        "line": 1204
+        "line": 1356
       },
       "480": {
         "filename": "Collection.code",
-        "line": 1205
+        "line": 1357
       },
       "496": {
         "filename": "Collection.code",
-        "line": 1206
+        "line": 1358
       },
       "512": {
         "filename": "Collection.code",
-        "line": 1207
+        "line": 1359
       },
       "528": {
         "filename": "Collection.code",
-        "line": 1208
+        "line": 1360
       },
       "544": {
         "filename": "Collection.code",
-        "line": 1209
+        "line": 1361
       },
       "552": {
         "filename": "Collection.code",
-        "line": 1210
+        "line": 1362
       },
       "576": {
         "filename": "Collection.code",
-        "line": 1211
+        "line": 1363
       },
       "592": {
         "filename": "Collection.code",
-        "line": 1212
+        "line": 1364
       },
       "616": {
         "filename": "Collection.code",
-        "line": 1213
+        "line": 1365
       },
       "624": {
         "filename": "Collection.code",
-        "line": 1214
+        "line": 1366
       },
       "632": {
         "filename": "Collection.code",
-        "line": 1215
+        "line": 1367
       },
       "648": {
         "filename": "Collection.code",
-        "line": 1216
+        "line": 1368
       },
       "664": {
         "filename": "Collection.code",
-        "line": 1217
+        "line": 1369
       },
       "672": {
         "filename": "Collection.code",
-        "line": 1218
+        "line": 1370
       },
       "696": {
         "filename": "Collection.code",
-        "line": 1219
+        "line": 1371
       },
       "704": {
         "filename": "Collection.code",
-        "line": 1220
+        "line": 1372
       },
       "712": {
         "filename": "Collection.code",
-        "line": 1221
+        "line": 1373
       },
       "728": {
         "filename": "Collection.code",
-        "line": 1222
+        "line": 1374
       },
       "744": {
         "filename": "Collection.code",
-        "line": 1223
+        "line": 1375
       },
       "768": {
         "filename": "Collection.code",
-        "line": 1224
+        "line": 1376
       },
       "784": {
         "filename": "Collection.code",
-        "line": 1225
+        "line": 1377
       },
       "792": {
         "filename": "Collection.code",
-        "line": 1226
+        "line": 1378
       },
       "800": {
         "filename": "Collection.code",
-        "line": 1227
+        "line": 1379
       },
       "816": {
         "filename": "Collection.code",
-        "line": 1228
+        "line": 1380
       },
       "832": {
         "filename": "Collection.code",
-        "line": 1230
+        "line": 1382
       },
       "840": {
         "filename": "Collection.code",
-        "line": 1231
+        "line": 1383
       },
       "856": {
         "filename": "Collection.code",
-        "line": 1232
+        "line": 1384
       },
       "872": {
         "filename": "Collection.code",
-        "line": 1235
+        "line": 1387
       }
     },
     "93f3c88de560c0f8d190fb1eeb838b8e398e139cb5160000f42c8b7e8de32fd1": {
@@ -3961,6 +4411,28 @@
       "144": {
         "filename": "../node_modules/@broxus/tip4/contracts/TIP4_1/TIP4_1Collection.tsol",
         "line": 86
+      }
+    },
+    "a100663bd60fb6eef8dfb7b6c2d9e885c67814526e358ac313ef49d8e397ab38": {
+      "0": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 111
+      },
+      "8": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 111
+      },
+      "16": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 111
+      },
+      "32": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 111
+      },
+      "48": {
+        "filename": "../contracts/Collection.tsol",
+        "line": 111
       }
     },
     "a3dc3f8c0e0a02b72c4490a88120eb1ecdd152cbec230163733c1186b205294d": {
@@ -4052,27 +4524,27 @@
     "aacde2c438d2d7d4d29e0b87ba4c1ef93a9365633d94512dec269d73eb53770c": {
       "0": {
         "filename": "Collection.code",
-        "line": 642
+        "line": 794
       },
       "8": {
         "filename": "Collection.code",
-        "line": 643
+        "line": 795
       },
       "24": {
         "filename": "Collection.code",
-        "line": 644
+        "line": 796
       },
       "48": {
         "filename": "Collection.code",
-        "line": 645
+        "line": 797
       },
       "64": {
         "filename": "Collection.code",
-        "line": 646
+        "line": 798
       },
       "72": {
         "filename": "Collection.code",
-        "line": 647
+        "line": 799
       },
       "88": {
         "filename": "../node_modules/@broxus/tip4/contracts/TIP4_3/TIP4_3Collection.tsol",
@@ -4100,447 +4572,217 @@
       },
       "168": {
         "filename": "Collection.code",
-        "line": 658
+        "line": 810
       },
       "184": {
         "filename": "Collection.code",
-        "line": 661
+        "line": 813
       },
       "192": {
         "filename": "Collection.code",
-        "line": 662
+        "line": 814
       },
       "208": {
         "filename": "Collection.code",
-        "line": 663
+        "line": 815
       },
       "216": {
         "filename": "Collection.code",
-        "line": 664
+        "line": 816
       },
       "224": {
         "filename": "Collection.code",
-        "line": 665
+        "line": 817
       },
       "240": {
         "filename": "Collection.code",
-        "line": 666
+        "line": 818
       },
       "256": {
         "filename": "Collection.code",
-        "line": 667
+        "line": 819
       },
       "264": {
         "filename": "Collection.code",
-        "line": 668
+        "line": 820
       },
       "272": {
         "filename": "Collection.code",
-        "line": 669
+        "line": 821
       },
       "280": {
         "filename": "Collection.code",
-        "line": 670
+        "line": 822
       },
       "304": {
         "filename": "Collection.code",
-        "line": 671
+        "line": 823
       },
       "312": {
         "filename": "Collection.code",
-        "line": 672
+        "line": 824
       },
       "360": {
         "filename": "Collection.code",
-        "line": 673
+        "line": 825
       },
       "384": {
         "filename": "Collection.code",
-        "line": 674
+        "line": 826
       },
       "392": {
         "filename": "Collection.code",
-        "line": 675
+        "line": 827
       },
       "400": {
         "filename": "Collection.code",
-        "line": 676
+        "line": 828
       },
       "408": {
         "filename": "Collection.code",
-        "line": 678
+        "line": 830
       },
       "424": {
         "filename": "Collection.code",
-        "line": 679
+        "line": 831
       },
       "440": {
         "filename": "Collection.code",
-        "line": 680
+        "line": 832
       },
       "448": {
         "filename": "Collection.code",
-        "line": 681
+        "line": 833
       },
       "464": {
         "filename": "Collection.code",
-        "line": 682
+        "line": 834
       },
       "472": {
         "filename": "Collection.code",
-        "line": 683
+        "line": 835
       },
       "488": {
         "filename": "Collection.code",
-        "line": 684
+        "line": 836
       },
       "504": {
         "filename": "Collection.code",
-        "line": 685
+        "line": 837
       },
       "520": {
         "filename": "Collection.code",
-        "line": 686
+        "line": 838
       },
       "536": {
         "filename": "Collection.code",
-        "line": 687
+        "line": 839
       },
       "544": {
         "filename": "Collection.code",
-        "line": 688
+        "line": 840
       },
       "568": {
         "filename": "Collection.code",
-        "line": 689
+        "line": 841
       },
       "584": {
         "filename": "Collection.code",
-        "line": 690
+        "line": 842
       },
       "608": {
         "filename": "Collection.code",
-        "line": 691
+        "line": 843
       },
       "616": {
         "filename": "Collection.code",
-        "line": 692
+        "line": 844
       },
       "624": {
         "filename": "Collection.code",
-        "line": 693
+        "line": 845
       },
       "640": {
         "filename": "Collection.code",
-        "line": 694
+        "line": 846
       },
       "656": {
         "filename": "Collection.code",
-        "line": 695
+        "line": 847
       },
       "672": {
         "filename": "Collection.code",
-        "line": 696
+        "line": 848
       },
       "688": {
         "filename": "Collection.code",
-        "line": 697
+        "line": 849
       },
       "704": {
         "filename": "Collection.code",
-        "line": 698
+        "line": 850
       },
       "720": {
         "filename": "Collection.code",
-        "line": 699
+        "line": 851
       },
       "744": {
         "filename": "Collection.code",
-        "line": 700
+        "line": 852
       },
       "752": {
         "filename": "Collection.code",
-        "line": 701
+        "line": 853
       },
       "760": {
         "filename": "Collection.code",
-        "line": 702
+        "line": 854
       },
       "776": {
         "filename": "Collection.code",
-        "line": 703
+        "line": 855
       },
       "792": {
         "filename": "Collection.code",
-        "line": 705
+        "line": 857
       },
       "800": {
         "filename": "Collection.code",
-        "line": 706
+        "line": 858
       },
       "816": {
         "filename": "Collection.code",
-        "line": 707
+        "line": 859
       },
       "832": {
         "filename": "Collection.code",
-        "line": 710
-      }
-    },
-    "acb7df585f0ddfadca7134ccc151c3c1a682bd5d4ddfba7c286e1a199c74c36a": {
-      "0": {
-        "filename": "Collection.code",
-        "line": 2400
-      },
-      "16": {
-        "filename": "Collection.code",
-        "line": 2401
-      },
-      "24": {
-        "filename": "Collection.code",
-        "line": 2402
-      },
-      "40": {
-        "filename": "Collection.code",
-        "line": 2403
-      },
-      "56": {
-        "filename": "Collection.code",
-        "line": 2404
-      },
-      "72": {
-        "filename": "Collection.code",
-        "line": 2405
-      },
-      "360": {
-        "filename": "Collection.code",
-        "line": 2406
-      },
-      "376": {
-        "filename": "Collection.code",
-        "line": 2407
-      },
-      "384": {
-        "filename": "Collection.code",
-        "line": 2408
-      },
-      "400": {
-        "filename": "Collection.code",
-        "line": 2411
-      },
-      "416": {
-        "filename": "Collection.code",
-        "line": 2412
-      },
-      "424": {
-        "filename": "Collection.code",
-        "line": 2413
-      },
-      "440": {
-        "filename": "Collection.code",
-        "line": 2414
-      },
-      "456": {
-        "filename": "Collection.code",
-        "line": 2415
-      },
-      "472": {
-        "filename": "Collection.code",
-        "line": 2416
-      },
-      "480": {
-        "filename": "Collection.code",
-        "line": 2417
-      },
-      "496": {
-        "filename": "Collection.code",
-        "line": 2418
-      },
-      "504": {
-        "filename": "Collection.code",
-        "line": 2419
-      },
-      "520": {
-        "filename": "Collection.code",
-        "line": 2420
-      },
-      "528": {
-        "filename": "Collection.code",
-        "line": 2421
-      },
-      "536": {
-        "filename": "Collection.code",
-        "line": 2422
-      },
-      "552": {
-        "filename": "Collection.code",
-        "line": 2423
-      },
-      "560": {
-        "filename": "Collection.code",
-        "line": 2424
-      },
-      "568": {
-        "filename": "Collection.code",
-        "line": 2426
-      },
-      "576": {
-        "filename": "Collection.code",
-        "line": 2427
-      },
-      "584": {
-        "filename": "Collection.code",
-        "line": 2428
-      },
-      "600": {
-        "filename": "Collection.code",
-        "line": 2430
-      },
-      "608": {
-        "filename": "Collection.code",
-        "line": 2431
-      },
-      "616": {
-        "filename": "Collection.code",
-        "line": 2432
-      },
-      "632": {
-        "filename": "Collection.code",
-        "line": 2433
-      },
-      "648": {
-        "filename": "Collection.code",
-        "line": 2434
-      },
-      "664": {
-        "filename": "Collection.code",
-        "line": 2436
-      },
-      "672": {
-        "filename": "Collection.code",
-        "line": 2437
-      },
-      "688": {
-        "filename": "Collection.code",
-        "line": 2438
-      },
-      "696": {
-        "filename": "Collection.code",
-        "line": 2439
-      },
-      "712": {
-        "filename": "Collection.code",
-        "line": 2441
-      },
-      "720": {
-        "filename": "Collection.code",
-        "line": 2442
-      },
-      "736": {
-        "filename": "Collection.code",
-        "line": 2443
-      },
-      "744": {
-        "filename": "stdlib.sol",
-        "line": 61
-      },
-      "760": {
-        "filename": "stdlib.sol",
-        "line": 61
-      },
-      "768": {
-        "filename": "stdlib.sol",
-        "line": 61
-      },
-      "776": {
-        "filename": "stdlib.sol",
-        "line": 61
-      },
-      "792": {
-        "filename": "stdlib.sol",
-        "line": 62
-      },
-      "800": {
-        "filename": "stdlib.sol",
-        "line": 62
-      },
-      "816": {
-        "filename": "stdlib.sol",
-        "line": 62
-      },
-      "840": {
-        "filename": "stdlib.sol",
-        "line": 62
-      },
-      "848": {
-        "filename": "stdlib.sol",
-        "line": 62
-      },
-      "888": {
-        "filename": "stdlib.sol",
-        "line": 62
-      },
-      "896": {
-        "filename": "stdlib.sol",
-        "line": 62
-      },
-      "904": {
-        "filename": "stdlib.sol",
-        "line": 62
-      },
-      "920": {
-        "filename": "stdlib.sol",
-        "line": 63
-      },
-      "936": {
-        "filename": "Collection.code",
-        "line": 2445
-      },
-      "952": {
-        "filename": "Collection.code",
-        "line": 2446
-      },
-      "960": {
-        "filename": "Collection.code",
-        "line": 2447
-      },
-      "976": {
-        "filename": "Collection.code",
-        "line": 2448
-      },
-      "984": {
-        "filename": "Collection.code",
-        "line": 2449
-      },
-      "1000": {
-        "filename": "Collection.code",
-        "line": 2450
+        "line": 862
       }
     },
     "adb58ff9b7303b0bf9306acf9fc8401b18ff695e5be0280065045c105defd946": {
       "0": {
         "filename": "Collection.code",
-        "line": 395
+        "line": 547
       },
       "8": {
         "filename": "Collection.code",
-        "line": 396
+        "line": 548
       },
       "24": {
         "filename": "Collection.code",
-        "line": 397
+        "line": 549
       },
       "48": {
         "filename": "Collection.code",
-        "line": 398
+        "line": 550
       },
       "64": {
         "filename": "Collection.code",
-        "line": 399
+        "line": 551
       },
       "72": {
         "filename": "Collection.code",
-        "line": 400
+        "line": 552
       },
       "88": {
         "filename": "../node_modules/@broxus/tip4/contracts/access/OwnableExternal.tsol",
@@ -4568,229 +4810,295 @@
       },
       "168": {
         "filename": "Collection.code",
-        "line": 411
+        "line": 563
       },
       "184": {
         "filename": "Collection.code",
-        "line": 414
+        "line": 566
       },
       "192": {
         "filename": "Collection.code",
-        "line": 415
+        "line": 567
       },
       "208": {
         "filename": "Collection.code",
-        "line": 416
+        "line": 568
       },
       "216": {
         "filename": "Collection.code",
-        "line": 417
+        "line": 569
       },
       "224": {
         "filename": "Collection.code",
-        "line": 418
+        "line": 570
       },
       "240": {
         "filename": "Collection.code",
-        "line": 419
+        "line": 571
       },
       "256": {
         "filename": "Collection.code",
-        "line": 420
+        "line": 572
       },
       "264": {
         "filename": "Collection.code",
-        "line": 421
+        "line": 573
       },
       "272": {
         "filename": "Collection.code",
-        "line": 422
+        "line": 574
       },
       "280": {
         "filename": "Collection.code",
-        "line": 423
+        "line": 575
       },
       "304": {
         "filename": "Collection.code",
-        "line": 424
+        "line": 576
       },
       "312": {
         "filename": "Collection.code",
-        "line": 425
+        "line": 577
       },
       "360": {
         "filename": "Collection.code",
-        "line": 426
+        "line": 578
       },
       "384": {
         "filename": "Collection.code",
-        "line": 427
+        "line": 579
       },
       "400": {
         "filename": "Collection.code",
-        "line": 428
+        "line": 580
       },
       "408": {
         "filename": "Collection.code",
-        "line": 429
+        "line": 581
       },
       "416": {
         "filename": "Collection.code",
-        "line": 431
+        "line": 583
       },
       "432": {
         "filename": "Collection.code",
-        "line": 432
+        "line": 584
       },
       "448": {
         "filename": "Collection.code",
-        "line": 433
+        "line": 585
       },
       "456": {
         "filename": "Collection.code",
-        "line": 434
+        "line": 586
       },
       "472": {
         "filename": "Collection.code",
-        "line": 435
+        "line": 587
       },
       "480": {
         "filename": "Collection.code",
-        "line": 436
+        "line": 588
       },
       "496": {
         "filename": "Collection.code",
-        "line": 437
+        "line": 589
       },
       "512": {
         "filename": "Collection.code",
-        "line": 438
+        "line": 590
       },
       "528": {
         "filename": "Collection.code",
-        "line": 439
+        "line": 591
       },
       "544": {
         "filename": "Collection.code",
-        "line": 440
+        "line": 592
       },
       "552": {
         "filename": "Collection.code",
-        "line": 441
+        "line": 593
       },
       "576": {
         "filename": "Collection.code",
-        "line": 442
+        "line": 594
       },
       "592": {
         "filename": "Collection.code",
-        "line": 443
+        "line": 595
       },
       "616": {
         "filename": "Collection.code",
-        "line": 444
+        "line": 596
       },
       "624": {
         "filename": "Collection.code",
-        "line": 445
+        "line": 597
       },
       "632": {
         "filename": "Collection.code",
-        "line": 446
+        "line": 598
       },
       "648": {
         "filename": "Collection.code",
-        "line": 447
+        "line": 599
       },
       "664": {
         "filename": "Collection.code",
-        "line": 448
+        "line": 600
       },
       "672": {
         "filename": "Collection.code",
-        "line": 449
+        "line": 601
       },
       "696": {
         "filename": "Collection.code",
-        "line": 450
+        "line": 602
       },
       "704": {
         "filename": "Collection.code",
-        "line": 451
+        "line": 603
       },
       "712": {
         "filename": "Collection.code",
-        "line": 452
+        "line": 604
       },
       "728": {
         "filename": "Collection.code",
-        "line": 453
+        "line": 605
       },
       "744": {
         "filename": "Collection.code",
-        "line": 454
+        "line": 606
       },
       "768": {
         "filename": "Collection.code",
-        "line": 455
+        "line": 607
       },
       "784": {
         "filename": "Collection.code",
-        "line": 456
+        "line": 608
       },
       "792": {
         "filename": "Collection.code",
-        "line": 457
+        "line": 609
       },
       "800": {
         "filename": "Collection.code",
-        "line": 458
+        "line": 610
       },
       "816": {
         "filename": "Collection.code",
-        "line": 459
+        "line": 611
       },
       "832": {
         "filename": "Collection.code",
-        "line": 461
+        "line": 613
       },
       "840": {
         "filename": "Collection.code",
-        "line": 462
+        "line": 614
       },
       "856": {
         "filename": "Collection.code",
-        "line": 463
+        "line": 615
       },
       "872": {
         "filename": "Collection.code",
-        "line": 466
+        "line": 618
+      }
+    },
+    "b79701a5983b3ef70c2fed026d033ac4bacb2df7769b488c4cc797ded52d8ca0": {
+      "0": {
+        "filename": "Collection.code",
+        "line": 2614
+      },
+      "8": {
+        "filename": "Collection.code",
+        "line": 2615
+      },
+      "56": {
+        "filename": "Collection.code",
+        "line": 2616
+      },
+      "64": {
+        "filename": "Collection.code",
+        "line": 2617
+      },
+      "80": {
+        "filename": "Collection.code",
+        "line": 2643
+      },
+      "88": {
+        "filename": "Collection.code",
+        "line": 2644
+      },
+      "136": {
+        "filename": "Collection.code",
+        "line": 2645
+      },
+      "144": {
+        "filename": "Collection.code",
+        "line": 2646
+      },
+      "160": {
+        "filename": "Collection.code",
+        "line": 2672
+      },
+      "168": {
+        "filename": "Collection.code",
+        "line": 2673
+      },
+      "216": {
+        "filename": "Collection.code",
+        "line": 2674
+      },
+      "224": {
+        "filename": "Collection.code",
+        "line": 2675
+      },
+      "240": {
+        "filename": "Collection.code",
+        "line": 2701
+      },
+      "248": {
+        "filename": "Collection.code",
+        "line": 2702
+      },
+      "296": {
+        "filename": "Collection.code",
+        "line": 2703
+      },
+      "304": {
+        "filename": "Collection.code",
+        "line": 2704
       }
     },
     "bda9bf7a019ed614dc19bdee904eedbef8267ca6d08119c9ac55b1ee4adf609e": {
       "0": {
         "filename": "Collection.code",
-        "line": 1558
+        "line": 1710
       },
       "8": {
         "filename": "Collection.code",
-        "line": 1559
+        "line": 1711
       },
       "24": {
         "filename": "Collection.code",
-        "line": 1560
+        "line": 1712
       },
       "48": {
         "filename": "Collection.code",
-        "line": 1561
+        "line": 1713
       },
       "64": {
         "filename": "Collection.code",
-        "line": 1562
+        "line": 1714
       },
       "72": {
         "filename": "Collection.code",
-        "line": 1563
+        "line": 1715
       },
       "88": {
         "filename": "../node_modules/@broxus/tip4/contracts/TIP4_1/TIP4_1Collection.tsol",
@@ -4818,217 +5126,217 @@
       },
       "168": {
         "filename": "Collection.code",
-        "line": 1574
+        "line": 1726
       },
       "184": {
         "filename": "Collection.code",
-        "line": 1577
+        "line": 1729
       },
       "192": {
         "filename": "Collection.code",
-        "line": 1578
+        "line": 1730
       },
       "208": {
         "filename": "Collection.code",
-        "line": 1579
+        "line": 1731
       },
       "216": {
         "filename": "Collection.code",
-        "line": 1580
+        "line": 1732
       },
       "224": {
         "filename": "Collection.code",
-        "line": 1581
+        "line": 1733
       },
       "240": {
         "filename": "Collection.code",
-        "line": 1582
+        "line": 1734
       },
       "256": {
         "filename": "Collection.code",
-        "line": 1583
+        "line": 1735
       },
       "264": {
         "filename": "Collection.code",
-        "line": 1584
+        "line": 1736
       },
       "272": {
         "filename": "Collection.code",
-        "line": 1585
+        "line": 1737
       },
       "280": {
         "filename": "Collection.code",
-        "line": 1586
+        "line": 1738
       },
       "304": {
         "filename": "Collection.code",
-        "line": 1587
+        "line": 1739
       },
       "312": {
         "filename": "Collection.code",
-        "line": 1588
+        "line": 1740
       },
       "360": {
         "filename": "Collection.code",
-        "line": 1589
+        "line": 1741
       },
       "384": {
         "filename": "Collection.code",
-        "line": 1590
+        "line": 1742
       },
       "400": {
         "filename": "Collection.code",
-        "line": 1591
+        "line": 1743
       },
       "408": {
         "filename": "Collection.code",
-        "line": 1592
+        "line": 1744
       },
       "416": {
         "filename": "Collection.code",
-        "line": 1594
+        "line": 1746
       },
       "432": {
         "filename": "Collection.code",
-        "line": 1595
+        "line": 1747
       },
       "448": {
         "filename": "Collection.code",
-        "line": 1596
+        "line": 1748
       },
       "456": {
         "filename": "Collection.code",
-        "line": 1597
+        "line": 1749
       },
       "472": {
         "filename": "Collection.code",
-        "line": 1598
+        "line": 1750
       },
       "480": {
         "filename": "Collection.code",
-        "line": 1599
+        "line": 1751
       },
       "496": {
         "filename": "Collection.code",
-        "line": 1600
+        "line": 1752
       },
       "512": {
         "filename": "Collection.code",
-        "line": 1601
+        "line": 1753
       },
       "528": {
         "filename": "Collection.code",
-        "line": 1602
+        "line": 1754
       },
       "544": {
         "filename": "Collection.code",
-        "line": 1603
+        "line": 1755
       },
       "552": {
         "filename": "Collection.code",
-        "line": 1604
+        "line": 1756
       },
       "576": {
         "filename": "Collection.code",
-        "line": 1605
+        "line": 1757
       },
       "592": {
         "filename": "Collection.code",
-        "line": 1606
+        "line": 1758
       },
       "616": {
         "filename": "Collection.code",
-        "line": 1607
+        "line": 1759
       },
       "624": {
         "filename": "Collection.code",
-        "line": 1608
+        "line": 1760
       },
       "632": {
         "filename": "Collection.code",
-        "line": 1609
+        "line": 1761
       },
       "648": {
         "filename": "Collection.code",
-        "line": 1610
+        "line": 1762
       },
       "664": {
         "filename": "Collection.code",
-        "line": 1611
+        "line": 1763
       },
       "680": {
         "filename": "Collection.code",
-        "line": 1612
+        "line": 1764
       },
       "696": {
         "filename": "Collection.code",
-        "line": 1613
+        "line": 1765
       },
       "712": {
         "filename": "Collection.code",
-        "line": 1614
+        "line": 1766
       },
       "728": {
         "filename": "Collection.code",
-        "line": 1615
+        "line": 1767
       },
       "752": {
         "filename": "Collection.code",
-        "line": 1616
+        "line": 1768
       },
       "768": {
         "filename": "Collection.code",
-        "line": 1617
+        "line": 1769
       },
       "776": {
         "filename": "Collection.code",
-        "line": 1618
+        "line": 1770
       },
       "792": {
         "filename": "Collection.code",
-        "line": 1619
+        "line": 1771
       },
       "808": {
         "filename": "Collection.code",
-        "line": 1621
+        "line": 1773
       },
       "816": {
         "filename": "Collection.code",
-        "line": 1622
+        "line": 1774
       },
       "832": {
         "filename": "Collection.code",
-        "line": 1623
+        "line": 1775
       },
       "848": {
         "filename": "Collection.code",
-        "line": 1626
+        "line": 1778
       }
     },
     "c23d967c35746f8c29cac479faffe0775ba0c9cb9c04b08ac17ad740a38dff82": {
       "0": {
         "filename": "Collection.code",
-        "line": 2241
+        "line": 2393
       },
       "16": {
         "filename": "Collection.code",
-        "line": 2242
+        "line": 2394
       },
       "24": {
         "filename": "Collection.code",
-        "line": 2243
+        "line": 2395
       },
       "40": {
         "filename": "Collection.code",
-        "line": 2244
+        "line": 2396
       },
       "56": {
         "filename": "Collection.code",
-        "line": 2245
+        "line": 2397
       },
       "72": {
         "filename": "Collection.code",
-        "line": 2297
+        "line": 2449
       }
     },
     "c95890bed81166a06050941719e6c791c4a022f08bc1daacfac9b7ec7df209dd": {
@@ -5058,35 +5366,35 @@
       },
       "88": {
         "filename": "../contracts/Collection.tsol",
-        "line": 81
+        "line": 83
       },
       "96": {
         "filename": "../contracts/Collection.tsol",
-        "line": 81
+        "line": 83
       },
       "104": {
         "filename": "../contracts/Collection.tsol",
-        "line": 81
+        "line": 83
       },
       "112": {
         "filename": "../contracts/Collection.tsol",
-        "line": 81
+        "line": 83
       },
       "120": {
         "filename": "../contracts/Collection.tsol",
-        "line": 81
+        "line": 83
       },
       "128": {
         "filename": "../contracts/Collection.tsol",
-        "line": 81
+        "line": 83
       },
       "136": {
         "filename": "../contracts/Collection.tsol",
-        "line": 81
+        "line": 83
       },
       "152": {
         "filename": "../contracts/Collection.tsol",
-        "line": 81
+        "line": 83
       },
       "160": {
         "filename": "Collection.code",
@@ -5143,6 +5451,236 @@
         "line": 36
       }
     },
+    "d1d084cf51a78d8e0134075a7a0e531349512adaa2b77b03f7875ec5f74e228b": {
+      "0": {
+        "filename": "Collection.code",
+        "line": 2552
+      },
+      "16": {
+        "filename": "Collection.code",
+        "line": 2553
+      },
+      "24": {
+        "filename": "Collection.code",
+        "line": 2554
+      },
+      "40": {
+        "filename": "Collection.code",
+        "line": 2555
+      },
+      "56": {
+        "filename": "Collection.code",
+        "line": 2556
+      },
+      "72": {
+        "filename": "Collection.code",
+        "line": 2557
+      },
+      "360": {
+        "filename": "Collection.code",
+        "line": 2558
+      },
+      "376": {
+        "filename": "Collection.code",
+        "line": 2559
+      },
+      "384": {
+        "filename": "Collection.code",
+        "line": 2560
+      },
+      "400": {
+        "filename": "Collection.code",
+        "line": 2563
+      },
+      "416": {
+        "filename": "Collection.code",
+        "line": 2564
+      },
+      "424": {
+        "filename": "Collection.code",
+        "line": 2565
+      },
+      "440": {
+        "filename": "Collection.code",
+        "line": 2566
+      },
+      "456": {
+        "filename": "Collection.code",
+        "line": 2567
+      },
+      "472": {
+        "filename": "Collection.code",
+        "line": 2568
+      },
+      "480": {
+        "filename": "Collection.code",
+        "line": 2569
+      },
+      "496": {
+        "filename": "Collection.code",
+        "line": 2570
+      },
+      "504": {
+        "filename": "Collection.code",
+        "line": 2571
+      },
+      "520": {
+        "filename": "Collection.code",
+        "line": 2572
+      },
+      "528": {
+        "filename": "Collection.code",
+        "line": 2573
+      },
+      "536": {
+        "filename": "Collection.code",
+        "line": 2574
+      },
+      "552": {
+        "filename": "Collection.code",
+        "line": 2575
+      },
+      "560": {
+        "filename": "Collection.code",
+        "line": 2576
+      },
+      "568": {
+        "filename": "Collection.code",
+        "line": 2578
+      },
+      "576": {
+        "filename": "Collection.code",
+        "line": 2579
+      },
+      "584": {
+        "filename": "Collection.code",
+        "line": 2580
+      },
+      "600": {
+        "filename": "Collection.code",
+        "line": 2582
+      },
+      "608": {
+        "filename": "Collection.code",
+        "line": 2583
+      },
+      "616": {
+        "filename": "Collection.code",
+        "line": 2584
+      },
+      "632": {
+        "filename": "Collection.code",
+        "line": 2585
+      },
+      "648": {
+        "filename": "Collection.code",
+        "line": 2586
+      },
+      "664": {
+        "filename": "Collection.code",
+        "line": 2588
+      },
+      "672": {
+        "filename": "Collection.code",
+        "line": 2589
+      },
+      "688": {
+        "filename": "Collection.code",
+        "line": 2590
+      },
+      "696": {
+        "filename": "Collection.code",
+        "line": 2591
+      },
+      "712": {
+        "filename": "Collection.code",
+        "line": 2593
+      },
+      "720": {
+        "filename": "Collection.code",
+        "line": 2594
+      },
+      "736": {
+        "filename": "Collection.code",
+        "line": 2595
+      },
+      "744": {
+        "filename": "stdlib.sol",
+        "line": 61
+      },
+      "760": {
+        "filename": "stdlib.sol",
+        "line": 61
+      },
+      "768": {
+        "filename": "stdlib.sol",
+        "line": 61
+      },
+      "776": {
+        "filename": "stdlib.sol",
+        "line": 61
+      },
+      "792": {
+        "filename": "stdlib.sol",
+        "line": 62
+      },
+      "800": {
+        "filename": "stdlib.sol",
+        "line": 62
+      },
+      "816": {
+        "filename": "stdlib.sol",
+        "line": 62
+      },
+      "840": {
+        "filename": "stdlib.sol",
+        "line": 62
+      },
+      "848": {
+        "filename": "stdlib.sol",
+        "line": 62
+      },
+      "888": {
+        "filename": "stdlib.sol",
+        "line": 62
+      },
+      "896": {
+        "filename": "stdlib.sol",
+        "line": 62
+      },
+      "904": {
+        "filename": "stdlib.sol",
+        "line": 62
+      },
+      "920": {
+        "filename": "stdlib.sol",
+        "line": 63
+      },
+      "936": {
+        "filename": "Collection.code",
+        "line": 2597
+      },
+      "952": {
+        "filename": "Collection.code",
+        "line": 2598
+      },
+      "960": {
+        "filename": "Collection.code",
+        "line": 2599
+      },
+      "976": {
+        "filename": "Collection.code",
+        "line": 2600
+      },
+      "984": {
+        "filename": "Collection.code",
+        "line": 2601
+      },
+      "1000": {
+        "filename": "Collection.code",
+        "line": 2602
+      }
+    },
     "d3f2b1249b540372674fd61f7a8f6d4287139933e5e10ab78733c90080ea690b": {
       "0": {
         "filename": "../node_modules/@broxus/tip4/contracts/TIP4_1/TIP4_1Collection.tsol",
@@ -5169,76 +5707,30 @@
         "line": 86
       }
     },
-    "d7ce1b93627a3a299bd6b79feb78ad6708b8d5489e9d18fff8f140f734edbef2": {
-      "0": {
-        "filename": "<entry-selector>",
-        "line": 1
-      },
-      "8": {
-        "filename": "<entry-selector>",
-        "line": 2
-      },
-      "24": {
-        "filename": "<entry-selector>",
-        "line": 3
-      },
-      "32": {
-        "filename": "<entry-selector>",
-        "line": 4
-      },
-      "48": {
-        "filename": "<entry-selector>",
-        "line": 5
-      },
-      "56": {
-        "filename": "<entry-selector>",
-        "line": 6
-      },
-      "72": {
-        "filename": "<entry-selector>",
-        "line": 7
-      },
-      "88": {
-        "filename": "<entry-selector>",
-        "line": 8
-      },
-      "96": {
-        "filename": "<entry-selector>",
-        "line": 9
-      },
-      "112": {
-        "filename": "<entry-selector>",
-        "line": 10
-      },
-      "128": {
-        "filename": "<entry-selector>",
-        "line": 11
-      }
-    },
     "dc4d75e0729bb75e97bf7c3175c6a1309b3517320ebe982d3be64f852daa26e5": {
       "0": {
         "filename": "Collection.code",
-        "line": 1820
+        "line": 1972
       },
       "8": {
         "filename": "Collection.code",
-        "line": 1821
+        "line": 1973
       },
       "24": {
         "filename": "Collection.code",
-        "line": 1822
+        "line": 1974
       },
       "48": {
         "filename": "Collection.code",
-        "line": 1823
+        "line": 1975
       },
       "64": {
         "filename": "Collection.code",
-        "line": 1824
+        "line": 1976
       },
       "72": {
         "filename": "Collection.code",
-        "line": 1825
+        "line": 1977
       },
       "88": {
         "filename": "../node_modules/@broxus/tip4/contracts/TIP4_1/TIP4_1Collection.tsol",
@@ -5294,503 +5786,561 @@
       },
       "232": {
         "filename": "Collection.code",
-        "line": 1844
+        "line": 1996
       },
       "248": {
         "filename": "Collection.code",
-        "line": 1847
+        "line": 1999
       },
       "256": {
         "filename": "Collection.code",
-        "line": 1848
+        "line": 2000
       },
       "272": {
         "filename": "Collection.code",
-        "line": 1849
+        "line": 2001
       },
       "280": {
         "filename": "Collection.code",
-        "line": 1850
+        "line": 2002
       },
       "288": {
         "filename": "Collection.code",
-        "line": 1851
+        "line": 2003
       },
       "304": {
         "filename": "Collection.code",
-        "line": 1852
+        "line": 2004
       },
       "320": {
         "filename": "Collection.code",
-        "line": 1853
+        "line": 2005
       },
       "328": {
         "filename": "Collection.code",
-        "line": 1854
+        "line": 2006
       },
       "336": {
         "filename": "Collection.code",
-        "line": 1855
+        "line": 2007
       },
       "344": {
         "filename": "Collection.code",
-        "line": 1856
+        "line": 2008
       },
       "368": {
         "filename": "Collection.code",
-        "line": 1857
+        "line": 2009
       },
       "376": {
         "filename": "Collection.code",
-        "line": 1858
+        "line": 2010
       },
       "384": {
         "filename": "Collection.code",
-        "line": 1859
+        "line": 2011
       },
       "408": {
         "filename": "Collection.code",
-        "line": 1860
+        "line": 2012
       },
       "416": {
         "filename": "Collection.code",
-        "line": 1861
+        "line": 2013
       },
       "424": {
         "filename": "Collection.code",
-        "line": 1862
+        "line": 2014
       },
       "472": {
         "filename": "Collection.code",
-        "line": 1863
+        "line": 2015
       },
       "480": {
         "filename": "Collection.code",
-        "line": 1864
+        "line": 2016
       },
       "488": {
         "filename": "Collection.code",
-        "line": 1865
+        "line": 2017
       },
       "496": {
         "filename": "Collection.code",
-        "line": 1866
+        "line": 2018
       },
       "504": {
         "filename": "Collection.code",
-        "line": 1868
+        "line": 2020
       },
       "520": {
         "filename": "Collection.code",
-        "line": 1869
+        "line": 2021
       },
       "536": {
         "filename": "Collection.code",
-        "line": 1870
+        "line": 2022
       },
       "544": {
         "filename": "Collection.code",
-        "line": 1871
+        "line": 2023
       },
       "560": {
         "filename": "Collection.code",
-        "line": 1872
+        "line": 2024
       },
       "568": {
         "filename": "Collection.code",
-        "line": 1873
+        "line": 2025
       },
       "584": {
         "filename": "Collection.code",
-        "line": 1874
+        "line": 2026
       },
       "600": {
         "filename": "Collection.code",
-        "line": 1875
+        "line": 2027
       },
       "616": {
         "filename": "Collection.code",
-        "line": 1876
+        "line": 2028
       },
       "632": {
         "filename": "Collection.code",
-        "line": 1877
+        "line": 2029
       },
       "640": {
         "filename": "Collection.code",
-        "line": 1878
+        "line": 2030
       },
       "664": {
         "filename": "Collection.code",
-        "line": 1879
+        "line": 2031
       },
       "680": {
         "filename": "Collection.code",
-        "line": 1880
+        "line": 2032
       },
       "704": {
         "filename": "Collection.code",
-        "line": 1881
+        "line": 2033
       },
       "712": {
         "filename": "Collection.code",
-        "line": 1882
+        "line": 2034
       },
       "720": {
         "filename": "Collection.code",
-        "line": 1883
+        "line": 2035
       },
       "736": {
         "filename": "Collection.code",
-        "line": 1884
+        "line": 2036
       },
       "752": {
         "filename": "Collection.code",
-        "line": 1885
+        "line": 2037
       },
       "760": {
         "filename": "Collection.code",
-        "line": 1886
+        "line": 2038
       },
       "784": {
         "filename": "Collection.code",
-        "line": 1887
+        "line": 2039
       },
       "792": {
         "filename": "Collection.code",
-        "line": 1888
+        "line": 2040
       },
       "800": {
         "filename": "Collection.code",
-        "line": 1889
+        "line": 2041
       },
       "816": {
         "filename": "Collection.code",
-        "line": 1890
+        "line": 2042
       },
       "832": {
         "filename": "Collection.code",
-        "line": 1891
+        "line": 2043
       },
       "856": {
         "filename": "Collection.code",
-        "line": 1892
+        "line": 2044
       },
       "864": {
         "filename": "Collection.code",
-        "line": 1893
+        "line": 2045
       },
       "872": {
         "filename": "Collection.code",
-        "line": 1894
+        "line": 2046
       },
       "880": {
         "filename": "Collection.code",
-        "line": 1895
+        "line": 2047
       },
       "896": {
         "filename": "Collection.code",
-        "line": 1896
+        "line": 2048
       },
       "912": {
         "filename": "Collection.code",
-        "line": 1898
+        "line": 2050
       },
       "920": {
         "filename": "Collection.code",
-        "line": 1899
+        "line": 2051
       },
       "936": {
         "filename": "Collection.code",
-        "line": 1900
+        "line": 2052
       },
       "952": {
         "filename": "Collection.code",
-        "line": 1903
+        "line": 2055
       }
     },
     "dd7d295f697fed049bab7158e4613cdcb6f6c0fee033aafbe908a397a1792e22": {
       "0": {
         "filename": "../contracts/Collection.tsol",
-        "line": 82
+        "line": 84
       },
       "16": {
         "filename": "../contracts/Collection.tsol",
-        "line": 82
+        "line": 84
       },
       "40": {
         "filename": "../contracts/Collection.tsol",
-        "line": 83
+        "line": 85
       }
     },
-    "ded4d057b9b8fd44ecc806a3ff130d7e4920760f29b82fd9c925644604da731e": {
+    "dfbf330c9a622c0e475e01cde5a9d752dd41885f30340346634416c23837fd0a": {
       "0": {
         "filename": "Collection.code",
-        "line": 2462
+        "line": 2507
       },
-      "8": {
+      "16": {
         "filename": "Collection.code",
-        "line": 2463
-      },
-      "48": {
-        "filename": "Collection.code",
-        "line": 2464
-      },
-      "56": {
-        "filename": "Collection.code",
-        "line": 2465
-      },
-      "72": {
-        "filename": "Collection.code",
-        "line": 2468
-      },
-      "80": {
-        "filename": "Collection.code",
-        "line": 2469
-      },
-      "128": {
-        "filename": "Collection.code",
-        "line": 2470
-      },
-      "136": {
-        "filename": "Collection.code",
-        "line": 2471
-      },
-      "152": {
-        "filename": "Collection.code",
-        "line": 2474
-      },
-      "160": {
-        "filename": "Collection.code",
-        "line": 2475
-      },
-      "208": {
-        "filename": "Collection.code",
-        "line": 2476
-      },
-      "216": {
-        "filename": "Collection.code",
-        "line": 2477
-      },
-      "232": {
-        "filename": "Collection.code",
-        "line": 2480
-      },
-      "240": {
-        "filename": "Collection.code",
-        "line": 2481
-      },
-      "288": {
-        "filename": "Collection.code",
-        "line": 2482
-      },
-      "296": {
-        "filename": "Collection.code",
-        "line": 2483
-      }
-    },
-    "e4f4583ed949f9cfefac8c23f326201eddfa0be4209a67c79ca2f2b82bbc9de0": {
-      "0": {
-        "filename": "Collection.code",
-        "line": 2451
-      },
-      "8": {
-        "filename": "Collection.code",
-        "line": 2452
+        "line": 2508
       },
       "24": {
         "filename": "Collection.code",
-        "line": 2455
+        "line": 2509
+      },
+      "40": {
+        "filename": "Collection.code",
+        "line": 2510
+      },
+      "56": {
+        "filename": "Collection.code",
+        "line": 2511
+      },
+      "72": {
+        "filename": "Collection.code",
+        "line": 2512
+      },
+      "80": {
+        "filename": "Collection.code",
+        "line": 2513
+      },
+      "88": {
+        "filename": "Collection.code",
+        "line": 2514
+      },
+      "104": {
+        "filename": "Collection.code",
+        "line": 2515
+      },
+      "120": {
+        "filename": "Collection.code",
+        "line": 2516
+      },
+      "128": {
+        "filename": "Collection.code",
+        "line": 2517
+      },
+      "144": {
+        "filename": "Collection.code",
+        "line": 2518
+      },
+      "168": {
+        "filename": "Collection.code",
+        "line": 2519
+      },
+      "184": {
+        "filename": "Collection.code",
+        "line": 2520
+      },
+      "192": {
+        "filename": "Collection.code",
+        "line": 2521
+      },
+      "208": {
+        "filename": "Collection.code",
+        "line": 2522
+      },
+      "248": {
+        "filename": "Collection.code",
+        "line": 2523
+      },
+      "264": {
+        "filename": "Collection.code",
+        "line": 2524
+      },
+      "272": {
+        "filename": "Collection.code",
+        "line": 2525
+      },
+      "288": {
+        "filename": "Collection.code",
+        "line": 2526
+      },
+      "296": {
+        "filename": "Collection.code",
+        "line": 2527
+      },
+      "312": {
+        "filename": "Collection.code",
+        "line": 2528
+      },
+      "328": {
+        "filename": "Collection.code",
+        "line": 2529
+      },
+      "336": {
+        "filename": "Collection.code",
+        "line": 2530
+      },
+      "344": {
+        "filename": "Collection.code",
+        "line": 2531
+      },
+      "360": {
+        "filename": "Collection.code",
+        "line": 2532
+      },
+      "376": {
+        "filename": "Collection.code",
+        "line": 2536
+      },
+      "384": {
+        "filename": "Collection.code",
+        "line": 2537
+      },
+      "408": {
+        "filename": "Collection.code",
+        "line": 2538
+      },
+      "424": {
+        "filename": "Collection.code",
+        "line": 2539
+      },
+      "432": {
+        "filename": "Collection.code",
+        "line": 2540
+      },
+      "448": {
+        "filename": "Collection.code",
+        "line": 2544
+      },
+      "456": {
+        "filename": "Collection.code",
+        "line": 2545
+      },
+      "472": {
+        "filename": "Collection.code",
+        "line": 2548
       }
     },
     "e573cc47fe725e9b965aaf7b3cc7ed5b5f9dabe5f017e8b5fd2e986e3e785c59": {
       "0": {
         "filename": "Collection.code",
-        "line": 2246
+        "line": 2398
       },
       "8": {
         "filename": "Collection.code",
-        "line": 2247
+        "line": 2399
       },
       "24": {
         "filename": "Collection.code",
-        "line": 2248
+        "line": 2400
       },
       "32": {
         "filename": "Collection.code",
-        "line": 2249
+        "line": 2401
       },
       "48": {
         "filename": "Collection.code",
-        "line": 2250
+        "line": 2402
       },
       "56": {
         "filename": "Collection.code",
-        "line": 2251
+        "line": 2403
       },
       "64": {
         "filename": "Collection.code",
-        "line": 2253
+        "line": 2405
       },
       "72": {
         "filename": "Collection.code",
-        "line": 2254
+        "line": 2406
       },
       "80": {
         "filename": "Collection.code",
-        "line": 2256
+        "line": 2408
       },
       "96": {
         "filename": "Collection.code",
-        "line": 2257
+        "line": 2409
       },
       "104": {
         "filename": "Collection.code",
-        "line": 2258
+        "line": 2410
       },
       "120": {
         "filename": "Collection.code",
-        "line": 2259
+        "line": 2411
       },
       "128": {
         "filename": "Collection.code",
-        "line": 2260
+        "line": 2412
       },
       "136": {
         "filename": "Collection.code",
-        "line": 2261
+        "line": 2413
       },
       "152": {
         "filename": "Collection.code",
-        "line": 2262
+        "line": 2414
       },
       "168": {
         "filename": "Collection.code",
-        "line": 2263
+        "line": 2415
       },
       "184": {
         "filename": "Collection.code",
-        "line": 2264
+        "line": 2416
       },
       "192": {
         "filename": "Collection.code",
-        "line": 2265
+        "line": 2417
       },
       "216": {
         "filename": "Collection.code",
-        "line": 2267
+        "line": 2419
       },
       "224": {
         "filename": "Collection.code",
-        "line": 2268
+        "line": 2420
       },
       "232": {
         "filename": "Collection.code",
-        "line": 2269
+        "line": 2421
       },
       "248": {
         "filename": "Collection.code",
-        "line": 2270
+        "line": 2422
       },
       "264": {
         "filename": "Collection.code",
-        "line": 2271
+        "line": 2423
       },
       "280": {
         "filename": "Collection.code",
-        "line": 2272
+        "line": 2424
       },
       "296": {
         "filename": "Collection.code",
-        "line": 2273
+        "line": 2425
       },
       "312": {
         "filename": "Collection.code",
-        "line": 2274
+        "line": 2426
       },
       "328": {
         "filename": "Collection.code",
-        "line": 2275
+        "line": 2427
       },
       "344": {
         "filename": "Collection.code",
-        "line": 2276
+        "line": 2428
       },
       "360": {
         "filename": "Collection.code",
-        "line": 2277
+        "line": 2429
       },
       "376": {
         "filename": "Collection.code",
-        "line": 2278
+        "line": 2430
       },
       "392": {
         "filename": "Collection.code",
-        "line": 2279
+        "line": 2431
       },
       "408": {
         "filename": "Collection.code",
-        "line": 2280
+        "line": 2432
       },
       "424": {
         "filename": "Collection.code",
-        "line": 2281
+        "line": 2433
       },
       "440": {
         "filename": "Collection.code",
-        "line": 2282
+        "line": 2434
       },
       "456": {
         "filename": "Collection.code",
-        "line": 2283
+        "line": 2435
       },
       "472": {
         "filename": "Collection.code",
-        "line": 2284
+        "line": 2436
       },
       "496": {
         "filename": "Collection.code",
-        "line": 2285
+        "line": 2437
       },
       "512": {
         "filename": "Collection.code",
-        "line": 2286
+        "line": 2438
       },
       "520": {
         "filename": "Collection.code",
-        "line": 2287
+        "line": 2439
       },
       "536": {
         "filename": "Collection.code",
-        "line": 2288
+        "line": 2440
       },
       "584": {
         "filename": "Collection.code",
-        "line": 2289
+        "line": 2441
       },
       "600": {
         "filename": "Collection.code",
-        "line": 2290
+        "line": 2442
       },
       "648": {
         "filename": "Collection.code",
-        "line": 2291
+        "line": 2443
       },
       "664": {
         "filename": "Collection.code",
-        "line": 2292
+        "line": 2444
       },
       "712": {
         "filename": "Collection.code",
-        "line": 2293
+        "line": 2445
       },
       "728": {
         "filename": "Collection.code",
-        "line": 2294
+        "line": 2446
       },
       "776": {
         "filename": "Collection.code",
-        "line": 2295
+        "line": 2447
       }
     },
     "e5bcdd2119476d1431fe608d0e167cc2a472cc103c84b8c2f7d0157c12a715a8": {
@@ -5806,223 +6356,223 @@
     "e619c4b465a4624528e82ed9ca8f7cba26ccc3624d4f3d32ee829d1fb955d0ad": {
       "0": {
         "filename": "Collection.code",
-        "line": 2302
+        "line": 2454
       },
       "16": {
         "filename": "Collection.code",
-        "line": 2303
+        "line": 2455
       },
       "32": {
         "filename": "Collection.code",
-        "line": 2304
+        "line": 2456
       },
       "48": {
         "filename": "Collection.code",
-        "line": 2305
+        "line": 2457
       },
       "64": {
         "filename": "Collection.code",
-        "line": 2306
+        "line": 2458
       },
       "80": {
         "filename": "Collection.code",
-        "line": 2307
+        "line": 2459
       },
       "96": {
         "filename": "Collection.code",
-        "line": 2308
+        "line": 2460
       },
       "112": {
         "filename": "Collection.code",
-        "line": 2309
+        "line": 2461
       },
       "128": {
         "filename": "Collection.code",
-        "line": 2310
+        "line": 2462
       },
       "144": {
         "filename": "Collection.code",
-        "line": 2311
+        "line": 2463
       },
       "160": {
         "filename": "Collection.code",
-        "line": 2312
+        "line": 2464
       },
       "176": {
         "filename": "Collection.code",
-        "line": 2313
+        "line": 2465
       },
       "192": {
         "filename": "Collection.code",
-        "line": 2314
+        "line": 2466
       },
       "208": {
         "filename": "Collection.code",
-        "line": 2315
+        "line": 2467
       },
       "224": {
         "filename": "Collection.code",
-        "line": 2316
+        "line": 2468
       },
       "232": {
         "filename": "Collection.code",
-        "line": 2317
+        "line": 2469
       },
       "248": {
         "filename": "Collection.code",
-        "line": 2318
+        "line": 2470
       },
       "264": {
         "filename": "Collection.code",
-        "line": 2319
+        "line": 2471
       },
       "280": {
         "filename": "Collection.code",
-        "line": 2320
+        "line": 2472
       },
       "296": {
         "filename": "Collection.code",
-        "line": 2321
+        "line": 2473
       },
       "304": {
         "filename": "Collection.code",
-        "line": 2322
+        "line": 2474
       },
       "320": {
         "filename": "Collection.code",
-        "line": 2323
+        "line": 2475
       },
       "328": {
         "filename": "Collection.code",
-        "line": 2324
+        "line": 2476
       },
       "344": {
         "filename": "Collection.code",
-        "line": 2325
+        "line": 2477
       },
       "352": {
         "filename": "Collection.code",
-        "line": 2326
+        "line": 2478
       },
       "360": {
         "filename": "Collection.code",
-        "line": 2327
+        "line": 2479
       },
       "368": {
         "filename": "Collection.code",
-        "line": 2328
+        "line": 2480
       },
       "384": {
         "filename": "Collection.code",
-        "line": 2329
+        "line": 2481
       },
       "400": {
         "filename": "Collection.code",
-        "line": 2330
+        "line": 2482
       },
       "416": {
         "filename": "Collection.code",
-        "line": 2331
+        "line": 2483
       },
       "432": {
         "filename": "Collection.code",
-        "line": 2332
+        "line": 2484
       },
       "448": {
         "filename": "Collection.code",
-        "line": 2333
+        "line": 2485
       },
       "464": {
         "filename": "Collection.code",
-        "line": 2334
+        "line": 2486
       },
       "472": {
         "filename": "Collection.code",
-        "line": 2335
+        "line": 2487
       },
       "480": {
         "filename": "Collection.code",
-        "line": 2336
+        "line": 2488
       }
     },
     "e6936e8f0e7b8fe98c2ca66eee9d4e9dafcfc747defef9cb795288fabb1b7ef3": {
       "0": {
         "filename": "Collection.code",
-        "line": 2339
+        "line": 2491
       },
       "16": {
         "filename": "Collection.code",
-        "line": 2340
+        "line": 2492
       },
       "24": {
         "filename": "Collection.code",
-        "line": 2341
+        "line": 2493
       },
       "40": {
         "filename": "Collection.code",
-        "line": 2342
+        "line": 2494
       },
       "56": {
         "filename": "Collection.code",
-        "line": 2343
+        "line": 2495
       },
       "64": {
         "filename": "Collection.code",
-        "line": 2344
+        "line": 2496
       },
       "80": {
         "filename": "Collection.code",
-        "line": 2345
+        "line": 2497
       },
       "88": {
         "filename": "Collection.code",
-        "line": 2346
+        "line": 2498
       },
       "96": {
         "filename": "Collection.code",
-        "line": 2347
+        "line": 2499
       },
       "112": {
         "filename": "Collection.code",
-        "line": 2348
+        "line": 2500
       },
       "128": {
         "filename": "Collection.code",
-        "line": 2349
+        "line": 2501
       },
       "136": {
         "filename": "Collection.code",
-        "line": 2350
+        "line": 2502
       },
       "144": {
         "filename": "Collection.code",
-        "line": 2351
+        "line": 2503
       }
     },
     "e8cae00a7a06d997614595b372da4cdeed52a986e1d615409e02f55685b9b25c": {
       "0": {
         "filename": "Collection.code",
-        "line": 1642
+        "line": 1794
       },
       "8": {
         "filename": "Collection.code",
-        "line": 1643
+        "line": 1795
       },
       "24": {
         "filename": "Collection.code",
-        "line": 1644
+        "line": 1796
       },
       "48": {
         "filename": "Collection.code",
-        "line": 1645
+        "line": 1797
       },
       "64": {
         "filename": "Collection.code",
-        "line": 1646
+        "line": 1798
       },
       "72": {
         "filename": "Collection.code",
-        "line": 1647
+        "line": 1799
       },
       "88": {
         "filename": "../node_modules/@broxus/tip4/contracts/TIP4_1/TIP4_1Collection.tsol",
@@ -6050,191 +6600,191 @@
       },
       "168": {
         "filename": "Collection.code",
-        "line": 1658
+        "line": 1810
       },
       "184": {
         "filename": "Collection.code",
-        "line": 1661
+        "line": 1813
       },
       "192": {
         "filename": "Collection.code",
-        "line": 1662
+        "line": 1814
       },
       "208": {
         "filename": "Collection.code",
-        "line": 1663
+        "line": 1815
       },
       "216": {
         "filename": "Collection.code",
-        "line": 1664
+        "line": 1816
       },
       "224": {
         "filename": "Collection.code",
-        "line": 1665
+        "line": 1817
       },
       "240": {
         "filename": "Collection.code",
-        "line": 1666
+        "line": 1818
       },
       "256": {
         "filename": "Collection.code",
-        "line": 1667
+        "line": 1819
       },
       "264": {
         "filename": "Collection.code",
-        "line": 1668
+        "line": 1820
       },
       "272": {
         "filename": "Collection.code",
-        "line": 1669
+        "line": 1821
       },
       "280": {
         "filename": "Collection.code",
-        "line": 1670
+        "line": 1822
       },
       "304": {
         "filename": "Collection.code",
-        "line": 1671
+        "line": 1823
       },
       "312": {
         "filename": "Collection.code",
-        "line": 1672
+        "line": 1824
       },
       "360": {
         "filename": "Collection.code",
-        "line": 1673
+        "line": 1825
       },
       "384": {
         "filename": "Collection.code",
-        "line": 1674
+        "line": 1826
       },
       "392": {
         "filename": "Collection.code",
-        "line": 1675
+        "line": 1827
       },
       "400": {
         "filename": "Collection.code",
-        "line": 1676
+        "line": 1828
       },
       "408": {
         "filename": "Collection.code",
-        "line": 1678
+        "line": 1830
       },
       "424": {
         "filename": "Collection.code",
-        "line": 1679
+        "line": 1831
       },
       "440": {
         "filename": "Collection.code",
-        "line": 1680
+        "line": 1832
       },
       "448": {
         "filename": "Collection.code",
-        "line": 1681
+        "line": 1833
       },
       "464": {
         "filename": "Collection.code",
-        "line": 1682
+        "line": 1834
       },
       "472": {
         "filename": "Collection.code",
-        "line": 1683
+        "line": 1835
       },
       "488": {
         "filename": "Collection.code",
-        "line": 1684
+        "line": 1836
       },
       "504": {
         "filename": "Collection.code",
-        "line": 1685
+        "line": 1837
       },
       "520": {
         "filename": "Collection.code",
-        "line": 1686
+        "line": 1838
       },
       "536": {
         "filename": "Collection.code",
-        "line": 1687
+        "line": 1839
       },
       "544": {
         "filename": "Collection.code",
-        "line": 1688
+        "line": 1840
       },
       "568": {
         "filename": "Collection.code",
-        "line": 1689
+        "line": 1841
       },
       "584": {
         "filename": "Collection.code",
-        "line": 1690
+        "line": 1842
       },
       "608": {
         "filename": "Collection.code",
-        "line": 1691
+        "line": 1843
       },
       "616": {
         "filename": "Collection.code",
-        "line": 1692
+        "line": 1844
       },
       "624": {
         "filename": "Collection.code",
-        "line": 1693
+        "line": 1845
       },
       "640": {
         "filename": "Collection.code",
-        "line": 1694
+        "line": 1846
       },
       "656": {
         "filename": "Collection.code",
-        "line": 1695
+        "line": 1847
       },
       "672": {
         "filename": "Collection.code",
-        "line": 1696
+        "line": 1848
       },
       "688": {
         "filename": "Collection.code",
-        "line": 1697
+        "line": 1849
       },
       "704": {
         "filename": "Collection.code",
-        "line": 1698
+        "line": 1850
       },
       "720": {
         "filename": "Collection.code",
-        "line": 1699
+        "line": 1851
       },
       "744": {
         "filename": "Collection.code",
-        "line": 1700
+        "line": 1852
       },
       "752": {
         "filename": "Collection.code",
-        "line": 1701
+        "line": 1853
       },
       "760": {
         "filename": "Collection.code",
-        "line": 1702
+        "line": 1854
       },
       "776": {
         "filename": "Collection.code",
-        "line": 1703
+        "line": 1855
       },
       "792": {
         "filename": "Collection.code",
-        "line": 1705
+        "line": 1857
       },
       "800": {
         "filename": "Collection.code",
-        "line": 1706
+        "line": 1858
       },
       "816": {
         "filename": "Collection.code",
-        "line": 1707
+        "line": 1859
       },
       "832": {
         "filename": "Collection.code",
-        "line": 1710
+        "line": 1862
       }
     },
     "ecb6b2f114ee852a3cad981e3dcc4fc57c28ff008b31bceba7ff449c309cb2d3": {
@@ -6520,11 +7070,11 @@
     "f24e1e7aa04d89aad2945816b6e9b921f2b3892da9ba53e2383c148351b96d0c": {
       "0": {
         "filename": "Collection.code",
-        "line": 2381
+        "line": 2533
       },
       "16": {
         "filename": "Collection.code",
-        "line": 2382
+        "line": 2534
       }
     },
     "f5290cd41b194ebc2148ebf8237b8cfe8a6c7ea2e8ce5015b21b7b08dbb2ac84": {
@@ -6540,147 +7090,147 @@
     "fd762203352d8fbe1c41b468692173599cfc706c41e8a319cb4b03b09d68fa5b": {
       "0": {
         "filename": "Collection.code",
-        "line": 2203
+        "line": 2355
       },
       "16": {
         "filename": "Collection.code",
-        "line": 2204
+        "line": 2356
       },
       "24": {
         "filename": "Collection.code",
-        "line": 2205
+        "line": 2357
       },
       "40": {
         "filename": "Collection.code",
-        "line": 2206
+        "line": 2358
       },
       "56": {
         "filename": "Collection.code",
-        "line": 2207
+        "line": 2359
       },
       "72": {
         "filename": "Collection.code",
-        "line": 2208
+        "line": 2360
       },
       "80": {
         "filename": "Collection.code",
-        "line": 2209
+        "line": 2361
       },
       "96": {
         "filename": "Collection.code",
-        "line": 2210
+        "line": 2362
       },
       "104": {
         "filename": "Collection.code",
-        "line": 2211
+        "line": 2363
       },
       "120": {
         "filename": "Collection.code",
-        "line": 2212
+        "line": 2364
       },
       "128": {
         "filename": "Collection.code",
-        "line": 2213
+        "line": 2365
       },
       "136": {
         "filename": "Collection.code",
-        "line": 2214
+        "line": 2366
       },
       "144": {
         "filename": "Collection.code",
-        "line": 2215
+        "line": 2367
       },
       "152": {
         "filename": "Collection.code",
-        "line": 2216
+        "line": 2368
       },
       "160": {
         "filename": "Collection.code",
-        "line": 2217
+        "line": 2369
       },
       "168": {
         "filename": "Collection.code",
-        "line": 2218
+        "line": 2370
       },
       "184": {
         "filename": "Collection.code",
-        "line": 2219
+        "line": 2371
       },
       "200": {
         "filename": "Collection.code",
-        "line": 2220
+        "line": 2372
       },
       "216": {
         "filename": "Collection.code",
-        "line": 2221
+        "line": 2373
       },
       "232": {
         "filename": "Collection.code",
-        "line": 2222
+        "line": 2374
       },
       "248": {
         "filename": "Collection.code",
-        "line": 2223
+        "line": 2375
       },
       "264": {
         "filename": "Collection.code",
-        "line": 2224
+        "line": 2376
       },
       "272": {
         "filename": "Collection.code",
-        "line": 2225
+        "line": 2377
       },
       "288": {
         "filename": "Collection.code",
-        "line": 2226
+        "line": 2378
       },
       "304": {
         "filename": "Collection.code",
-        "line": 2227
+        "line": 2379
       },
       "320": {
         "filename": "Collection.code",
-        "line": 2228
+        "line": 2380
       },
       "336": {
         "filename": "Collection.code",
-        "line": 2229
+        "line": 2381
       },
       "352": {
         "filename": "Collection.code",
-        "line": 2230
+        "line": 2382
       },
       "368": {
         "filename": "Collection.code",
-        "line": 2231
+        "line": 2383
       },
       "384": {
         "filename": "Collection.code",
-        "line": 2232
+        "line": 2384
       },
       "400": {
         "filename": "Collection.code",
-        "line": 2233
+        "line": 2385
       },
       "416": {
         "filename": "Collection.code",
-        "line": 2234
+        "line": 2386
       },
       "432": {
         "filename": "Collection.code",
-        "line": 2235
+        "line": 2387
       },
       "448": {
         "filename": "Collection.code",
-        "line": 2236
+        "line": 2388
       },
       "464": {
         "filename": "Collection.code",
-        "line": 2237
+        "line": 2389
       },
       "480": {
         "filename": "Collection.code",
-        "line": 2238
+        "line": 2390
       }
     },
     "fff9b98fbca723fcdb22ae5bd4e153ee8cf182cb2b5f344ec8fd06cdeba6b402": {
@@ -6710,67 +7260,67 @@
       },
       "88": {
         "filename": "../contracts/Collection.tsol",
-        "line": 48
+        "line": 50
       },
       "96": {
         "filename": "../contracts/Collection.tsol",
-        "line": 48
+        "line": 50
       },
       "104": {
         "filename": "../contracts/Collection.tsol",
-        "line": 48
+        "line": 50
       },
       "112": {
         "filename": "../contracts/Collection.tsol",
-        "line": 48
+        "line": 50
       },
       "120": {
         "filename": "../contracts/Collection.tsol",
-        "line": 48
+        "line": 50
       },
       "128": {
         "filename": "../contracts/Collection.tsol",
-        "line": 48
+        "line": 50
       },
       "136": {
         "filename": "../contracts/Collection.tsol",
-        "line": 48
+        "line": 50
       },
       "144": {
         "filename": "../contracts/Collection.tsol",
-        "line": 48
+        "line": 50
       },
       "152": {
         "filename": "../contracts/Collection.tsol",
-        "line": 48
+        "line": 50
       },
       "160": {
         "filename": "../contracts/Collection.tsol",
-        "line": 48
+        "line": 50
       },
       "176": {
         "filename": "../contracts/Collection.tsol",
-        "line": 48
+        "line": 50
       },
       "192": {
         "filename": "../contracts/Collection.tsol",
-        "line": 48
+        "line": 50
       },
       "208": {
         "filename": "../contracts/Collection.tsol",
-        "line": 48
+        "line": 50
       },
       "224": {
         "filename": "../contracts/Collection.tsol",
-        "line": 48
+        "line": 50
       },
       "240": {
         "filename": "../contracts/Collection.tsol",
-        "line": 48
+        "line": 50
       },
       "248": {
         "filename": "../contracts/Collection.tsol",
-        "line": 48
+        "line": 50
       },
       "256": {
         "filename": "Collection.code",

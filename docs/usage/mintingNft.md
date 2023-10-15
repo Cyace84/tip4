@@ -1,4 +1,4 @@
-# Minting Nft
+# Minting Nfts
 
 <div class="deployToken">
 

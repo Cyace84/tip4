@@ -8,11 +8,8 @@ import {
 import { factorySource, FactorySource } from "./build/factorySource";
 import isValidEverAddress from "./helpers/isValideverAddress";
 import { useProviderInfo } from "./helpers/useProviders";
+import { zeroAddress } from "./helpers/zeroAddress";
 import { toast } from "../src/helpers/toast";
-
-const zeroAddress: Address = new Address(
-  "0:0000000000000000000000000000000000000000000000000000000000000000"
-);
 
 export async function findNfts(
   collectionAddress: string = zeroAddress.toString()

@@ -1,7 +1,7 @@
 # Architecture
 
 ## TIP-4 Design
-The TIP-4 distributed NFT standard utilized in this project involves scattering the information of NFTs across multiple smart contracts instead of consolidating them in a single contract.
+The TIP-4 distributed NFT standard, explained in this documentation, involves dispersing the information of NFTs across multiple smart contracts instead of consolidating them into a single contract.
 
 For example, if an artist has 1000 artworks, it would be necessary to deploy 1001 contracts. One contract functions as the collection contract, while the remaining 1000 contracts are specifically assigned to individual NFTs.
 
