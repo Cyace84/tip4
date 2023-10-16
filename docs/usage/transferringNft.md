@@ -2,21 +2,21 @@
 
 <div class="deployToken">
 
-One of the most simple concepts of the standard is coved in this section which is transferring the non-fungible tokens from one account to another. What happens under the hood is that owner of the nft gets changed which is pretty straight forward approach.
+In this section, we will learn how to use the  `Index`  contract to transfer non-fungible tokens (NFTs) from one account to another. This is a fundamental concept of the standard, and it involves changing the ownership of the NFT.
 
-The steps below demonstrates the mentioned operation.
+The following steps outline the process of transferring NFTs:
 
-::: info
-As we mentioned earlier, Two index contracts of the nft will get destructed before the transfer happens and then they get redeployed with the new owner data as the salt of their code hash.
-:::
+1. Destruct the two index contracts associated with the NFT before the transfer. These contracts will be redeployed with the new owner data as the salt of their code hash.
+
+2. Update the ownership information of the NFT to reflect the new owner.
 
 ## Step 1: Write Transfer Script
 
 <span  :class="LLdis"  >
 
-The code sample below uses the locklift tool and the previously written script to perform the transfer operation.
+The code sample below uses the locklift tool and the previously written script to perform the NFT transferring operation.
 
-Add the following lines of code to the [previously written script](./findingNftByIndexes.md#step-1-write-searching-script) on minting the nft's section.
+Add the following lines of code to the [previously written script](./findingNftByIndexes.md#step-1-write-searching-script) in the finding NFts by indexes section.
 
 ::: info
 Before we start to write our scripts we need to make sure that there is a file named `04-transfer-nft.ts` in the `script` folder in the project root.
@@ -26,9 +26,9 @@ Before we start to write our scripts we need to make sure that there is a file n
 
 <span :class="EIPdis"  >
 
-Utilize the code sample below to transfer the nfts using the `everscale-inpage-provider` tool.
+Utilize the code sample below to transfer the NFTs using the `everscale-inpage-provider` tool.
 
-add the following lines of code to the [previously written script](./findingNftByIndexes.md#step-1-write-searching-script) on deploying the base collection contract section.
+add the following lines of code to the [previously written script](./findingNftByIndexes.md#step-1-write-searching-script) in the finding NFts by indexes section.
 
 </span>
 

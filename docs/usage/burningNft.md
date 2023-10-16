@@ -2,23 +2,21 @@
 
 <div class="deployToken">
 
-This section involves the tutorial on burning the non-fungible tokens. This operations is performed by draining all of the gas tokens in  he nft contract, this way the nft contract won;t have the enough gas tokens to pay for the storage fees that the TVM based blockchains receives for storing the data.
+In this section, we will learn how to use the  `Index`  contract to perform the burning operation on non-fungible tokens (NFTs). Burning an NFT involves draining all of the gas tokens in the NFT contract, which renders it unable to pay for storage fees on TVM-based blockchains.
 
-The total supply amount in the collection contract is updated after the nft is destroyed by a callback function that calls the relevant function on the collection contract that reduces the total supply by one.
+After the NFT is destroyed, the total supply amount in the collection contract is updated. This is achieved through a callback function that calls the relevant function on the collection contract, reducing the total supply by one.
 
 ::: tip
-As we saud earlier the index contracts will get destroyed when the nft contracts get burnt.
-Please notice that this operation is not handled by the nft or the collection contract or even by the user.
-The index contracts will get freezed after sometimes when the their balance gets negative because of the storage fees and gets deleted after sometime.
+Please note that the destruction of the index contracts is not directly handled by the NFT or collection contract, nor by the user. The index contracts are frozen when their balance becomes negative due to storage fees and are eventually deleted after a certain period of time.
 :::
 
 ## Step 1: Write burning Script
 
 <span  :class="LLdis"  >
 
-The code sample below uses the locklift tool and the previously written script and burns the nfts.
+The code sample below uses the locklift tool and the previously written script aon transferring NFTs to burn the nfts.
 
-Add the following lines of code to the [previously written script](./transferringNft.md#step-1-write-transfer-script) on minting the nft's section.
+Add the following lines of code to the [previously written script](./transferringNft.md#step-1-write-transfer-script) in the transferring NFTs section .
 
 ::: info
 Before we start to write our scripts we need to make sure that there is a file named `04-burn-nft.ts` in the `script` folder in the project root.
@@ -28,9 +26,9 @@ Before we start to write our scripts we need to make sure that there is a file n
 
 <span :class="EIPdis"  >
 
-Utilize the code sample below to burn the nfts using the `everscale-inpage-provider` tool.
+Utilize the code sample below to burn the NFTs using the `everscale-inpage-provider` tool.
 
-add the following lines of code to the [previously written script](./transferringNft.md#step-1-write-transfer-script) on deploying the base collection contract section.
+add the following lines of code to the [previously written script](./transferringNft.md#step-1-write-transfer-script) in the transferring NFTs section .
 
 </span>
 
@@ -39,18 +37,24 @@ add the following lines of code to the [previously written script](./transferrin
 ::: code-group
 
 ```` typescript [locklift]
- // Burning nfts
+  // Adding an existing SafeMultiSig Account using its address and sending the burn transaction
+  const bobAccount: Account = await locklift.factory.accounts.addExistingAccount({
+    type: WalletTypes.MsigAccount,
+    address: BobAccount.address, // if deploying new account >> new Address("YOUR_ACCOUNT_ADDRESS")
+    mSigType: "SafeMultisig",
+    publicKey: signerBob.publicKey,
+  });
+
   await nftContract.methods
     .burn({
-      sendGasTo: account.address,
+      sendGasTo: bobAccount.address,
       callbackPayload: "",
       callbackTo: zeroAddress,
     })
-    .send({ from: account.address, amount: locklift.utils.toNano(2), bounce: true });
+    .send({ from: bobAccount.address, amount: locklift.utils.toNano(2), bounce: true }),
 
-  // fetching the account again and see if we get the "account not found" error
-
-  console.log("burnt nft info: ", await nftContract.methods.getInfo({ answerId: 0 }).call()); // Account not found
+    // fetching the account again and see if we get the "account not found" error
+    console.log("burnt nft info: ", await nftContract.methods.getInfo({ answerId: 0 }).call()); // Account not found
 
 ````
 

@@ -4,26 +4,22 @@
 
 In this section, we will learn how to use the  `Index`  and  `IndexBasis`  contracts to find the NFT contracts owned by a user. As you already know, indexing helps locate all the NFTs owned by a user across all collections existing in the TVM-based blockchains.
 
-In this tutorial we will learn how to find all of the nfts owned by a user using the `Index` contract functionality.
-We also will explore through the process of finding all of the collections using the `IndexBasis` contract functionality.
+In this tutorial, we will learn how to find all of the NFTs owned by a user using the functionality provided by the  `Index`  contract. Additionally, we will explore the process of finding all of the collections using the functionality of the  `IndexBasis`  contract.
 
+## How to Find All Collection Contracts?
 
-## How to Find all of the Collection Contracts ?
-
-The collection contracts that are desiring to support the indexing functionality will have a specific code hash which is salted with the word `"nft"`. We can calculate the the code hash of which and send a request to the api endpoint of our relevant blockchain and get the accounts that their code hash is matching with the one we provided.
+The collection contracts that wish to support the indexing functionality will have a specific code hash that is salted with the word "nft". We can calculate this code hash and send a request to the API endpoint of our relevant blockchain to retrieve the accounts whose code hash matches the one we provided.
 
 ::: tip
-
-THe apis are probably having a limit on the size of the values returned, for example when using the everscale-inpage-provider or the locklift tool we only get "50" collection contracts as the out put which is sorted by acceding numeric and then alphabetic algorithm, therefor if we are desiring to find all of collection contracts existing on the blockchain we must send the request multiple times
-
+Please note that APIs may have limitations on the size of the returned values. For example, when using the everscale-inpage-provider or the Locklift tool, we may only receive "50" collection contracts as the output. The contracts are sorted using an ascending numeric and alphabetic algorithm. Therefore, if we want to find all the collection contracts existing on the blockchain, we need to send multiple requests with specifying the contention collection address which the last address fetched from the previous batch of collection.
 :::
 
 
 ### Searching for All Collections
 
-The following script written in typescript uses the locklift tool to find all of the collection contracts.
+The following script written in typescript uses the locklift tool to find all of the collection contracts. across the blockchain
 
-make a file name `find-all-collections.ts` in the scripts folder of your locklift project root and copy the following content into it.
+make a file name `find-all-collections.ts` in the scripts folder of your locklift project root directory and copy the provided script below into it.
 
 ````typescript
 import { Address, Contract, zeroAddress } from "locklift";
@@ -99,9 +95,10 @@ npx locklift run -s scripts/find-all-collections.ts -n local
 <span  :class="LLdis"  >
 
 The code sample below utilizes the state of the previously written script in the minting nft's section and the Locklift tool to provide us with the indexing functionality represented by the standard.
-It first all of the nft contracts owned by the user and then uses the collection contract address to find the specific nfts related to a collection contract.
 
-Add the following lines of code to the [previously written script](./mintingNft.md#step-2-write-minting-script) on minting the nft's section.
+It fetches two type of the Index contracts, one of them is created and can be fetched to locate all of the nft contracts and the other one is used to find out if there is any nft ids owned by the user from a specific collection contract.
+
+Add the following lines of code to the [previously written script](./mintingNft.md#step-2-write-minting-script) in the minting nft's section.
 
 ::: info
 Before we start to write our scripts we need to make sure that there is a file named `03-find-nft-by-index.ts` in the `script` folder in the project root.
@@ -113,7 +110,7 @@ Before we start to write our scripts we need to make sure that there is a file n
 
 The code sample below is utilized to perform the mentioned operations using `everscale-inpage-provider` tool.
 
-add the following lines of code to the [previously written script](./mintingNft.md#step-2-write-minting-script) on deploying the base collection contract section.
+add the following lines of code to the [previously written script](./mintingNft.md#step-2-write-minting-script) in the minting nft's section.
 
 </span>
 

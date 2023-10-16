@@ -2,19 +2,19 @@
 
 <div class="deployToken">
 
-This section provides a tutorial on minting NFTs using the base collection that we deployed in the [previous section](./deployingCollection.md). The contract that is minted is the [NFT contract](./deployingCollection.md#nft-contract), which we also discussed in the previous section.
+This section provides a tutorial on minting NFTs using the base collection that was deployed in the [previous section](./deployingCollection.md). The NFT contract, which was also discussed in the previous section, is the contract that will be minted.
 
-To mint an NFT, we need the relevant JSON object and the associated royalty information. Follow the steps below to learn how to prepare these parameters and mint an NFT through the base collection.
+To mint an NFT, we require the relevant JSON object and the associated royalty information. Follow the steps below to learn how to prepare these parameters and mint an NFT through the base collection.
 
 ::: info
-Please note that the deployable NFT contract inherits from the `TIP4_3Nft`, resulting in the deployment of two index contracts in the constructor of the Base NFT contract.
+Please note that the deployable NFT contract inherits from the  `TIP4_3Nft` , resulting in the deployment of two index contracts via the constructor of the Base NFT contract.
 :::
 
 ## Step 2: Write Minting Script
 
 <span  :class="LLdis"  >
 
-The code sample below utilizes the state of the previously written script in the base collection deployment section and the Locklift tool to provide us with the NFT minting functionality.
+The code sample below utilizes the state of the previously written script in the base collection deployment section and the Locklift tool to provide us with NFT minting functionality
 
 add the following lines of code to the [previously written script](./deployingCollection.md#step-2-write-deployment-script) on deploying the base collection contract section.
 
