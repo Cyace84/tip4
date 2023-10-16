@@ -32,12 +32,56 @@ module.exports = {
   base: "/",
 
   plugins: [vue()],
+  rewrites: {
+    "src/pages/index.md": "index.md",
+    "src/pages/architecture.md": "architecture.md",
+
+    "src/pages/specification/toc.md": "specification/toc.md",
+    "src/pages/specification/baseCollection.md":
+      "specification/baseCollection.md",
+    "src/pages/specification/baseNFT.md": "specification/baseNFT.md",
+    "src/pages/specification/tip4_1.md": "specification/tip4_1.md",
+    "src/pages/specification/tip4_2.md": "specification/tip4_2.md",
+    "src/pages/specification/tip4_3.md": "specification/tip4_3.md",
+    "src/pages/specification/tip4_royalty.md": "specification/tip4_royalty.md",
+    "src/pages/specification/tip4_4.md": "specification/tip4_4.md",
+    "src/pages/specification/tip4_5.md": "specification/tip4_5.md",
+    "src/pages/specification/tip4_6.md": "specification/tip4_6.md",
+    "src/pages/specification/tip6.md": "specification/tip6.md",
+
+    "src/pages/gettingStarted/toc.md": "gettingStarted/toc.md",
+    "src/pages/gettingStarted/basicProjectSetup.md":
+      "gettingStarted/basicProjectSetup.md",
+    "src/pages/gettingStarted/lockliftConfigSetting.md":
+      "gettingStarted/lockliftConfigSetting.md",
+    "src/pages/gettingStarted/localEnvironment.md":
+      "gettingStarted/localEnvironment.md",
+    "src/pages/gettingStarted/deployAccount.md":
+      "gettingStarted/deployAccount.md",
+
+    "src/pages/usageAndDeployment/toc.md": "usageAndDeployment/toc.md",
+    "src/pages/usageAndDeployment/prerequisites.md":
+      "usageAndDeployment/prerequisites.md",
+    "src/pages/usageAndDeployment/deployingCollection.md":
+      "usageAndDeployment/deployingCollection.md",
+    "src/pages/usageAndDeployment/mintingNft.md":
+      "usageAndDeployment/mintingNft.md",
+    "src/pages/usageAndDeployment/findingNftByIndexes.md":
+      "usageAndDeployment/findingNftByIndexes.md",
+    "src/pages/usageAndDeployment/transferringNft.md":
+      "usageAndDeployment/transferringNft.md",
+    "src/pages/usageAndDeployment/burningNft.md":
+      "usageAndDeployment/burningNft.md",
+    "src/pages/apiReferences.md": "apiReferences.md",
+    "src/pages/FAQ.md": "FAQ.md",
+  },
+
   themeConfig: {
     search: {
       provider: "local",
     },
     editLink: {
-      pattern: "https://github.com/Javadyakuza/TIP3-Docs/edit/main/:path",
+      pattern: "https://github.com/JavadYakuzaa/TIP4-Docs/edit/main/:path",
     },
     nav: NAV,
     sidebar: [
@@ -45,75 +89,73 @@ module.exports = {
         text: "Introduction",
         collapsable: false,
         link: "/",
-        items: [
-          {
-            text: "Architecture",
-            collapsable: false,
-            link: "/docs/architecture",
-          },
-        ],
+      },
+      {
+        text: "Architecture",
+        collapsable: false,
+        link: "/architecture.md",
       },
       {
         text: "Specification",
         collapsable: false,
-        link: "/docs/specifications/ToC.md",
+        link: "/specification/toc.md",
         items: [
           {
             text: "Base Collection",
             collapsable: false,
-            link: "/docs/specifications/baseCollection.md",
+            link: "/specification/baseCollection.md",
           },
           {
             text: "Base NFT",
             collapsable: false,
-            link: "/docs/specifications/baseNFT.md",
+            link: "/specification/baseNFT.md",
           },
           {
             text: "TIP4-1 Non-Fungible Token",
             collapsable: false,
-            link: "/docs/specifications/41.md",
+            link: "/specification/tip4_1.md",
           },
           {
             text: "TIP4-2 NFT Metadata",
             collapsable: false,
-            link: "/docs/specifications/42.md",
+            link: "/specification/tip4_2.md",
           },
           {
             text: "TIP4-3 On-Chain Indexes",
             collapsable: false,
-            link: "/docs/specifications/43.md",
+            link: "/specification/tip4_3.md",
           },
           {
             text: "TIP4_Royalty",
             collapsable: false,
-            link: "/docs/specifications/royalty.md",
+            link: "/specification/tip4_royalty.md",
           },
           {
             text: "TIP4-4 On-Chain Storage",
             collapsable: false,
-            link: "/docs/specifications/44.md",
+            link: "/specification/tip4_4.md",
           },
           {
             text: "TIP4-5 Don't be Evil Licensing",
             collapsable: false,
-            link: "/docs/specifications/45.md",
+            link: "/specification/tip4_5.md",
           },
           {
             text: "TIP4-6 Upgradeable NFT",
             collapsable: false,
-            link: "/docs/specifications/46.md",
+            link: "/specification/tip4_6.md",
           },
           {
             text: "TIP-6.1",
             collapsable: false,
-            link: "/docs/specifications/6.md",
+            link: "/specification/tip6.md",
           },
         ],
       },
       {
         text: "Getting Started",
         collapsable: false,
-        link: "/docs/gettingStarted/ToC.md",
+        link: "/gettingStarted/toc.md",
         items: [
           {
             text: "Setup",
@@ -122,71 +164,75 @@ module.exports = {
               {
                 text: "Basic Project Setup",
                 collapsable: false,
-                link: "/docs/gettingStarted/BasicProjectSetup.md",
+                link: "/gettingStarted/basicProjectSetup.md",
               },
               {
                 text: "Locklift Config Setup",
                 collapsable: false,
-                link: "/docs/gettingStarted/LockliftConfigSetting.md",
+                link: "/gettingStarted/lockliftConfigSetting.md",
               },
             ],
           },
           {
             text: "Local Environment",
             collapsable: false,
-            link: "/docs/gettingStarted/HelperScripts.md",
+            link: "/gettingStarted/helperScripts.md",
           },
           {
             text: "Deploy Account",
             collapsable: false,
-            link: "/docs/gettingStarted/DeployAccount.md",
+            link: "/gettingStarted/deployAccount.md",
           },
         ],
       },
       {
         text: "Usage and Deployment",
         collapsable: false,
-        link: "/docs/usage/toc.md",
+        link: "/usageAndDeployment/toc.md",
         items: [
           {
             text: "Prerequisites",
             collapsable: false,
-            link: "/docs/usage/pre.md",
+            link: "/usageAndDeployment/prerequisites.md",
           },
           {
             text: "Deploying Collection",
             collapsable: false,
-            link: "/docs/usage/deployingCollection.md",
+            link: "/usageAndDeployment/deployingCollection.md",
           },
           {
             text: "Minting Nft",
             collapsable: false,
-            link: "/docs/usage/mintingNft.md",
+            link: "/usageAndDeployment/mintingNft.md",
           },
           {
             text: "Finding Nft by Indexes",
             collapsable: false,
-            link: "/docs/usage/findingNftByIndexes.md",
+            link: "/usageAndDeployment/findingNftByIndexes.md",
           },
           {
             text: "Transferring Nft",
             collapsable: false,
-            link: "/docs/usage/transferringNft.md",
+            link: "/usageAndDeployment/transferringNft.md",
           },
           {
             text: "Burning Nft",
             collapsable: false,
-            link: "/docs/usage/burningNft.md",
+            link: "/usageAndDeployment/burningNft.md",
           },
           {
             text: "Upgradeable Nft",
             collapsable: false,
-            link: "/docs/usage/upgradeableNft.md",
+            link: "/usageAndDeployment/upgradeableNft.md",
           },
         ],
       },
-      { text: "FAQ", collapsable: false, link: "" },
-      { text: "API Reference", collapsable: false, link: "" },
+      { text: "FAQ", collapsable: false, link: "FAQ.md" },
+      {
+        text: "API Reference",
+        collapsable: false,
+        link: "apiReferences.md",
+      },
     ],
 
     socialLinks: [{ icon: "github", link: GITHUB_URL }],
