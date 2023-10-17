@@ -2,21 +2,21 @@
 
 <div class="deployToken">
 
-This section provides a tutorial on minting NFTs using the base collection that was deployed in the [previous section](./deployingCollection.md). The NFT contract, which was also discussed in the previous section, is the contract that will be minted.
+This section provides a tutorial on minting NFTs using the `CollectionWithRoyalty` that was deployed in the [previous section](./deployingCollection.md). The NFT contract, which was also discussed in the previous section, is the contract that will be minted.
 
-To mint an NFT, we require the relevant JSON object and the associated royalty information. Follow the steps below to learn how to prepare these parameters and mint an NFT through the base collection.
+To mint an NFT, we require the relevant JSON object and the associated royalty information. Follow the steps below to learn how to prepare these parameters and mint an NFT through the `CollectionWithRoyalty`.
 
 ::: info
-Please note that the deployable NFT contract inherits from the  `TIP4_3Nft` , resulting in the deployment of two index contracts via the constructor of the Base NFT contract.
+Please note that the deployable NFT contract inherits from the  `TIP4_3Nft` , resulting in the deployment of two index contracts via the constructor of the `NftWithRoyalty` contract.
 :::
 
-## Step 2: Write Minting Script
+## Step 1: Write Minting Script
 
 <span  :class="LLdis"  >
 
-The code sample below utilizes the state of the previously written script in the base collection deployment section and the Locklift tool to provide us with NFT minting functionality
+The code sample below utilizes the state of the previously written script in the `CollectionWithRoyalty` deployment section and the Locklift tool to provide us with NFT minting functionality
 
-add the following lines of code to the [previously written script](./deployingCollection.md#step-2-write-deployment-script) on deploying the base collection contract section.
+add the following lines of code to the [previously written script](./deployingCollection.md#step-2-write-deployment-script) on deploying the `CollectionWithRoyalty` contract section.
 
 ::: info
 Before we start to write our scripts we need to make sure that there is a file named `02-mint-nft.ts` in the `script` folder in the project root.
@@ -28,7 +28,7 @@ Before we start to write our scripts we need to make sure that there is a file n
 
 The code sample below is utilized to mint the nfts using `everscale-inpage-provider` tool.
 
-add the following lines of code to the [previously written script](./deployingCollection.md#step-2-write-deployment-script) on deploying the base collection contract section.
+add the following lines of code to the [previously written script](./deployingCollection.md#step-2-write-deployment-script) on deploying the `CollectionWithRoyalty` contract section.
 
 </span>
 
@@ -87,13 +87,13 @@ add the following lines of code to the [previously written script](./deployingCo
 
   // Minting the nft
   await collectionContract.methods
-    .mintNft({ json: nftJsonMetadata, royalty: royalty })
+    .mintNft({ _owner: account.address, _json: nftJsonMetadata, _royalty: royalty })
     .send({ from: account.address, amount: locklift.utils.toNano(3) });
 
   // Fetching thw newly minted nft data and making an instance of it
   const nftAddress: Address = (await collectionContract.methods.nftAddress({ answerId: 0, id: totalSupply }).call())
     .nft;
-  const nftContract: Contract<FactorySource["Nft"]> = locklift.factory.getDeployedContract("Nft", nftAddress);
+  const nftContract: Contract<FactorySource["NftWithRoyalty"]> = locklift.factory.getDeployedContract("NftWithRoyalty", nftAddress);
 
   console.log(`Nft number ${totalSupply} minted on: ${nftContract.address.toString()}`);
 
@@ -147,7 +147,7 @@ interface IRoyaltyStructure {
 }
 
 await collectionContract.methods
-      .mintNft({ json: json, royalty: royalty })
+      .mintNft({ _owner: account.address, _json: json, _royalty: royalty })
       .send({
         from: providerAddress,
         amount: String(3 * 10 ** 9),
@@ -164,7 +164,7 @@ const nftAddr: Address = (
 ).nft;
 
 // fetching the newly deployed nft contract
-const nftContract: Contract<FactorySource["Nft"]> = new provider.Contract(
+const nftContract: Contract<FactorySource["NftWithRoyalty"]> = new provider.Contract(
   nftAbi,
   nftAddr
 );
@@ -196,14 +196,14 @@ if (nftContractData.collection.toString() == CollectionAddr.toString()) {
 
 <div class="action">
 
-## Step 3: Mint the NFT
+## Step 2: Mint the NFT
 
 <div :class="llAction">
 
 Use this command to mint an nft:
 
 ```shell
-npx locklift run -s ./scripts/02-mint-nft.ts -n local
+npx locklift run -s ./scripts/02-mint-nft.ts
 ```
 <ImgContainer src= '/mintingNft.png' width="100%" altText="deployTip3Output" />
 
@@ -216,6 +216,10 @@ Congratulations, you have successfully deployed collection contract using the TI
 <p class=actionInName style="margin-bottom: 0;">Collection Address</p>
 
 <input ref="actionCollectionAddress" type="text" class="action Ain" />
+
+<p class=actionInName style="margin-bottom: 0;">Owner Address Address</p>
+
+<input ref="actionOwnerAddress" type="text" class="action Ain" />
 
 <p class=actionInName style="margin-bottom: 0;">Royalty Percentage</p>
 
@@ -325,6 +329,16 @@ export default defineComponent({
             this.loadingText = "Failed"
             return
         }
+
+        if (
+            this.$refs.actionOwnerAddress.value == ''
+
+        ){
+            toast("Nft owner address field is required !", 0)
+            this.loadingText = "Failed"
+            return
+        }
+
         let deployTokenRes;
         const royalty: IRoyaltyStructure =
         {
@@ -335,14 +349,16 @@ export default defineComponent({
         if(this.$refs.actionNftMetaDefault.checked){
             deployTokenRes = await mintNft(
                 this.$refs.actionCollectionAddress.value,
-                royalty
+                royalty,
+                this.$refs.actionOwnerAddress.value,
             )
         }else{
             deployTokenRes = await mintNft(
                 this.$refs.actionCollectionAddress.value,
+                royalty,
+                this.$refs.actionOwnerAddress.value,
                 this.$refs.actionNftMeta.value,
-                royalty
-            )
+)
         }
         // Rendering the output
         deployTokenRes = !deployTokenRes ? "Failed" :  deployTokenRes;

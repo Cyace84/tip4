@@ -13,7 +13,7 @@ In this section we will walk through on how to deploy an Account smart contract 
     </a>
   </div>
   <div class="bridge-section-row">
-    <a href="/gettingStarted/helperScripts.html">
+    <a href="/gettingStarted/localEnvironment.html">
       <span class="bridge-section">Local Environment</span>
     </a>
     <a href="/gettingStarted/deployAccount.html">

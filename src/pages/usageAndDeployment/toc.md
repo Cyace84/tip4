@@ -1,6 +1,6 @@
 # Standard Specification
 
-In this section we will walk you through the process of deploying the `BaseCollection` contract, Minting , transferring, burning and upgrading the Nfts using tools like `locklift` and `everscale-inpage-provider`.
+In this section we will walk you through the process of deploying the collection contract, Minting , transferring, burning and upgrading the Nfts using tools like `locklift` and `everscale-inpage-provider`.
 
 **Here you can find the mentioned topics in this section.**
 <div class="sections-container">

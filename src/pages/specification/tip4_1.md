@@ -1,6 +1,6 @@
 # TIP-4_1 (Non-Fungible Token)
 
-Requires: [TIP-6.1](.tip6.md)
+Requires: [TIP-6.1](./tip6.md)
 
 ## Overview
 

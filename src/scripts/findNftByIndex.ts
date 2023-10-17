@@ -5,12 +5,12 @@ import {
   ProviderRpcClient,
 } from "everscale-inpage-provider";
 
-import { factorySource, FactorySource } from "./build/factorySource";
 import isValidEverAddress from "./helpers/isValideverAddress";
+import { IndexTvc } from "./helpers/tvcExporter";
 import { useProviderInfo } from "./helpers/useProviders";
 import { zeroAddress } from "./helpers/zeroAddress";
 import { toast } from "../../src/helpers/toast";
-
+import { factorySource, FactorySource } from "../build/factorySource";
 export async function findNfts(
   collectionAddress: string = zeroAddress.toString()
 ): Promise<string[] | undefined | string> {
@@ -26,11 +26,8 @@ export async function findNfts(
 
       return "Failed";
     }
-    // Fetching the tvc and the code of the nft contract
-    const indexTvc: string = (
-      await (await fetch("/scripts/build/Index.base64")).text()
-    ).replace(/\r?\n|\r/g, "");
-    const indexCode: string = (await provider.splitTvc(indexTvc)).code!;
+
+    const indexCode: string = (await provider.splitTvc(IndexTvc)).code!;
 
     const nfts: string[] = [];
 

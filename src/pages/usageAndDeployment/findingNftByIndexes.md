@@ -87,7 +87,7 @@ run the following command to find all of the collection contracts:
 
 ````shell
 
-npx locklift run -s scripts/find-all-collections.ts -n local
+npx locklift run -s scripts/find-all-collections.ts
 
 ````
 ## Step 1: Write Searching Script
@@ -267,7 +267,7 @@ add the following lines of code to the [previously written script](./mintingNft.
 Use this command to find the nfts using indexing:
 
 ```shell
-npx locklift run -s ./scripts/03-find-nft-by-index.ts -n local
+npx locklift run -s ./scripts/03-find-nft-by-index.ts
 ```
 <ImgContainer src= '/findNftByIndex.png' width="100%" altText="deployTip3Output" />
 

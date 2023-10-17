@@ -6,10 +6,10 @@ import {
   Transaction,
 } from "everscale-inpage-provider";
 
-import { factorySource, FactorySource } from "./build/factorySource";
 import isValidEverAddress from "./helpers/isValideverAddress";
 import { useProviderInfo } from "./helpers/useProviders";
 import { toast } from "../../src/helpers/toast";
+import { factorySource, FactorySource } from "../build/factorySource";
 
 export async function transferNft(
   nftAddress: string,
@@ -31,12 +31,11 @@ export async function transferNft(
     }
 
     // Nft contract abi
-    const nftAbi: FactorySource["Nft"] = factorySource["Nft"];
+    const nftAbi: FactorySource["NftWithRoyalty"] =
+      factorySource["NftWithRoyalty"];
 
-    const nftContract: Contract<FactorySource["Nft"]> = new provider.Contract(
-      nftAbi,
-      new Address(nftAddress)
-    );
+    const nftContract: Contract<FactorySource["NftWithRoyalty"]> =
+      new provider.Contract(nftAbi, new Address(nftAddress));
 
     // deploying an nft from the collection contract
     const transferRes: Transaction = await nftContract.methods

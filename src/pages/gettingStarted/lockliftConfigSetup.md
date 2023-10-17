@@ -4,14 +4,14 @@ In this section we will learn how to use the TIP-4 contracts inside of our lockl
 
 ## Step 1: Add the External Contracts
 
-We must specify for the compiler that we have some external contracts in our `node_modules` folder, in this case the `Index`, `IndexBasis`, `TIP-4_1Collection`, `TIP4_1Nft`, `OwnableExternal` and `Account` contracts are needed to be specified.
+We must specify for the compiler that we have some external contracts in our `node_modules` folder, in this case the `Index`, `IndexBasis`, `CollectionWithRoyalty`, `NftWithRoyalty` and `Account` contracts are needed to be specified.
 
 Add this line to locklift.config.ts/compiler
 
 ```typescript
     externalContracts: {
       "node_modules/@broxus/tip4/precompiled": ["Index", "IndexBasis"],
-      "node_modules/@broxus/tip4/contracts/access": ["OwnableExternal", "OwnableInternal"],
+      "node_modules/@broxus/tip4/contracts": ["CollectionWithRoyalty", "NftWithRoyalty"],
       "node_modules/@broxus/contracts/contracts/wallets": ["Account"],
     },
 ```

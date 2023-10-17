@@ -6,11 +6,11 @@ import {
   Transaction,
 } from "everscale-inpage-provider";
 
-import { factorySource, FactorySource } from "./build/factorySource";
 import isValidEverAddress from "./helpers/isValideverAddress";
 import { useProviderInfo } from "./helpers/useProviders";
 import { zeroAddress } from "./helpers/zeroAddress";
 import { toast } from "../../src/helpers/toast";
+import { factorySource, FactorySource } from "../build/factorySource";
 
 export async function burnNft(nftAddress: string): Promise<string> {
   try {
@@ -24,12 +24,11 @@ export async function burnNft(nftAddress: string): Promise<string> {
     }
 
     // Nft contract abi
-    const nftAbi: FactorySource["Nft"] = factorySource["Nft"];
+    const nftAbi: FactorySource["NftWithRoyalty"] =
+      factorySource["NftWithRoyalty"];
 
-    const nftContract: Contract<FactorySource["Nft"]> = new provider.Contract(
-      nftAbi,
-      new Address(nftAddress)
-    );
+    const nftContract: Contract<FactorySource["NftWithRoyalty"]> =
+      new provider.Contract(nftAbi, new Address(nftAddress));
     const nftContractData = await nftContract.methods
       .getInfo({ answerId: 0 })
       .call();

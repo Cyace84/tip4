@@ -8,10 +8,15 @@ import {
   ProviderRpcClient,
 } from "everscale-inpage-provider";
 
-import { factorySource, FactorySource } from "./build/factorySource";
+import {
+  CollectionTvc,
+  IndexBasisTvc,
+  IndexTvc,
+  NftTvc,
+} from "./helpers/tvcExporter";
 import { useProviderInfo } from "./helpers/useProviders";
 import { toast } from "../../src/helpers/toast";
-
+import { factorySource, FactorySource } from "../build/factorySource";
 const defaultCollectionMetadata: string = JSON.stringify({
   type: "Basic NFT",
   name: "hell bite",
@@ -38,9 +43,10 @@ export async function deployBaseCollection(
     // let provider: ProviderRpcClient, providerAddress: Address;
     const [provider, providerAddress]: [ProviderRpcClient, Address] =
       await useProviderInfo();
+
     // Collection contract abi
-    const collectionAbi: FactorySource["Collection"] =
-      factorySource["Collection"];
+    const collectionAbi: FactorySource["CollectionWithRoyalty"] =
+      factorySource["CollectionWithRoyalty"];
 
     // Define the deployParams type
     type DeployParams<Abi> = GetExpectedAddressParams<Abi> & {
@@ -56,32 +62,20 @@ export async function deployBaseCollection(
     );
 
     // Fetching the tvc and the code of the nft contract
-    const collectionTvc: string = await (
-      await fetch("/scripts/build/Collection.base64")
-    ).text();
-    const nftTvc: string = (
-      await (await fetch("/scripts/build/Nft.base64")).text()
-    ).replace(/\r?\n|\r/g, "");
-    const indexTvc: string = (
-      await (await fetch("/scripts/build/Index.base64")).text()
-    ).replace(/\r?\n|\r/g, "");
-    const indexBasisTvc: string = (
-      await (await fetch("/scripts/build/IndexBasis.base64")).text()
-    ).replace(/\r?\n|\r/g, "");
-    const nftCode: string = (await provider.splitTvc(nftTvc)).code!;
-    const indexCode: string = (await provider.splitTvc(indexTvc)).code!;
-    const indexBasisCode: string = (await provider.splitTvc(indexBasisTvc))
+    const nftCode: string = (await provider.splitTvc(NftTvc)).code!;
+    const indexCode: string = (await provider.splitTvc(IndexTvc)).code!;
+    const indexBasisCode: string = (await provider.splitTvc(IndexBasisTvc))
       .code!;
     /**
      * Preparing deploy params to build the state init with the contract abi
      * @param deployer_ Its important to set this param to zero address when deploying the token root contract whiteout using an smart contract.
      */
-    const deployParams: DeployParams<FactorySource["Collection"]> = {
-      tvc: collectionTvc,
+    const deployParams: DeployParams<FactorySource["CollectionWithRoyalty"]> = {
+      tvc: CollectionTvc,
       workchain: 0,
       publicKey: senderPublicKey,
       initParams: {
-        _randomNonce: (Math.random() * 6400) | 0,
+        nonce_: (Math.random() * 6400) | 0,
       },
     };
 
@@ -106,14 +100,14 @@ export async function deployBaseCollection(
     });
 
     // Create a contract instance
-    const collectionContract: Contract<FactorySource["Collection"]> =
+    const collectionContract: Contract<FactorySource["CollectionWithRoyalty"]> =
       new provider.Contract(collectionAbi, expectedAddress);
 
     // Call the contract constructor
     const { transaction: deployRes } = await collectionContract.methods
       .constructor({
         codeNft: nftCode,
-        ownerPubkey: `0x${deployParams.publicKey!}`,
+        owner: providerAddress,
         json: json,
         codeIndex: indexCode,
         codeIndexBasis: indexBasisCode,

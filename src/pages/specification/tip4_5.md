@@ -1,7 +1,7 @@
 # TIP-4_5 (Non-Fungible Licensing)
 
-Requires: TIP-4.1 Requires: TIP-6.1
-
+Requires: [TIP-4.1](./tip4_1.md)\
+Requires: [TIP-6.1](./tip6.md)
 # Overview
 
 The NFT License standard is a set of functions for retrieving license information's. This interface allows external callers to access the license URI and the license name associated with a specific entity. The preferred but not mandatory method of storing license links is using IPFS. A collection of NFT licenses can be obtained via a link.

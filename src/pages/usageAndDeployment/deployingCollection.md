@@ -2,282 +2,15 @@
 
 <div class="deployToken">
 
-In this section, we will explore the process of deploying the "base collection" contract. As explained earlier in the [Base Collection](../specification/baseCollection.md) section, the base collection contract inherits from other TIP4 Collection contracts and combines all the functionalities of the inherited contracts into one. We will utilize the collection contracts from the following parts of the standard to deploy the base collection contract:
+In this section, we will explore the process of deploying the `CollectionWithRoyalty` contract. As explained earlier in the [Collection](../specification/collection.md) section, the `CollectionWithRoyalty` contract inherits from other TIP4 Collection contracts and combines all the functionalities of the inherited contracts into one.
 
-- [TIP4_1](/src/pages/specification/tip4_1.md)
-- [TIP4_2](/src/pages/specification/tip4_2.md)
-- [TIP4_3](/src/pages/specification/tip4_3.md)
-- [TIP4_royalty](/src/pages/specification/tip4_royalty.md)
-
-These mentioned collection contracts will provide us with the foundational functionality of the existing NFT standards, along with an additional feature called "Indexing" [found in the specification](/src/pages/specification/tip4_3.md). Follow the steps below to learn how to deploy the base collection contract:
+These mentioned collection contracts will provide us with the foundational functionality of the existing NFT standards, along with an additional feature called  [`Indexing`](../specification/tip4_3.md). Follow the steps below to learn how to deploy the collection contract:
 
 ## Step 1: Prepare the Contracts
 
-### Nft Contract
-
-The base NFT contract inherits from other standard NFT contracts and includes the implementation of burning logic. It overrides the functions responsible for deploying or destroying index contracts as well. The following code demonstrates the implementation of the base NFT contract along with these explanations.
-
-<details>
-<summary> show code</summary>
-
-````solidity
-pragma ever-solidity >= 0.61.2;
-
-pragma AbiHeader expire;
-pragma AbiHeader time;
-pragma AbiHeader pubkey;
-
-import '@broxus/tip4/contracts/TIP4_2/TIP4_2Nft.tsol';
-import '@broxus/tip4/contracts/TIP4_3/TIP4_3Nft.tsol';
-import '@broxus/tip4/contracts/TIP4_royalty/TIP4_royaltyNft.tsol';
-import '@broxus/tip4/contracts/TIP4_royalty/structures/IRoyaltyStructure.tsol';
-import "@broxus/tip4/contracts/interfaces/IBurnableCollection.tsol";
-
-
-contract Nft is TIP4_2Nft, TIP4_3Nft, TIP4_royaltyNft {
-
-    constructor(
-        address owner,
-        address sendGasTo,
-        uint128 remainOnNft,
-        string json,
-        Royalty royalty,
-        uint128 indexDeployValue,
-        uint128 indexDestroyValue,
-        TvmCell codeIndex
-    ) TIP4_1Nft (
-        owner,
-        sendGasTo,
-        remainOnNft
-    ) TIP4_2Nft (
-        json
-    ) TIP4_3Nft (
-        indexDeployValue,
-        indexDestroyValue   ,
-        codeIndex
-    ) TIP4_royaltyNft (
-        royalty
-    ) public {
-        tvm.accept();
-    }
-
-    function _beforeTransfer(
-        address to,
-        address sendGasTo,
-        mapping(address => CallbackParams) callbacks
-    ) internal virtual override(TIP4_1Nft, TIP4_3Nft) {
-        TIP4_3Nft._destructIndex(sendGasTo);
-    }
-
-    function _afterTransfer(
-        address to,
-        address sendGasTo,
-        mapping(address => CallbackParams) callbacks
-    ) internal virtual override(TIP4_1Nft, TIP4_3Nft) {
-        TIP4_3Nft._deployIndex();
-    }
-
-    function _beforeChangeOwner(
-        address oldOwner,
-        address newOwner,
-        address sendGasTo,
-        mapping(address => CallbackParams) callbacks
-    ) internal virtual override(TIP4_1Nft, TIP4_3Nft) {
-        TIP4_3Nft._destructIndex(sendGasTo);
-    }
-
-    function _afterChangeOwner(
-        address oldOwner,
-        address newOwner,
-        address sendGasTo,
-        mapping(address => CallbackParams) callbacks
-    ) internal virtual override(TIP4_1Nft, TIP4_3Nft) {
-        TIP4_3Nft._deployIndex();
-    }
-
-    function burn(
-        address sendGasTo,
-        address callbackTo,
-        TvmCell callbackPayload
-    ) external virtual onlyManager {
-        tvm.accept();
-        IBurnableCollection(_collection).acceptNftBurn{
-            value: 0,
-            flag: 128 + 32,
-            bounce: false
-        }(
-            _id,
-            _owner,
-            _manager,
-            sendGasTo,
-            callbackTo,
-            callbackPayload
-        );
-    }
-}
-
-````
-
-</details>
-
-
-### Collection Contract
-
-As mentioned earlier, the base collection contract also inherits from other parts of the standard collection contracts. The base collection contract must import them and feed their constructors. It also must manage the process of minting and burning the NFT contract as well.
-
-Additionally, some functions of the other collection contracts must be re-implemented and overwritten by the base collection. The contract code below will provide us with the expected functionality:
-
-<details>
-<summary> show code</summary>
-
-```` solidity
-pragma ever-solidity >= 0.61.2;
-
-pragma AbiHeader expire;
-pragma AbiHeader time;
-pragma AbiHeader pubkey;
-
-import "@broxus/tip4/contracts/interfaces/IAcceptNftBurnCallback.tsol";
-import "@broxus/tip4/contracts/interfaces/IBurnableCollection.tsol";
-
-import '@broxus/tip4/contracts/access/OwnableExternal.tsol';
-import '@broxus/tip4/contracts/TIP4_2/TIP4_2Collection.tsol';
-import '@broxus/tip4/contracts/TIP4_3/TIP4_3Collection.tsol';
-import '@broxus/tip4/contracts/TIP4_royalty/structures/IRoyaltyStructure.tsol';
-import './Nft.tsol';
-
-contract Collection is TIP4_2Collection, TIP4_3Collection, OwnableExternal, IRoyaltyStructure, IBurnableCollection {
-
-    uint32 static _randomNonce;
-
-    /**
-    * Errors
-    **/
-
-    uint8 constant sender_is_not_owner = 100;
-    uint8 constant value_is_less_than_required = 101;
-
-    /// _remainOnNft - the number of crystals that will remain after the entire mint
-    /// process is completed on the Nft contract
-    uint128 _remainOnNft;
-
-    constructor(
-        TvmCell codeNft,
-        uint256 ownerPubkey,
-        string json,
-        TvmCell codeIndex,
-        TvmCell codeIndexBasis,
-        uint128 remainOnNft
-    ) OwnableExternal (
-        ownerPubkey
-    ) TIP4_1Collection (
-        codeNft
-    ) TIP4_2Collection (
-        json
-    ) TIP4_3Collection (
-        codeIndex,
-        codeIndexBasis
-    ) public {
-        tvm.accept();
-        tvm.rawReserve(1 ever, 0);
-        _remainOnNft = remainOnNft;
-    }
-
-    function mintNft(string json, Royalty royalty) external virtual {
-        require(msg.value > _remainOnNft + 0.1 ever, value_is_less_than_required);
-        tvm.rawReserve(0, 4);
-
-        uint256 id = uint256(_totalSupply);
-        _totalSupply++;
-        TvmCell codeNft = _buildNftCode(address(this));
-        TvmCell stateNft = _buildNftState(codeNft, id);
-        address nftAddr = new Nft{
-            stateInit: stateNft,
-            value: 0,
-            flag: 128
-        }(
-            msg.sender,
-            msg.sender,
-            _remainOnNft,
-            json,
-            royalty,
-            _indexDeployValue,
-            _indexDestroyValue,
-            _codeIndex
-        );
-
-        emit NftCreated(
-            id,
-            nftAddr,
-            msg.sender,
-            msg.sender,
-            msg.sender
-        );
-
-    }
-
-    function setRemainOnNft(uint128 remainOnNft) external virtual {
-        require(TIP4_1Collection._isOwner(), sender_is_not_owner);
-        _remainOnNft = remainOnNft;
-    }
-
-    function _isOwner() internal override onlyOwner returns(bool){
-        return true;
-    }
-
-    function _buildNftState(
-        TvmCell code,
-        uint256 id
-    ) internal virtual override(TIP4_2Collection, TIP4_3Collection) pure returns (TvmCell) {
-        return tvm.buildStateInit({
-            contr: Nft,
-            varInit: {_id: id},
-            code: code
-        });
-    }
-
-	function acceptNftBurn(
-		uint256 _id,
-		address _owner,
-		address _manager,
-		address _sendGasTo,
-		address _callbackTo,
-		TvmCell _callbackPayload
-	) external override {
-		require(msg.sender.value != 0 && _resolveNft(_id) == msg.sender, 100);
-
-		_totalSupply--;
-		emit NftBurned(_id, msg.sender, _owner, _manager);
-
-		if (_callbackTo.value != 0) {
-			IAcceptNftBurnCallback(_callbackTo).onAcceptNftBurn{
-				value: 0,
-				flag: 64 + 2,
-				bounce: false
-			}(
-				address(this),
-				_id,
-				msg.sender,
-				_owner,
-				_manager,
-				_sendGasTo,
-				_callbackPayload
-			);
-		} else {
-			_sendGasTo.transfer({
-				value: 0,
-				flag: 64 + 2,
-				bounce: false
-			});
-		}
-	}
-}
-````
-</details>
-
 ### Build the Contracts Artifacts
 
-run the command below into your terminal to build the written contracts artifacts:
+run the command below into your terminal to build the mentioned contracts in the [Locklift Config Setup](../gettingStarted/lockliftConfigSetup.md) artifacts in your `locklift project`:
 
 ````shell
 
@@ -289,13 +22,14 @@ npx locklift build
 
 In order to deploy a contract using the `everscale-inpage-provider` tool we need the target contracts code and tvc.
 
-Copy the build folder generated by the mentioned build command into the scripts folder of your project that using the `everscale-inpage-provider`.
+Copy the build folder generated by the mentioned build command into the scripts folder of your `everscale-inpage-provider` project.
+
 
 ## Step 2: Write Deployment Script
 
 <span  :class="LLdis"  >
 
-The code sample below written in `TS` will deploy the base collection contract with the help of the `Locklift` tool.
+The code sample below written in `TS` will deploy the `CollectionWithRoyalty` contract with the help of the `Locklift` tool.
 
 ::: info
 Before we start to write our scripts we need to make sure that there is a file named `01-deploy-base-collection.ts` in the `script` folder in the project root.
@@ -305,7 +39,7 @@ Before we start to write our scripts we need to make sure that there is a file n
 
 <span :class="EIPdis"  >
 
-The code sample below is utilized to deploy the base collection contract using `everscale-inpage-provider` tool.
+The code sample below is utilized to deploy the `CollectionWithRoyalty` contract using `everscale-inpage-provider` tool.
 
 </span>
 
@@ -343,13 +77,13 @@ async function main() {
   const signer: Signer = (await locklift.keystore.getSigner("0"))!;
 
   // uncomment if deploying a new account
-  //   const { contract: Account } = await locklift.factory.deployContract({
-  //     contract: "Account",
-  //     publicKey: signer.publicKey,
-  //     constructorParams: {},
-  //     initParams: { _randomNonce: locklift.utils.getRandomNonce() },
-  //     value: locklift.utils.toNano(20),
-  //   });
+  // const { contract: Account } = await locklift.factory.deployContract({
+  //   contract: "Account",
+  //   publicKey: signer.publicKey,
+  //   constructorParams: {},
+  //   initParams: { _randomNonce: locklift.utils.getRandomNonce() },
+  //   value: locklift.utils.toNano(20),
+  // });
 
   // Adding an existing SafeMultiSig Account using its address
   const account: Account = await locklift.factory.accounts.addExistingAccount({
@@ -363,23 +97,24 @@ async function main() {
   const indexBasisCode = locklift.factory.getContractArtifacts("IndexBasis").code;
 
   const { contract: collectionContract } = await locklift.factory.deployContract({
-    contract: "Collection",
+    contract: "CollectionWithRoyalty",
     publicKey: signer.publicKey,
     constructorParams: {
-      codeNft: locklift.factory.getContractArtifacts("Nft").code,
-      ownerPubkey: `0x${signer.publicKey}`,
+      codeNft: locklift.factory.getContractArtifacts("NftWithRoyalty").code,
+      owner: account.address,
       json: collectionJsonMetadata,
       codeIndex: indexCode,
       codeIndexBasis: indexBasisCode,
-      remainOnNft : locklift.utils.toNano("2")
+      remainOnNft: locklift.utils.toNano("2"),
     },
     initParams: {
-      _randomNonce: locklift.utils.getRandomNonce(),
+      nonce_: locklift.utils.getRandomNonce(),
     },
     value: locklift.utils.toNano(10),
   });
 
   console.log(`collection deployed to: ${collectionContract.address.toString()}`);
+
 }
 main()
   .then(res => {
@@ -393,7 +128,6 @@ main()
 ````
 
 ````typescript [everscale-inpage-provider]
-
 // Import the following libraries
 import {
   Address,
@@ -401,14 +135,13 @@ import {
   Contract,
   ProviderApiResponse,
   FullContractState,
-  Transaction,
   ProviderRpcClient,
 } from "everscale-inpage-provider";
 
-import { factorySource, FactorySource } from "./artifacts/build/factorySource"; // copied build folder
+import { factorySource, FactorySource } from "./build/factorySource";
 import { useProviderInfo } from "./helpers/useProviders";
 
-const collectionJsonMetadata: string = JSON.stringify({
+const defaultCollectionMetadata: string = JSON.stringify({
   type: "Basic NFT",
   name: "hell bite",
   description: "The red daemons from hell",
@@ -427,18 +160,16 @@ const collectionJsonMetadata: string = JSON.stringify({
   external_url: "https://images.pexels.com",
 });
 
-export async function main(
-  json: string = collectionJsonMetadata
+export async function deployBaseCollection(
+  json: string = defaultCollectionMetadata
 ): Promise<string> {
   try {
-
     // let provider: ProviderRpcClient, providerAddress: Address;
     const [provider, providerAddress]: [ProviderRpcClient, Address] =
       await useProviderInfo();
-
     // Collection contract abi
-    const collectionAbi: FactorySource["Collection"] =
-      factorySource["Collection"];
+    const collectionAbi: FactorySource["CollectionWithRoyalty"] =
+      factorySource["CollectionWithRoyalty"];
 
     // Define the deployParams type
     type DeployParams<Abi> = GetExpectedAddressParams<Abi> & {
@@ -453,33 +184,36 @@ export async function main(
       accountFullState.boc
     );
 
-    // Fetching the tvc and the code of the nft contract
+    /*
+      Fetching the tvc and the code of the nft contract
+      @notice the replace() function is utilized to avoid any line because of the back slashes in the .base64(tvc) files
+    */
     const collectionTvc: string = await (
-      await fetch("/scripts/artifacts/build/Collection.base64")
+      await fetch("/scripts/build/CollectionWithRoyalty.base64")
     ).text();
-    const nftTvc: string = await (
-      await fetch("/scripts/artifacts/build/Nft.base64")
-    ).text();
-    const indexTvc: string = await (
-      await fetch("/scripts/artifacts/build/Index.base64")
-    ).text();
-    const indexBasisTvc: string = await (
-      await fetch("/scripts/artifacts/build/IndexBasis.base64")
-    ).text();
+    const nftTvc: string = (
+      await (await fetch("/scripts/build/NftWithRoyalty.base64")).text()
+    ).replace(/\r?\n|\r/g, "");
+    const indexTvc: string = (
+      await (await fetch("/scripts/build/Index.base64")).text()
+    ).replace(/\r?\n|\r/g, "");
+    const indexBasisTvc: string = (
+      await (await fetch("/scripts/build/IndexBasis.base64")).text()
+    ).replace(/\r?\n|\r/g, "");
     const nftCode: string = (await provider.splitTvc(nftTvc)).code!;
     const indexCode: string = (await provider.splitTvc(indexTvc)).code!;
-    const indexBasisCode: string = (await provider.splitTvc(indexBasisTvc)).code!;
-
+    const indexBasisCode: string = (await provider.splitTvc(indexBasisTvc))
+      .code!;
     /**
      * Preparing deploy params to build the state init with the contract abi
      * @param deployer_ Its important to set this param to zero address when deploying the token root contract whiteout using an smart contract.
      */
-    const deployParams: DeployParams<FactorySource["Collection"]> = {
+    const deployParams: DeployParams<FactorySource["CollectionWithRoyalty"]> = {
       tvc: collectionTvc,
       workchain: 0,
       publicKey: senderPublicKey,
       initParams: {
-        _randomNonce: (Math.random() * 6400) | 0,
+        nonce_: (Math.random() * 6400) | 0,
       },
     };
 
@@ -504,18 +238,18 @@ export async function main(
     });
 
     // Create a contract instance
-    const collectionContract: Contract<FactorySource["Collection"]> =
+    const collectionContract: Contract<FactorySource["CollectionWithRoyalty"]> =
       new provider.Contract(collectionAbi, expectedAddress);
 
     // Call the contract constructor
     const { transaction: deployRes } = await collectionContract.methods
       .constructor({
         codeNft: nftCode,
-        ownerPubkey: `0x${deployParams.publicKey!}`,
+        owner: providerAddress,
         json: json,
         codeIndex: indexCode,
         codeIndexBasis: indexBasisCode,
-        remainOnNft : locklift.utils.toNano("2")
+        remainOnNft: String(2 * 10 ** 9),
       })
       .sendExternal({
         stateInit: stateInit.stateInit,
@@ -528,16 +262,18 @@ export async function main(
     ).count;
 
     if (totalSupply == "0") {
-      console.log( `TIP4_1 collection deployed to ${expectedAddress.toString()}`);
+      console.log(`TIP4_1 collection deployed to ${expectedAddress.toString()}`);
     } else {
-      throw new Error( `TIP4_1 collection deployment failed ! ${
+      console.log( `TIP4_1 collection deployment failed ! ${
         (deployRes.exitCode, deployRes.resultCode)
       }`);
     }
   } catch (err: any) {
-    throw new Error(err.message);
+    console.log(err.message);
   }
 }
+
+
 
 ````
 
@@ -548,14 +284,14 @@ export async function main(
 
 <div class="action">
 
-## Step 3: Deploy the Base Collection
+## Step 3: Deploy the CollectionWithRoyalty
 
 <div :class="llAction">
 
-Use this command to deploy base collection contract:
+Use this command to deploy CollectionWithRoyalty contract:
 
 ```shell
-npx locklift run -s ./scripts/01-deploy-base-collection.ts -n local
+npx locklift run -s ./scripts/01-deploy-base-collection.ts
 ```
 <ImgContainer src= '/deployingBaseCollection.png' width="100%" altText="deployTip3Output" />
 

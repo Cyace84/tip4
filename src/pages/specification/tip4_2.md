@@ -72,16 +72,17 @@ The JSON object below is utilized for the metadata of the `TIP-4_2Collection` co
 ````json
 {
   "type": "Basic NFT",
-  "name": "Revolt Agents",
-  "description":
-    "A curated collection of 10,000 Agents from the Venom blockchain deployed on a mission to take over Web3",
+  "name": "hell bite",
+  "description": "The red daemons from hell",
   "preview": {
-    "source": "https://bafybeify5q7od6cthzgxjkdy22qtrxtxzl5hro7rbh3oyg2rxs736eept4.ipfs.w3s.link/images/1.jpeg",
+    "source":
+      "https://images.pexels.com/photos/16115934/pexels-photo-16115934/free-photo-of-spooky-traditional-figurine.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "mimetype": "image/JPEG",
   },
   "files": [
     {
-      "source": "https://bafybeify5q7od6cthzgxjkdy22qtrxtxzl5hro7rbh3oyg2rxs736eept4.ipfs.w3s.link/images/1.jpeg",
+      "source":
+        "https://images.pexels.com/photos/16115934/pexels-photo-16115934/free-photo-of-spooky-traditional-figurine.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "mimetype": "image/JPEG",
     },
   ],

@@ -86,7 +86,7 @@ add the following lines of code to the [previously written script](./transferrin
 Use this command to find the nfts using indexing:
 
 ```shell
-npx locklift run -s ./scripts/05-burn-nft.ts -n local
+npx locklift run -s ./scripts/05-burn-nft.ts
 ```
 <ImgContainer src= '/burningNft.png' width="100%" altText="deployTip3Output" />
 

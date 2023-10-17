@@ -41,9 +41,8 @@ module.exports = {
     "src/pages/architecture.md": "architecture.md",
 
     "src/pages/specification/toc.md": "specification/toc.md",
-    "src/pages/specification/baseCollection.md":
-      "specification/baseCollection.md",
-    "src/pages/specification/baseNFT.md": "specification/baseNFT.md",
+    "src/pages/specification/collection.md": "specification/collection.md",
+    "src/pages/specification/NFT.md": "specification/NFT.md",
     "src/pages/specification/tip4_1.md": "specification/tip4_1.md",
     "src/pages/specification/tip4_2.md": "specification/tip4_2.md",
     "src/pages/specification/tip4_3.md": "specification/tip4_3.md",
@@ -56,8 +55,8 @@ module.exports = {
     "src/pages/gettingStarted/toc.md": "gettingStarted/toc.md",
     "src/pages/gettingStarted/basicProjectSetup.md":
       "gettingStarted/basicProjectSetup.md",
-    "src/pages/gettingStarted/lockliftConfigSetting.md":
-      "gettingStarted/lockliftConfigSetting.md",
+    "src/pages/gettingStarted/lockliftConfigSetup.md":
+      "gettingStarted/lockliftConfigSetup.md",
     "src/pages/gettingStarted/localEnvironment.md":
       "gettingStarted/localEnvironment.md",
     "src/pages/gettingStarted/deployAccount.md":
@@ -76,6 +75,8 @@ module.exports = {
       "usageAndDeployment/transferringNft.md",
     "src/pages/usageAndDeployment/burningNft.md":
       "usageAndDeployment/burningNft.md",
+    "src/pages/usageAndDeployment/upgradeableNft.md":
+      "usageAndDeployment/upgradeableNft.md",
     "src/pages/apiReferences.md": "apiReferences.md",
     "src/pages/FAQ.md": "FAQ.md",
   },
@@ -105,14 +106,14 @@ module.exports = {
         link: "/specification/toc.md",
         items: [
           {
-            text: "Base Collection",
+            text: "Collection",
             collapsable: false,
-            link: "/specification/baseCollection.md",
+            link: "/specification/collection.md",
           },
           {
-            text: "Base NFT",
+            text: "NFT",
             collapsable: false,
-            link: "/specification/baseNFT.md",
+            link: "/specification/NFT.md",
           },
           {
             text: "TIP4-1 Non-Fungible Token",
@@ -180,7 +181,7 @@ module.exports = {
           {
             text: "Local Environment",
             collapsable: false,
-            link: "/gettingStarted/helperScripts.md",
+            link: "/gettingStarted/localEnvironment.md",
           },
           {
             text: "Deploy Account",

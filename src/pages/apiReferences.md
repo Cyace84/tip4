@@ -2,7 +2,7 @@
 
 ## Other NFt Standards:
 
-- [TIP-4 Implementation ](https://github.com/broxus/tip4)
+- [TIP-4 Broxus Implementation ](https://github.com/broxus/tip4)
 - [Ethereum EIP-721](https://eips.ethereum.org/EIPS/eip-721)
 - [Solana v1.2.0](https://docs.metaplex.com/token-metadata/specification)
 - [TON NFT](https://github.com/ton-blockchain/TIPs/issues/62), [TON DATA](https://github.com/ton-blockchain/TIPs/issues/64)

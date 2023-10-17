@@ -81,7 +81,7 @@ has a pre-installed contract with the initial amount of EVERs. For other network
 Use this command and deploy account:
 
 ```shell
-npx locklift run -s ./scripts/00-deploy-account.ts -n local
+npx locklift run -s ./scripts/00-deploy-account.ts  
 ```
 <ImgContainer src= '/deployAccOutput.png' width="100%"  altText="deployAccountOutput" />
 

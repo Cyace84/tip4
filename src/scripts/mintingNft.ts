@@ -6,10 +6,10 @@ import {
   Transaction,
 } from "everscale-inpage-provider";
 
-import { factorySource, FactorySource } from "./build/factorySource";
 import isValidEverAddress from "./helpers/isValideverAddress";
 import { useProviderInfo } from "./helpers/useProviders";
 import { toast } from "../../src/helpers/toast";
+import { factorySource, FactorySource } from "../build/factorySource";
 
 // Preparing the json metadata object
 const defaultNftMetadata: string = JSON.stringify({
@@ -50,12 +50,17 @@ interface IRoyaltyStructure {
 export async function mintNft(
   CollectionAddr: string,
   royalty: IRoyaltyStructure,
+  receiver: string,
   json: string = defaultNftMetadata
 ): Promise<string> {
   try {
     const [provider, providerAddress]: [ProviderRpcClient, Address] =
       await useProviderInfo();
+    if (!isValidEverAddress(provider, receiver)) {
+      toast("Please enter a valid Nft owner address !", 0);
 
+      return "Failed";
+    }
     if (!isValidEverAddress(provider, CollectionAddr)) {
       toast("Please enter a valid collection address !", 0);
 
@@ -67,11 +72,12 @@ export async function mintNft(
       return "Failed";
     }
     // Collection and the Nft contracts abis
-    const collectionAbi: FactorySource["Collection"] =
-      factorySource["Collection"];
-    const nftAbi: FactorySource["Nft"] = factorySource["Nft"];
+    const collectionAbi: FactorySource["CollectionWithRoyalty"] =
+      factorySource["CollectionWithRoyalty"];
+    const nftAbi: FactorySource["NftWithRoyalty"] =
+      factorySource["NftWithRoyalty"];
 
-    const collectionContract: Contract<FactorySource["Collection"]> =
+    const collectionContract: Contract<FactorySource["CollectionWithRoyalty"]> =
       new provider.Contract(collectionAbi, new Address(CollectionAddr));
     collectionContract.getFullState;
     // deploying an nft from the collection contract
@@ -85,7 +91,11 @@ export async function mintNft(
       receiver: new Address(royalty.receiver),
     };
     const mintRes: Transaction = await collectionContract.methods
-      .mintNft({ json: json, royalty: royaltyInfo })
+      .mintNft({
+        _owner: new Address(receiver),
+        _json: json,
+        _royalty: royaltyInfo,
+      })
       .send({
         from: providerAddress,
         amount: String(2 * 10 ** 9),
@@ -106,10 +116,8 @@ export async function mintNft(
     ).nft;
 
     // fetching the newly deployed nft contract
-    const nftContract: Contract<FactorySource["Nft"]> = new provider.Contract(
-      nftAbi,
-      nftAddr
-    );
+    const nftContract: Contract<FactorySource["NftWithRoyalty"]> =
+      new provider.Contract(nftAbi, nftAddr);
 
     // fetching
     const nftContractData = await nftContract.methods

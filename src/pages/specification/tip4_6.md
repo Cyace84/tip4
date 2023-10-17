@@ -1,7 +1,7 @@
 # TIP-4.6 (Upgradeable NFT)
 
-Requires: TIP-4.1 Requires: TIP-6.1
-
+Requires: [TIP-4.1](./tip4_1.md)\
+Requires: [TIP-6.1](./tip6.md)
 ## Overview
 
 This standard describes the operation of upgradeable NFT contracts. This is based on TIP-4.1 and does not describe the functionality proposed there.

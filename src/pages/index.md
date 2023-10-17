@@ -3,8 +3,7 @@ This documentation is describes the concept of implementing distributed non-fung
 
 ::: info
 
-This documentation has been developed by the [Broxus team](https://broxus.com/) and provides a unique implementation of the TIP4 contracts. All rights pertaining to this documentation project are exclusively reserved for the Broxus team.
-
+This documentation has been developed by the [Broxus team](https://broxus.com/) and provides a unique implementation of the TIP4 contracts.
 :::
 
 ## Abstract

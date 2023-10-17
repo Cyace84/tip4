@@ -1,7 +1,7 @@
-# Setup of TIP-4 Contracts in a Project
+# Basic TIP-4 Contracts Project Setup
 
-This guide will walk you through the process of setting up a project with TIP-4 contracts.
-Although the TIP4 standard already has couple of implementations such as [itgoldio](https://github.com/itgoldio/everscale-tip) or [grandbazar](https://github.com/grandbazar-io/everscale-tip4-contracts) implementations, we prefer to implement the TIP4 `BaseCollection` and `BaseNft` contracts ourselves and understand what happens under the hood.
+This guide will walk you through the process of setting up a locklift project with TIP-4 contracts.
+Although the TIP4 standard already has couple of implementations such as [itgoldio](https://github.com/itgoldio/everscale-tip) or [grandbazar](https://github.com/grandbazar-io/everscale-tip4-contracts) implementations, We would prefer to proceed with the implementation provided by Broxus.
 
 ## Prerequisites
 First, make sure you have the nodeJs and npm installed on your machine.

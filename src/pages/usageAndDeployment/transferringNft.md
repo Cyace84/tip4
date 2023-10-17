@@ -112,7 +112,7 @@ await nftContract.methods
 Use this command to find the nfts using indexing:
 
 ```shell
-npx locklift run -s ./scripts/03-find-nft-by-index.ts -n local
+npx locklift run -s ./scripts/03-find-nft-by-index.ts
 ```
 <ImgContainer src= '/transferNft.png' width="100%" altText="deployTip3Output" />
 

@@ -15,6 +15,6 @@
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true
   },
-  "include": ["src/**/*.ts", "src/**/*.vue", "src/**/*.md", ".vitepress/**/*", "scripts/**/*"],
+  "include": ["src/**/*.ts", "src/**/*.vue", "src/**/*.md", ".vitepress/**/*", "scripts/**/*", "src/build"],
   "exclude": ["node_modules"]
 }
