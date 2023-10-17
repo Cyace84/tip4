@@ -17,7 +17,7 @@ Before we start to write our scripts we need to make sure that there is a file n
   locklift is a globally declared variable
 */
 
-import { Signer, WalletTypes, Address } from "locklift";
+import { Signer, WalletTypes } from "locklift";
 
 async function main() {
 

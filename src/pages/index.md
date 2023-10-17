@@ -1,5 +1,11 @@
 # Introduction
-This documentation describes the concept of implementing distributed non-fungible tokens (NFTs) on the TVM (Ton Virtual Machine) based blockchains. The standard aims to provide a professional and standardized API for NFTs within smart contracts.
+This documentation is describes the concept of implementing distributed non-fungible tokens (NFTs) on the TVM (TON Virtual Machine) based blockchains. The standard aims to provide a professional and standardized API for NFTs within smart contracts.
+
+::: info
+
+This documentation has been developed by the [Broxus team](https://broxus.com/) and provides a unique implementation of the TIP4 contracts. All rights pertaining to this documentation project are exclusively reserved for the Broxus team.
+
+:::
 
 ## Abstract
 This standard defines the implementation of NFTs within smart contracts, with a specific focus on the storage and management of NFT collections. Each NFT is deployed in its own smart contract and linked to the NFT collection contract.
@@ -18,7 +24,7 @@ In addition to the expected functionalities of an NFT standard, such as minting 
 The proposed standard differs significantly from Ethereum's ERC721 and other NFT standards with a single registry due to the unique characteristics of these blockchains. As TVM imposes storage fees, TIP-4 takes a distributed approach, ensuring separate storage for each NFT contract.
 
 ## Implementations and References
-- [TIP-4 Implementation](https://github.com/broxus/tip4)
+- [TIP-4 Broxus Implementation ](https://github.com/broxus/tip4/tree/master/contracts)
 - [TIP-4 itgold Implementation](https://github.com/itgoldio/everscale-tip)
 - [TIP-4 grandbazar.io Implementation](https://github.com/grandbazar-io/everscale-tip4.6-contracts)
 - [Ethereum EIP-721](https://eips.ethereum.org/EIPS/eip-721)

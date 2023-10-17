@@ -8,7 +8,7 @@ In this section we will walk through on how to deploy an Account smart contract 
     <a href="/gettingStarted/basicProjectSetup.html">
       <span class="bridge-section">Basic Project Setup</span>
     </a>
-    <a href="/gettingStarted/lockliftConfigSetting.html">
+    <a href="/gettingStarted/lockliftConfigSetup.html">
       <span class="bridge-section">Locklift Config Setup</span>
     </a>
   </div>

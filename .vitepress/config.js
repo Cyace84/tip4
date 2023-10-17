@@ -2,7 +2,7 @@ import vue from "@vitejs/plugin-vue";
 
 const HELP_URL = "https://t.me/everdev";
 const FEEDBACK_URL = "https://t.me/everdev";
-const GITHUB_URL = "https://github.com/Javadyakuza/TIP3-Docs";
+const GITHUB_URL = "https://github.com/broxus/tip4";
 const NAV = [
   {
     text: "Broxus Docs",
@@ -17,6 +17,10 @@ const NAV = [
       {
         text: "TIP-4 Api Reference",
         link: "https://tip4-api-reference.netlify.app/",
+      },
+      {
+        text: "TIP-3 Docs",
+        link: "https://tip-3-docs-javadyakuza.vercel.app/",
       },
       {
         text: "TIP-4 Docs",
@@ -169,7 +173,7 @@ module.exports = {
               {
                 text: "Locklift Config Setup",
                 collapsable: false,
-                link: "/gettingStarted/lockliftConfigSetting.md",
+                link: "/gettingStarted/lockliftConfigSetup.md",
               },
             ],
           },

@@ -2,7 +2,7 @@
 
 ## Packages
 
-In order to perform the operations mentioned in this documentation using  [`everscale-inpage-provider`](https://github.com/broxus/everscale-inpage-provider) , the target contracts artifacts, including the contract tvc and code, are required. These artifacts can be obtained using the `locklift build` command, which generates the necessary files which we can provide them by simply copying and pasting the these required files from the build folder as we generated them earlier in [lockliftConfigSetup](/src/pages/gettingStarted/lockliftConfigSetting.md#step-3-build-the-artifacts).
+In order to perform the operations mentioned in this documentation using  [`everscale-inpage-provider`](https://provider-docs.broxus.com/) , the target contracts artifacts, including the contract tvc and code, are required. These artifacts can be obtained using the `locklift build` command, which generates the necessary files which we can provide them by simply copying and pasting the these required files from the build folder as we generated them earlier in [Locklift Config Setup](/src/pages/gettingStarted/lockliftConfigSetup.md#step-3-build-the-artifacts).
 
 ::: tip
 
@@ -48,10 +48,10 @@ Create a file named `useProvider.ts`.
 
 Add the following script to the file you just made:
 
+
 ````typescript
 import { ProviderRpcClient, Address } from "everscale-inpage-provider";
 
-import { useProvider } from "../../src/providers/useProvider";
 /**
  * Fetches the data about the EVER Wallet
  * @returns Either the Tvm provider, Tvm wallet address or undefined
@@ -82,10 +82,3 @@ export async function useProviderInfo(): Promise<[ProviderRpcClient, Address]> {
 ````
 
 From now we can use the provider object and the provider address in our scripts by just simply importing and initiating this function.
-
-::: tip
-You can also refer to the Documentation of the everscale-inpage-provider.
-
-https://provider-docs.broxus.com/
-
-:::
