@@ -117,6 +117,7 @@ export async function deployBaseCollection(
         json: json,
         codeIndex: indexCode,
         codeIndexBasis: indexBasisCode,
+        remainOnNft: String(2 * 10 ** 9),
       })
       .sendExternal({
         stateInit: stateInit.stateInit,

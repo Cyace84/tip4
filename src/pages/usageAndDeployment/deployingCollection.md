@@ -159,14 +159,15 @@ contract Collection is TIP4_2Collection, TIP4_3Collection, OwnableExternal, IRoy
 
     /// _remainOnNft - the number of crystals that will remain after the entire mint
     /// process is completed on the Nft contract
-    uint128 _remainOnNft = 0.3 ever;
+    uint128 _remainOnNft;
 
     constructor(
         TvmCell codeNft,
         uint256 ownerPubkey,
         string json,
         TvmCell codeIndex,
-        TvmCell codeIndexBasis
+        TvmCell codeIndexBasis,
+        uint128 remainOnNft
     ) OwnableExternal (
         ownerPubkey
     ) TIP4_1Collection (
@@ -178,6 +179,8 @@ contract Collection is TIP4_2Collection, TIP4_3Collection, OwnableExternal, IRoy
         codeIndexBasis
     ) public {
         tvm.accept();
+        tvm.rawReserve(1 ever, 0);
+        _remainOnNft = remainOnNft;
     }
 
     function mintNft(string json, Royalty royalty) external virtual {
@@ -368,6 +371,7 @@ async function main() {
       json: collectionJsonMetadata,
       codeIndex: indexCode,
       codeIndexBasis: indexBasisCode,
+      remainOnNft : locklift.utils.toNano("2")
     },
     initParams: {
       _randomNonce: locklift.utils.getRandomNonce(),
@@ -511,6 +515,7 @@ export async function main(
         json: json,
         codeIndex: indexCode,
         codeIndexBasis: indexBasisCode,
+        remainOnNft : locklift.utils.toNano("2")
       })
       .sendExternal({
         stateInit: stateInit.stateInit,
