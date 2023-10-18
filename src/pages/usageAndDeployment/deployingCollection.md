@@ -48,6 +48,7 @@ The code sample below is utilized to deploy the `CollectionWithRoyalty` contract
 ::: code-group
 
 ```` typescript [locklift]
+
 // Import the following libraries
 import { Account, Signer } from "everscale-standalone-client";
 import { Address, Contract, WalletTypes, zeroAddress } from "locklift";
@@ -56,23 +57,25 @@ import { FactorySource } from "../build/factorySource";
 // Prepare the collection json metadata
 const collectionJsonMetadata: string = JSON.stringify({
   type: "Basic NFT",
-  name: "Revolt Agents",
-  description:
-    "A curated collection of 10,000 Agents from the Venom blockchain deployed on a mission to take over Web3",
+  name: "hell bite",
+  description: "The red daemons from hell",
   preview: {
-    source: "https://bafybeify5q7od6cthzgxjkdy22qtrxtxzl5hro7rbh3oyg2rxs736eept4.ipfs.w3s.link/images/1.jpeg",
+    source:
+      "https://images.pexels.com/photos/16115934/pexels-photo-16115934/free-photo-of-spooky-traditional-figurine.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     mimetype: "image/JPEG",
   },
   files: [
     {
-      source: "https://bafybeify5q7od6cthzgxjkdy22qtrxtxzl5hro7rbh3oyg2rxs736eept4.ipfs.w3s.link/images/1.jpeg",
+      source:
+        "https://images.pexels.com/photos/16115934/pexels-photo-16115934/free-photo-of-spooky-traditional-figurine.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       mimetype: "image/JPEG",
     },
   ],
-  external_url: "https://venom.network",
+  external_url: "https://images.pexels.com",
 });
 
 async function main() {
+
   // Fetching the signer key pair from locklift.config.ts
   const signer: Signer = (await locklift.keystore.getSigner("0"))!;
 
@@ -93,9 +96,14 @@ async function main() {
     publicKey: signer.publicKey,
   });
 
+  // Storing the "Index" and "IndexBasis" codes which are required to be passed to the collectionWithRoyalty contract constructor.
   const indexCode = locklift.factory.getContractArtifacts("Index").code;
   const indexBasisCode = locklift.factory.getContractArtifacts("IndexBasis").code;
 
+  /**
+   *  Deploying the CollectionWithRoyalty contract.
+   * @param remainOnNft The number of the gas tokens that will stay on the nft contract after the minting process is done.
+   */
   const { contract: collectionContract } = await locklift.factory.deployContract({
     contract: "CollectionWithRoyalty",
     publicKey: signer.publicKey,
@@ -128,6 +136,7 @@ main()
 ````
 
 ````typescript [everscale-inpage-provider]
+
 // Import the following libraries
 import {
   Address,
@@ -141,9 +150,10 @@ import {
 import { factorySource, FactorySource } from "./build/factorySource";
 import { useProviderInfo } from "./helpers/useProviders";
 
-const defaultCollectionMetadata: string = JSON.stringify({
+// Prepare the nft json metadata
+const nftJsonMetadata: string = JSON.stringify({
   type: "Basic NFT",
-  name: "hell bite",
+  name: "Daemon #1",
   description: "The red daemons from hell",
   preview: {
     source:
@@ -158,16 +168,26 @@ const defaultCollectionMetadata: string = JSON.stringify({
     },
   ],
   external_url: "https://images.pexels.com",
+  image: "/1.jpeg",
+  attributes: [
+    { trait_type: "Background", value: "hell" },
+    { trait_type: "Skin Color", value: "red" },
+    { trait_type: "teeth", value: "sharp white" },
+    { trait_type: "nationality", value: "utbvir" },
+    { trait_type: "jewelry", value: "fire water fire" },
+    { trait_type: "crown", value: "golden" },
+    { trait_type: "Rarity Rank", value: 1 },
+  ],
 });
 
-export async function deployBaseCollection(
-  json: string = defaultCollectionMetadata
-): Promise<string> {
+export async function main(){
   try {
-    // let provider: ProviderRpcClient, providerAddress: Address;
+
+    // Fetching the provider info from the module we made in the perquisites section
     const [provider, providerAddress]: [ProviderRpcClient, Address] =
       await useProviderInfo();
-    // Collection contract abi
+
+    // Storing the CollectionWithRoyalty contract abi
     const collectionAbi: FactorySource["CollectionWithRoyalty"] =
       factorySource["CollectionWithRoyalty"];
 
@@ -184,10 +204,12 @@ export async function deployBaseCollection(
       accountFullState.boc
     );
 
-    /*
-      Fetching the tvc and the code of the nft contract
-      @notice the replace() function is utilized to avoid any line because of the back slashes in the .base64(tvc) files
+    /**
+      Fetching and storing the tvc and calculating the the codes of the mentioned contracts.
+      @notice The replace() function is utilized to avoid any line breaks because of the back slashes in the .base64(tvc) files
     */
+
+    // Fetching the tvc files from build folder that we provided for the project by copying it from our locklift project.
     const collectionTvc: string = await (
       await fetch("/scripts/build/CollectionWithRoyalty.base64")
     ).text();
@@ -200,13 +222,15 @@ export async function deployBaseCollection(
     const indexBasisTvc: string = (
       await (await fetch("/scripts/build/IndexBasis.base64")).text()
     ).replace(/\r?\n|\r/g, "");
+
+    // Calculating the codes of the contracts.
     const nftCode: string = (await provider.splitTvc(nftTvc)).code!;
     const indexCode: string = (await provider.splitTvc(indexTvc)).code!;
     const indexBasisCode: string = (await provider.splitTvc(indexBasisTvc))
       .code!;
+
     /**
      * Preparing deploy params to build the state init with the contract abi
-     * @param deployer_ Its important to set this param to zero address when deploying the token root contract whiteout using an smart contract.
      */
     const deployParams: DeployParams<FactorySource["CollectionWithRoyalty"]> = {
       tvc: collectionTvc,
@@ -237,11 +261,11 @@ export async function deployBaseCollection(
       stateInit: stateInit.stateInit,
     });
 
-    // Create a contract instance
+    // Create a contract instance, notice at this stage the collection contract is in the "uninit" status.
     const collectionContract: Contract<FactorySource["CollectionWithRoyalty"]> =
       new provider.Contract(collectionAbi, expectedAddress);
 
-    // Call the contract constructor
+    // Calling the contracts constructor and changing its status from "uninit" to "active"
     const { transaction: deployRes } = await collectionContract.methods
       .constructor({
         codeNft: nftCode,
@@ -256,7 +280,7 @@ export async function deployBaseCollection(
         publicKey: deployParams.publicKey!,
       });
 
-    // checking if the token root is deployed successfully by calling its name method
+    // checking if the collection contract is deployed by fetching its "totalSupply", must be zero.
     const totalSupply: string = (
       await collectionContract.methods.totalSupply({ answerId: 0 }).call()
     ).count;
