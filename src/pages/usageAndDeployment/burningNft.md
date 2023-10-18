@@ -66,7 +66,7 @@ add the following lines of code to the [previously written script](./transferrin
     const burnRes: Transaction = await nftContract.methods
       .burn({
         sendGasTo: providerAddress,
-        callbackTo: zeroAddress,
+        callbackTo: new Address("0:0000000000000000000000000000000000000000000000000000000000000000"),
         callbackPayload: "",
       })
       .send({

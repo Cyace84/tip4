@@ -113,84 +113,97 @@ add the following lines of code to the [previously written script](./deployingCo
 
 ````typescript [everscale-inpage-provider]
 
-// Preparing the json metadata object
-const defaultNftMetadata: string = JSON.stringify({
-  type: "Basic NFT",
-  name: "Daemon #1",
-  description: "The red daemons from hell",
-  preview: {
-    source:
-      "https://images.pexels.com/photos/16115934/pexels-photo-16115934/free-photo-of-spooky-traditional-figurine.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    mimetype: "image/JPEG",
-  },
-  files: [
-    {
-      source:
-        "https://images.pexels.com/photos/16115934/pexels-photo-16115934/free-photo-of-spooky-traditional-figurine.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      mimetype: "image/JPEG",
-    },
-  ],
-  external_url: "https://images.pexels.com",
-  image: "/1.jpeg",
-  attributes: [
-    { trait_type: "Background", value: "hell" },
-    { trait_type: "Skin Color", value: "red" },
-    { trait_type: "teeth", value: "sharp white" },
-    { trait_type: "nationality", value: "utbvir" },
-    { trait_type: "jewelry", value: "fire water fire" },
-    { trait_type: "crown", value: "golden" },
-    { trait_type: "Rarity Rank", value: 1 },
-  ],
-});
+ // Preparing the json metadata object
+    const nftJsonMetadata: string = JSON.stringify({
+      type: "Basic NFT",
+      name: "Daemon #1",
+      description: "The red daemons from hell",
+      preview: {
+        source:
+          "https://images.pexels.com/photos/16115934/pexels-photo-16115934/free-photo-of-spooky-traditional-figurine.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        mimetype: "image/JPEG",
+      },
+      files: [
+        {
+          source:
+            "https://images.pexels.com/photos/16115934/pexels-photo-16115934/free-photo-of-spooky-traditional-figurine.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          mimetype: "image/JPEG",
+        },
+      ],
+      external_url: "https://images.pexels.com",
+      image: "/1.jpeg",
+      attributes: [
+        { trait_type: "Background", value: "hell" },
+        { trait_type: "Skin Color", value: "red" },
+        { trait_type: "teeth", value: "sharp white" },
+        { trait_type: "nationality", value: "utbvir" },
+        { trait_type: "jewelry", value: "fire water fire" },
+        { trait_type: "crown", value: "golden" },
+        { trait_type: "Rarity Rank", value: 1 },
+      ],
+    });
 
-// Defining an interface for the royalty information
-interface IRoyaltyStructure {
-  numerator: string | number;
-  denominator: string | number;
-  receiver: Address;
-}
+    // The address of the new owner of the nft
+    const nftOwner: Address = new Address("NFT_OWNER_ADDRESS");
 
-// Minting the nft
-const mintRes: Transaction = await collectionContract.methods
-      .mintNft({ _owner: account.address, _json: json, _royalty: royalty })
+    // Defining an interface for the royalty information
+    interface IRoyaltyStructure {
+      numerator: string | number;
+      denominator: string | number;
+      receiver: Address;
+    }
+
+    // Preparing the royalty information
+    const royalty: IRoyaltyStructure = {
+      numerator: 10,
+      denominator: 100,
+      receiver: nftOwner,
+    };
+
+    // Minting the nft
+    const mintRes: Transaction = await collectionContract.methods
+      .mintNft({
+        _owner: nftOwner,
+        _json: nftJsonMetadata,
+        _royalty: royalty,
+      })
       .send({
         from: providerAddress,
         amount: String(3 * 10 ** 9),
         bounce: true,
       });
 
-const nftAddress: Address = (
-  await collectionContract.methods
-    .nftAddress({
-      answerId: 0,
-      id: totalSupply,
-    })
-    .call()
-).nft;
+    const nftAddress: Address = (
+      await collectionContract.methods
+        .nftAddress({
+          answerId: 0,
+          id: totalSupply,
+        })
+        .call()
+    ).nft;
 
-// Fetching the newly minted nft contract
-const nftContract: Contract<FactorySource["NftWithRoyalty"]> = new provider.Contract(
-  nftAbi,
-  nftAddress
-);
+    // Fetching the newly minted nft contract
+    const nftContract: Contract<FactorySource["NftWithRoyalty"]> =
+      new provider.Contract(factorySource["NftWithRoyalty"], nftAddress);
 
-// Fetching the newly minted nft data to validate its minting process.
-const nftContractData = await nftContract.methods
-  .getInfo({ answerId: 0 })
-  .call();
+    // Fetching the newly minted nft data to validate its minting process.
+    const nftContractData = await nftContract.methods
+      .getInfo({ answerId: 0 })
+      .call();
 
-// Ensuring that the nft is minted correctly and contains the expected info.
-if (nftContractData.collection.toString() == CollectionAddr.toString()) {
-  console.log (`Nft number ${
-    nftContractData.id
-  } deployed to ${nftAddress.toString()}`);
-} else {
-  console.log(`Nft deployment failed ! ${
-    (mintRes.exitCode, mintRes.resultCode)
-  }`);
-}
-
-
+    // Ensuring that the nft is minted correctly and contains the expected info.
+    if (
+      nftContractData.collection.toString() ==
+      collectionExpectedAddress.toString()
+    ) {
+      console.log(
+        `Nft number ${nftContractData.id} deployed to ${nftAddress.toString()}`
+      );
+    } else {
+      console.log(
+        `Nft deployment failed ! ${(mintRes.exitCode, mintRes.resultCode)}`
+      );
+    }
 ````
 
 :::

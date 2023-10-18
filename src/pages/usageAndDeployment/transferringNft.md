@@ -77,12 +77,12 @@ add the following lines of code to the [previously written script](./findingNftB
 ````typescript [everscale-inpage-provider]
 
 // Preparing the nft's new owner address
-const receiverAddress: Address = new Address(<"RECEIVER_ADDRESS">);
+const receiverAddress: Address = new Address("<RECEIVER_ADDRESS>");
 
 // Transferring the nft
 await nftContract.methods
       .transfer({
-        to: new Address(receiverAddress),
+        to: receiverAddress,
         sendGasTo: providerAddress,
         callbacks: [],
       })
@@ -98,7 +98,7 @@ await nftContract.methods
       .call();
 
     // Validating the transfer operation
-    if (nftContractData.owner.toString() == receiverAddress) {
+    if (nftContractData.owner.toString() == receiverAddress.toString()) {
       console.log `Nft number ${nftContractData.id} transferred to ${receiverAddress}`;
     } else {
       console.log("Transferring Nft failed");

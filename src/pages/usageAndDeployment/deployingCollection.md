@@ -152,7 +152,7 @@ import { factorySource, FactorySource } from "./build/factorySource";
 import { useProviderInfo } from "./helpers/useProviders";
 
 // Prepare the nft json metadata
-const nftJsonMetadata: string = JSON.stringify({
+const collectionJsonMetadata: string = JSON.stringify({
   type: "Basic NFT",
   name: "Daemon #1",
   description: "The red daemons from hell",
@@ -212,16 +212,16 @@ export async function main(){
 
     // Fetching the tvc files from build folder that we provided for the project by copying it from our locklift project.
     const collectionTvc: string = await (
-      await fetch("/scripts/build/CollectionWithRoyalty.base64")
+      await fetch("/path/to/build/CollectionWithRoyalty.base64")
     ).text();
     const nftTvc: string = (
-      await (await fetch("/scripts/build/NftWithRoyalty.base64")).text()
+      await (await fetch("/path/to/build/NftWithRoyalty.base64")).text()
     ).replace(/\r?\n|\r/g, "");
     const indexTvc: string = (
-      await (await fetch("/scripts/build/Index.base64")).text()
+      await (await fetch("/path/to/build/Index.base64")).text()
     ).replace(/\r?\n|\r/g, "");
     const indexBasisTvc: string = (
-      await (await fetch("/scripts/build/IndexBasis.base64")).text()
+      await (await fetch("/path/to/build/IndexBasis.base64")).text()
     ).replace(/\r?\n|\r/g, "");
 
     // Calculating the codes of the contracts.
@@ -243,7 +243,7 @@ export async function main(){
     };
 
     // Get the expected contract address
-    const expectedAddress: Address = await provider.getExpectedAddress(
+    const collectionExpectedAddress: Address = await provider.getExpectedAddress(
       collectionAbi,
       deployParams
     );
@@ -256,7 +256,7 @@ export async function main(){
     // Send the coins to the calculated address
     await provider.sendMessage({
       sender: providerAddress,
-      recipient: expectedAddress,
+      recipient: collectionExpectedAddress,
       amount: String(2 * 10 ** 9),
       bounce: false, // it's important to set this param to keep the evers in the contract
       stateInit: stateInit.stateInit,
@@ -264,14 +264,14 @@ export async function main(){
 
     // Create a contract instance, notice at this stage the collection contract is in the "uninit" status.
     const collectionContract: Contract<FactorySource["CollectionWithRoyalty"]> =
-      new provider.Contract(collectionAbi, expectedAddress);
+      new provider.Contract(collectionAbi, collectionExpectedAddress);
 
     // Calling the contracts constructor and changing its status from "uninit" to "active"
     const { transaction: deployRes } = await collectionContract.methods
       .constructor({
         codeNft: nftCode,
         owner: providerAddress,
-        json: json,
+        json: collectionJsonMetadata,
         codeIndex: indexCode,
         codeIndexBasis: indexBasisCode,
         remainOnNft: String(2 * 10 ** 9),
@@ -287,9 +287,9 @@ export async function main(){
     ).count;
 
     if (totalSupply == "0") {
-      console.log(`TIP4_1 collection deployed to ${expectedAddress.toString()}`);
+      console.log(`Collection deployed to ${collectionExpectedAddress.toString()}`);
     } else {
-      console.log( `TIP4_1 collection deployment failed ! ${
+      console.log( `Collection deployment failed ! ${
         (deployRes.exitCode, deployRes.resultCode)
       }`);
     }
