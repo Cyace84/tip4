@@ -26,6 +26,7 @@ import { Address, Contract, zeroAddress } from "locklift";
 import { FactorySource } from "../build/factorySource";
 
 async function main() {
+
   // Building the salt cell for IndexBasis
   const indexBasisSaltCell = await locklift.provider.packIntoCell({
     data: {
@@ -44,19 +45,28 @@ async function main() {
   // Calculating the code hash of the salted code
   const indexBasisCodeHash = await locklift.provider.getBocHash(indexBasisSaltedCode.code);
 
+  // Creating an empty array . we will add the found collections to it later.
   let fetchedCollectionAddresses: string[] = [];
-  // Fetching the contracts that has the same code hash as what we built
+
+  /**
+   * Fetching the contracts that has the same code hash as what we built
+   * @param continuation The last address from previous fetched batch of "IndexBasis" Contracts addresses,
+   * using this parameter we can tell the provider to fetch the indexBasis contracts from a certain address to next.
+   */
   let continuation: string | undefined = zeroAddress.toString();
   while (continuation != undefined) {
 
+    // Fetching IndexBasis's
     const tempIndexBasisContractsBatch = await locklift.provider.getAccountsByCodeHash({
       codeHash: indexBasisCodeHash,
       continuation: continuation,
       limit: 50, // more limit amounts are ignored
     });
 
+    // Updating the continuation to the lates address fetched from the batch.
     continuation = tempIndexBasisContractsBatch.continuation;
 
+    // Iterating over the fetched IndexBasis's contracts and adding their related collection to the fetchedCollectionsAddress array as a string.
     for (let account in tempIndexBasisContractsBatch.accounts) {
       const tempIndexBasisContract: Contract<FactorySource["IndexBasis"]> = locklift.factory.getDeployedContract(
         "IndexBasis",
@@ -67,7 +77,7 @@ async function main() {
       );
     }
   }
-  // extracting the collections address from the indexBasis contacts
+
   console.log(fetchedCollectionAddresses);
 }
 
@@ -120,9 +130,13 @@ add the following lines of code to the [previously written script](./mintingNft.
 
 ```` typescript [locklift]
 
+  // Creating an array of the nft addresses in string, we will add the found nft addresses to it later.
   let allNfts: string[] = [];
 
-  // Building the salt cell for IndexBasis
+  /**
+   *  Building the salt cell for Index contract, we will salt the Index contracts code with it.
+   * @notice The collection contract address is zero address in the following lines, it is explained in the "specification/TIP4_3On- ChainIndexes" section.
+   */
   let indexSaltCell = await locklift.provider.packIntoCell({
     data: {
       name: "nft",
@@ -137,28 +151,34 @@ add the following lines of code to the [previously written script](./mintingNft.
     abiVersion: "1.0",
   });
 
-  // Salting the index contracts code
+  // Salting the Index's contract code
   let indexSaltedCode = await locklift.provider.setCodeSalt({
     code: indexCode,
     salt: indexSaltCell.boc,
   });
 
-  // Calculating the index contracts code hah using the salted code hash
+  // Calculating the index contracts code hash using the salted code
   let indexCodeHash = await locklift.provider.getBocHash(indexSaltedCode.code);
 
+  // Fetching the index contracts that has the same code hash as the one we prepared.
   let indexContracts = (await locklift.provider.getAccountsByCodeHash({ codeHash: indexCodeHash })).accounts;
 
-  for (let index in indexContracts) {
-    let tempIndex = locklift.factory.getDeployedContract("Index", indexContracts[index]);
+  // Iterating over the fetched Index contracts, making an instance from each and pushing the related nft address as a string to the nfts array.
+  for (const index of indexContracts) {
+    let tempIndex = locklift.factory.getDeployedContract("Index", index);
     allNfts.push((await tempIndex.methods.getInfo({ answerId: 0 }).call()).nft.toString());
   }
   console.log("All of the user's Nft's: ", allNfts);
 
-  // Finding the nfts from one collection
+  //------- Finding the nfts from one collection -------//
+
+  // Creating an array of the nft addresses in string, we will add the found nft addresses to it later.
   let NftsFromCollection: string[] = [];
 
-  // Building the salt cell for IndexBasis
-  indexSaltCell = await locklift.provider.packIntoCell({
+  /**
+   *  Building the salt cell for Index contract, we will salt the Index contracts code with it.
+   * @notice The collection contract address is an collection address in the following lines, it is explained in the "specification/TIP4_3On- ChainIndexes" section.
+   */  indexSaltCell = await locklift.provider.packIntoCell({
     data: {
       name: "nft",
       collection: collectionContract.address,
@@ -172,17 +192,19 @@ add the following lines of code to the [previously written script](./mintingNft.
     abiVersion: "1.0",
   });
 
-  // Salting the index contracts code
+  // Salting the Index's contract code
   indexSaltedCode = await locklift.provider.setCodeSalt({
     code: indexCode,
     salt: indexSaltCell.boc,
   });
 
-  // Calculating the index contracts code hah using the salted code hash
+  // Calculating the Index's contract code hash using the salted code.
   indexCodeHash = await locklift.provider.getBocHash(indexSaltedCode.code);
 
+  // Fetching the Index contracts that has the same code hash as the one we prepared.
   indexContracts = (await locklift.provider.getAccountsByCodeHash({ codeHash: indexCodeHash })).accounts;
 
+  // Iterating over the fetched Index contracts, making an instance from each and pushing the related nft address as a string to the nftsFromCollection array.
   for (const index of indexContracts) {
     let tempIndex = locklift.factory.getDeployedContract("Index", index);
     NftsFromCollection.push((await tempIndex.methods.getInfo({ answerId: 0 }).call()).nft.toString());
@@ -194,16 +216,18 @@ add the following lines of code to the [previously written script](./mintingNft.
 ````typescript [everscale-inpage-provider]
 
     /*
-        THe collection address prepared below helps us with finding all fo the nfts owned by the user.
+        THe collection address prepared below helps us with finding all of the nfts owned by the user.
         If you desire to find the nfts owned by the user from a specific collection replace the collection address with the zero address
     */
+
     const collectionAddress: Address = new Address(
           "0:0000000000000000000000000000000000000000000000000000000000000000"
         );
 
+    // Creating an array of the nft addresses in string, we will add the found nft addresses to it later.
     let nfts: string[] = [];
 
-    // Building the salt cell for IndexBasis
+    // Building the salt cell for Index contract, we will salt the Index contracts code with it.
     const indexSaltCell = await provider.packIntoCell({
       data: {
         name: "nft",
@@ -218,21 +242,23 @@ add the following lines of code to the [previously written script](./mintingNft.
       abiVersion: "1.0",
     });
 
-    // Salting the index contracts code
+    // Salting the Index's contract code
     const indexSaltedCode = await provider.setCodeSalt({
       code: indexCode,
       salt: indexSaltCell.boc,
     });
 
-    // Calculating the index contracts code hah using the salted code hash
+    // Calculating the Index's contract code hash using the salted code
     const indexCodeHash = await provider.getBocHash(indexSaltedCode.code);
 
+    // Fetching the Index contracts that has the same code hash as the one we prepared.
     const indexContracts = (
       await provider.getAccountsByCodeHash({
         codeHash: indexCodeHash,
       })
     ).accounts;
 
+    // Iterating over the fetched Index contracts, making an instance from each and pushing the related nft address as a string to the nfts array.
     for (const index of indexContracts) {
       console.log(index);
       const tempIndex: Contract<FactorySource["Index"]> = new provider.Contract(
@@ -244,7 +270,6 @@ add the following lines of code to the [previously written script](./mintingNft.
       );
     }
 
-    console.log("every thing passed");
     if (nfts.length > 0) {
       console.log(`Found ${nfts.length} nfts: ${nfts}`);
     } else {

@@ -145,6 +145,7 @@ import {
   ProviderApiResponse,
   FullContractState,
   ProviderRpcClient,
+  Transaction
 } from "everscale-inpage-provider";
 
 import { factorySource, FactorySource } from "./build/factorySource";

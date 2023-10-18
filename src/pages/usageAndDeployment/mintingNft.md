@@ -38,7 +38,7 @@ add the following lines of code to the [previously written script](./deployingCo
 
 ```` typescript [locklift]
 
-  // Fetching the total supply in order to be aware of the nft id that is going to be deployed
+  // Fetching the total supply to store what our nft id will be.
   const totalSupply: string = (await collectionContract.methods.totalSupply({ answerId: 0 }).call()).count;
 
   // Preparing the json metadata object
@@ -71,7 +71,7 @@ add the following lines of code to the [previously written script](./deployingCo
     ],
   });
 
-  // Defining the interface for the royalty information
+  // Defining an interface for the royalty information
   interface IRoyaltyStructure {
     numerator: string | number;
     denominator: string | number;
@@ -83,21 +83,24 @@ add the following lines of code to the [previously written script](./deployingCo
     numerator: 10,
     denominator: 100,
     receiver: account.address,
-  };
+  }; // 10%
 
   // Minting the nft
   await collectionContract.methods
     .mintNft({ _owner: account.address, _json: nftJsonMetadata, _royalty: royalty })
     .send({ from: account.address, amount: locklift.utils.toNano(3) });
 
-  // Fetching thw newly minted nft data and making an instance of it
+  // Fetching the newly minted nft data and making an instance of it
   const nftAddress: Address = (await collectionContract.methods.nftAddress({ answerId: 0, id: totalSupply }).call())
     .nft;
   const nftContract: Contract<FactorySource["NftWithRoyalty"]> = locklift.factory.getDeployedContract("NftWithRoyalty", nftAddress);
 
   console.log(`Nft number ${totalSupply} minted on: ${nftContract.address.toString()}`);
 
-  // Fetching the nft royalty on 100 USDTs sale price
+  /**
+   * Fetching the nft royalty on 100 USDTs sale price, the returned value is the price that must be paid to the buyer which is:
+   * wholePrice - royaltyAmount >> 100 - (100 * 10 / 100)
+    */
   const royaltyInfo = await nftContract.methods.royaltyInfo({ answerId: 0, salePrice: 100_000_000 }).call();
   console.log("Nft royalty: ", royaltyInfo);
 
@@ -140,13 +143,15 @@ const defaultNftMetadata: string = JSON.stringify({
   ],
 });
 
+// Defining an interface for the royalty information
 interface IRoyaltyStructure {
   numerator: string | number;
   denominator: string | number;
   receiver: Address;
 }
 
-await collectionContract.methods
+// Minting the nft
+const mintRes: Transaction = await collectionContract.methods
       .mintNft({ _owner: account.address, _json: json, _royalty: royalty })
       .send({
         from: providerAddress,
@@ -154,7 +159,7 @@ await collectionContract.methods
         bounce: true,
       });
 
-const nftAddr: Address = (
+const nftAddress: Address = (
   await collectionContract.methods
     .nftAddress({
       answerId: 0,
@@ -163,27 +168,26 @@ const nftAddr: Address = (
     .call()
 ).nft;
 
-// fetching the newly deployed nft contract
+// Fetching the newly minted nft contract
 const nftContract: Contract<FactorySource["NftWithRoyalty"]> = new provider.Contract(
   nftAbi,
-  nftAddr
+  nftAddress
 );
 
-// fetching
+// Fetching the newly minted nft data to validate its minting process.
 const nftContractData = await nftContract.methods
   .getInfo({ answerId: 0 })
   .call();
 
+// Ensuring that the nft is minted correctly and contains the expected info.
 if (nftContractData.collection.toString() == CollectionAddr.toString()) {
-  toast(`Nft number ${nftContractData.id} Minted successfully`, 1);
-  return `Nft number ${
+  console.log (`Nft number ${
     nftContractData.id
-  } deployed to ${nftAddr.toString()}`;
+  } deployed to ${nftAddress.toString()}`);
 } else {
-  toast("Minting Nft failed", 0);
-  return `TIP4_1 Nft deployment failed ! ${
+  console.log(`Nft deployment failed ! ${
     (mintRes.exitCode, mintRes.resultCode)
-  }`;
+  }`);
 }
 
 
