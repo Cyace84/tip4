@@ -37,7 +37,8 @@ add the following lines of code to the [previously written script](./transferrin
 ::: code-group
 
 ```` typescript [locklift]
-  // Adding an existing SafeMultiSig Account using its address and sending the burn transaction
+
+  // Adding the bob account since the nft is transferred to the bobs address and the burning operation must be initiated using the bobs account.
   const bobAccount: Account = await locklift.factory.accounts.addExistingAccount({
     type: WalletTypes.MsigAccount,
     address: BobAccount.address, // if deploying new account >> new Address("YOUR_ACCOUNT_ADDRESS")
@@ -45,6 +46,7 @@ add the following lines of code to the [previously written script](./transferrin
     publicKey: signerBob.publicKey,
   });
 
+  // Burning the nft
   await nftContract.methods
     .burn({
       sendGasTo: bobAccount.address,
@@ -53,12 +55,14 @@ add the following lines of code to the [previously written script](./transferrin
     })
     .send({ from: bobAccount.address, amount: locklift.utils.toNano(2), bounce: true }),
 
-    // fetching the account again and see if we get the "account not found" error
+    // Fetching the account again and see if we get the "account not found" error and if yes that burning operation is done successfully.
     console.log("burnt nft info: ", await nftContract.methods.getInfo({ answerId: 0 }).call()); // Account not found
 
 ````
 
 ````typescript [everscale-inpage-provider]
+
+    // Burning the nft
     const burnRes: Transaction = await nftContract.methods
       .burn({
         sendGasTo: providerAddress,

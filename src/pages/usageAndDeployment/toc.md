@@ -2,6 +2,10 @@
 
 In this section we will walk you through the process of deploying the collection contract, Minting , transferring, burning and upgrading the Nfts using tools like `locklift` and `everscale-inpage-provider`.
 
+::: tip
+The code samples presented in this section have been developed using tools such as  `locklift`  and  `everscale-inpage-provider` . Each code sample within a section is designed as a continuation of the previous one. Consequently, when adding new code samples, it is necessary to append them to the end of the previous script, just before the closing bracket of the  `main`  function.
+:::
+
 **Here you can find the mentioned topics in this section.**
 <div class="sections-container">
   <div class="bridge-section-row">
