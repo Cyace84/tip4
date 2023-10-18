@@ -37,21 +37,25 @@ add the following lines of code to the [previously written script](./findingNftB
 ::: code-group
 
 ```` typescript [locklift]
-  // Fetching the signer key pair from locklift.config.ts
+
+  // Crating another signer in order to perform the transferring nft from one account to another
   const signerBob: Signer = (await locklift.keystore.getSigner("0"))!;
 
   // uncomment if deploying a new account
-  const { contract: BobAccount } = await locklift.factory.deployContract({
-    contract: "Account",
-    publicKey: signerBob.publicKey,
-    constructorParams: {},
-    initParams: { _randomNonce: locklift.utils.getRandomNonce() },
-    value: locklift.utils.toNano(20),
-  });
+  // const { contract: BobAccount } = await locklift.factory.deployContract({
+  //   contract: "Account",
+  //   publicKey: signerBob.publicKey,
+  //   constructorParams: {},
+  //   initParams: { _randomNonce: locklift.utils.getRandomNonce() },
+  //   value: locklift.utils.toNano(20),
+  // });
 
+
+  // Fetching the owner of the nft before transferring to be able to validate the transfer process.
   const newOldOwner: Address = (await nftContract.methods.getInfo({ answerId: 0 }).call()).owner;
   console.log("Nft old owner: ", newOldOwner.toString());
 
+  // Transferring the nft
   await nftContract.methods
     .transfer({
       to: BobAccount.address,
@@ -64,7 +68,7 @@ add the following lines of code to the [previously written script](./findingNftB
       bounce: true,
     });
 
-  // Fetching the owner of the transferred nft to see if the owner is changed to second one
+  // Fetching the new owner of the nft to validate the transfer operation
   const newNftOwner: Address = (await nftContract.methods.getInfo({ answerId: 0 }).call()).owner;
   console.log("Nft new owner: ", newNftOwner.toString());
 
@@ -72,8 +76,10 @@ add the following lines of code to the [previously written script](./findingNftB
 
 ````typescript [everscale-inpage-provider]
 
+// Preparing the nft's new owner address
 const receiverAddress: Address = new Address(<"RECEIVER_ADDRESS">);
 
+// Transferring the nft
 await nftContract.methods
       .transfer({
         to: new Address(receiverAddress),
@@ -91,6 +97,7 @@ await nftContract.methods
       .getInfo({ answerId: 0 })
       .call();
 
+    // Validating the transfer operation
     if (nftContractData.owner.toString() == receiverAddress) {
       console.log `Nft number ${nftContractData.id} transferred to ${receiverAddress}`;
     } else {
