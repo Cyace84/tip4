@@ -1,11 +1,7 @@
 # TIP-4_2 (Non-Fungible Token JSON Metadata)
-Requires: [TIP-6.1](./tip6.md)
 
 ## Overview
 The metadata related to an specific NFT is stored as a string in the smart contract. To facilitate off-chain work with metadata, it is stored as a JSON object. The JSON object should have a specific structure with some required fields, and additional data about the NFT can be added next to those fields. This standard provides optional JSON fields and a contract interface.
-
-## Motivation
-Standard fields facilitate the display of NFT data for wallets, explorers, marketplaces, etc.
 
 ---
 
@@ -20,22 +16,6 @@ Both this contracts have one additional functionality compared to the previously
 ## JSON Metadata
 
 ### Basic
-The  `Basic NFT`  is used for links to files stored on the web. The JSON fields contain information about the item, files, and preview info. The  `Basic NFT`  describes the fields that must be present in the JSON.
-
-| Field name           | Type   | Value                                                                                              | Description                 |
-|----------------------|--------|----------------------------------------------------------------------------------------------------|-----------------------------|
-| **type**             | string | "Basic NFT"                                                                                        | Constant name for this type |
-| **name**             | string | Name of the object                                                                                 |                             |
-| **description**      | string | Description of the object                                                                          |                             |
-| **preview**          | object | Object preview                                                                                    |                             |
-| **preview.source**   | string | Link to the object. Contains protocol and data source. Delimiter is **:**                              |                             |
-| **preview.mimetype** | string | [Mime type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) of the object |                             |
-| **files**            | array  | Array of objects.                                                                                  |                             |
-| **file.source**      | string | Link to the object. Contains protocol and data source. Delimiter is **:**                              |                             |
-| **file.mimetype**    | string | [Mime type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) of the object |                             |
-| **external_url**     | string | URL to website                                                                                     |                             |
-
-### Basic Example
 
 ````json
 {
@@ -55,11 +35,10 @@ The  `Basic NFT`  is used for links to files stored on the web. The JSON fields 
     "external_url": "https://everscale.network"
 }
 ````
-The source files' URLs can be [IPFSs](https://www.ipfs.com/) links where all the files with their relevant IDs are stored.
-The collection contract and each NFT contract will have a separate json field stored in their code and the off-chain services will read and render the asset based on the motioned filed.
 
-Please note that the collection contracts will typically have the same JSON metadata as the first NFT ID within the collection.
-`
+The source files' URLs can be [IPFSs](https://www.ipfs.com/) links where all the files with their relevant IDs are stored.
+The collection contract and each NFT contract will have a separate json field stored in their code.
+
 ### Advanced
 
 Here you can find a bit more advanced implementation of the JSON objects that are used as the metadata of the NFTs:
@@ -140,19 +119,3 @@ The provided link below will assist you further in preparing the JSON metadata i
 
 :::
 
-### JSON Metadata Type
-A non-empty JSON must have a "type" field.
-
-```` json
-{"type":"string"}
-````
-
-Applications that read JSON metadata use the "type" field for parsing standard or custom JSON fields.
-
-You can extend the  `Basic NFT`  type for your custom fields.
-
-## Contribution
-To add a new metadata type of  `TIP-4.2` :
-- Create a product that uses the new JSON type.
-- Send a pull request to change the documentation in the [TIP-4 official repository](https://github.com/broxus/tip4).
-- Explain why it should be included in the standard.

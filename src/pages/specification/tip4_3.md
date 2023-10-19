@@ -1,18 +1,11 @@
 # TIP-4_3 ( Non-Fungible Token on-chain indexes)
 
-Requires: [TIP-4.1](./tip4_1.md)\
-Requires: [TIP-6.1](./tip6.md)
-
 ## Overview
 Using the `Index` contract code hash, you can find all your NFTs with one simple dApp query to the desired network graphql endpoint.
 This makes blockchain application less dependent on different off-chain parsers and indexers
 
 On-chain Indexes solves easy and fast searching any data in blockchain.
 This document shows standard for basic query.
-Any developer can get an idea of this solution and realize his own on-chain index.
-
-## Motivation
-A standard interface allows search all Collections and all NFT by owner address using the base dApp functionality.
 
 ## Contract Specification
 
@@ -51,28 +44,9 @@ Utilizing one of the `Index` contracts code hash we are able to find all of the 
 contract, that helps to find all collections by the **code hash** of which.
 The index basis contract also has a specific code hash based on the word `"nft"`, using this unique property we will be able to find all of the nft collection contracts.
 
-::: warning
-
-- **Code** of `IndexBasis` and `Index` contracts and **code hash** of contracts is fixed and **CANNOT BE CHANGED** before deployment.
-after they are deployed, their code hashes can be changed based on the mentioned salting parameters.
-
-- **Code hash** of `IndexBasis` compiled by [TVMCompiler](https://github.com/tonlabs/TON-Solidity-Compiler/tree/a222452e27aacff14fdf2fff356542843a2a8d1c) `v0.58.2` and [TVM-linker](https://github.com/tonlabs/TVM-linker/tree/740f9f62a4e68c9f515667c109b116f265942d72) `v0.14.51` without salting is `2359f897c9527073b1c95140c670089aa5ab825f5fd1bd453db803fbab47def2`
-
-- **Code hash** of `Index` compiled by [TVMCompiler](https://github.com/tonlabs/TON-Solidity-Compiler/tree/a222452e27aacff14fdf2fff356542843a2a8d1c) `v0.58.2` and [TVM-linker](https://github.com/tonlabs/TVM-linker/tree/740f9f62a4e68c9f515667c109b116f265942d72) `v0.14.51` without salting is `61e5f39a693dc133ea8faf3e80fac069250161b0bced3790c20ae234ce6fd866`
-
+::: tip
+Please refer to the [TON solidity compiler API](https://github.com/tonlabs/TON-Solidity-Compiler/blob/master/API.md) to understand what is salting in the TVM.
 :::
-
-## Salting
-The `salting` operation is when we grab some special and unique value that we desire and integrate them into the current contract code to build a new code for a contract.
-
-The workflow is followed by the steps below:
-
-1. storing the slat values into a [TvmBuilder](https://github.com/tonlabs/TON-Solidity-Compiler/blob/master/API.md#tvmbuilder) type variable using [TvmBuilder.store()](https://github.com/tonlabs/TON-Solidity-Compiler/blob/master/API.md#tvmbuilderstore) instruction.
-
-2. building the new code for the contract using the old contract code and the salted values stored in the TvmBuilder using [tvm.setCodeSalt()](https://github.com/tonlabs/TON-Solidity-Compiler/blob/master/API.md#tvmsetcodesalt) instruction.
-
-We can generate the new and specific code hash for the newly built code and use that to query the blockchain data using off-chain tools like [locklift](https://docs.locklift.io/) or [everscale-inpage-provider](https://provider-docs.broxus.com/).
-
 
 ## Query Example
 
@@ -106,41 +80,3 @@ Part of response example
 }
 ```
 
-## Visualization
-
-### Legend
-
-<br/>
-<ImgContainer src= '/img/legend1.svg' width="100%" altText="deployAccountOutput"/>
-
-### `IndexBasis` deployment for `Collection`
-
-<br/>
-<ImgContainer src= '/img/index1.svg' width="100%" altText="deployAccountOutput"/>
-
-### `Index` contracts deployment for `NFT`
-
-<br/>
-<ImgContainer src= '/img/index2.svg' width="100%" altText="deployAccountOutput"/>
-
-### Redeploy `Index` contracts after `changeOwner`
-
-<br/>
-<ImgContainer src= '/img/index3.svg' width="100%" altText="deployAccountOutput"/>
-
-<script lang="ts" >
-import { defineComponent, ref, onMounted } from "vue";
-import ImgContainer from "../../../.vitepress/theme/components/shared/BKDImgContainer.vue"
-
-export default defineComponent({
-  name: "Diagrams",
-  components :{
-    ImgContainer
-  },
-  setup() {
-    return {
-    };
-  },
-});
-
-</script>

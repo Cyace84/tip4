@@ -36,6 +36,15 @@ The specification section of this documentation involves describing each part of
   </div>
 </div>
 
+
+
+::: tip
+This section of the documentation will demonstrate an overall scheme of the different parts of the standard. if you want more about the standard, refer to the [everscale](https:/everscale.network/) docs at:
+
+https://docs.everscale.network/standard/TIP-4
+
+:::
+
 <style>
 .bridge-section-row {
   display: flex;

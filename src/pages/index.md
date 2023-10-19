@@ -1,9 +1,9 @@
 # Introduction
-This documentation is describes the concept of implementing distributed non-fungible tokens (NFTs) on the TVM (TON Virtual Machine) based blockchains. The standard aims to provide a professional and standardized API for NFTs within smart contracts.
+This documentation is describes the concept of implementing distributed non-fungible tokens (NFTs) on the [TVM (TON Virtual Machine)](https://github.com/tonlabs/TON-Solidity-Compiler/tree/master) based blockchains. The standard aims to provide a professional and standardized API for NFTs within smart contracts.
 
 ::: info
 
-This documentation has been developed by the [Broxus team](https://broxus.com/) and provides a unique implementation of the TIP4 contracts.
+This documentation has been developed by the [Broxus team](https://broxus.com/) and provides a unique implementation of the TIP4 standard contracts.
 :::
 
 ## Abstract

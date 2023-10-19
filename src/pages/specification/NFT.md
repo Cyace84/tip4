@@ -1,5 +1,5 @@
 # NFT
-As explained earlier, a `NFT` contract is developed to handle the logic of the TIP-4_nNFT contracts.`NFT` simply feeds the constructor of the inheriting TIP-4_nNft contracts.
+As explained earlier, a `NFT` contract is developed to handle the logic of the TIP-4_nNft contracts.`NFT` simply feeds the constructor of the inheriting TIP-4_nNft contracts.
 
 When it comes to indexing functionality, the `NFT` contract must implement the methods that handles the deployment and destruction of the index contracts when ever its required.
 
