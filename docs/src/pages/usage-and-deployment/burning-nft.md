@@ -1,34 +1,34 @@
-# Transferring Nfts
+# Burning Nfts
 
 <div class="deployToken">
 
-In this section, we will learn how to use the  `Index`  contract to transfer non-fungible tokens (NFTs) from one account to another. This is a fundamental concept of the standard, and it involves changing the ownership of the NFT.
+In this section, we will learn how to use the  `Index`  contract to perform the burning operation on non-fungible tokens (NFTs). Burning an NFT involves draining all of the gas tokens in the NFT contract, which renders it unable to pay for storage fees on TVM-based blockchains.
 
-The following steps outline the process of transferring NFTs:
+After the NFT is destroyed, the total supply amount in the collection contract is updated. This is achieved through a callback function that calls the relevant function on the collection contract, reducing the total supply by one.
 
-1. Destruct the two index contracts associated with the NFT before the transfer. These contracts will be redeployed with the new owner data as the salt of their code hash.
+::: tip
+Please note that the destruction of the index contracts is not directly handled by the NFT or collection contract, nor by the user. The index contracts are frozen when their balance becomes negative due to storage fees and are eventually deleted after a certain period of time.
+:::
 
-2. Update the ownership information of the NFT to reflect the new owner.
-
-## Step 1: Write Transfer Script
+## Step 1: Write burning Script
 
 <span  :class="LLdis"  >
 
-The code sample below uses the locklift tool and the previously written script to perform the NFT transferring operation.
+The code sample below uses the locklift tool and the previously written script aon transferring NFTs to burn the nfts.
 
-Add the following lines of code to the [previously written script](./findingNftByIndexes.md#step-1-write-searching-script) in the finding NFts by indexes section.
+Add the following lines of code to the [previously written script](./transferring-nft.md#step-1-write-transfer-script) in the transferring NFTs section .
 
 ::: info
-Before we start to write our scripts we need to make sure that there is a file named `04-transfer-nft.ts` in the `script` folder in the project root.
+Before we start to write our scripts we need to make sure that there is a file named `04-burn-nft.ts` in the `script` folder in the project root.
 :::
 
 </span>
 
 <span :class="EIPdis"  >
 
-Utilize the code sample below to transfer the NFTs using the `everscale-inpage-provider` tool.
+Utilize the code sample below to burn the NFTs using the `everscale-inpage-provider` tool.
 
-add the following lines of code to the [previously written script](./findingNftByIndexes.md#step-1-write-searching-script) in the finding NFts by indexes section.
+add the following lines of code to the [previously written script](./transferring-nft.md#step-1-write-transfer-script) in the transferring NFTs section .
 
 </span>
 
@@ -38,71 +38,42 @@ add the following lines of code to the [previously written script](./findingNftB
 
 ```` typescript [locklift]
 
-  // Crating another signer in order to perform the transferring nft from one account to another
-  const signerBob: Signer = (await locklift.keystore.getSigner("0"))!;
+  // Adding the bob account since the nft is transferred to the bobs address and the burning operation must be initiated using the bobs account.
+  const bobAccount: Account = await locklift.factory.accounts.addExistingAccount({
+    type: WalletTypes.MsigAccount,
+    address: BobAccount.address, // if deploying new account >> new Address("YOUR_ACCOUNT_ADDRESS")
+    mSigType: "SafeMultisig",
+    publicKey: signerBob.publicKey,
+  });
 
-  // uncomment if deploying a new account
-  // const { contract: BobAccount } = await locklift.factory.deployContract({
-  //   contract: "Account",
-  //   publicKey: signerBob.publicKey,
-  //   constructorParams: {},
-  //   initParams: { _randomNonce: locklift.utils.getRandomNonce() },
-  //   value: locklift.utils.toNano(20),
-  // });
-
-
-  // Fetching the owner of the nft before transferring to be able to validate the transfer process.
-  const newOldOwner: Address = (await nftContract.methods.getInfo({ answerId: 0 }).call()).owner;
-  console.log("Nft old owner: ", newOldOwner.toString());
-
-  // Transferring the nft
+  // Burning the nft
   await nftContract.methods
-    .transfer({
-      to: BobAccount.address,
-      sendGasTo: account.address,
-      callbacks: [],
+    .burn({
+      sendGasTo: bobAccount.address,
+      callbackPayload: "",
+      callbackTo: zeroAddress,
     })
-    .send({
-      from: account.address,
-      amount: locklift.utils.toNano(2),
-      bounce: true,
-    });
+    .send({ from: bobAccount.address, amount: locklift.utils.toNano(2), bounce: true }),
 
-  // Fetching the new owner of the nft to validate the transfer operation
-  const newNftOwner: Address = (await nftContract.methods.getInfo({ answerId: 0 }).call()).owner;
-  console.log("Nft new owner: ", newNftOwner.toString());
+    // Fetching the account again and see if we get the "account not found" error and if yes that burning operation is done successfully.
+    console.log("burnt nft info: ", await nftContract.methods.getInfo({ answerId: 0 }).call()); // Account not found
 
 ````
 
 ````typescript [everscale-inpage-provider]
 
-// Preparing the nft's new owner address
-const receiverAddress: Address = new Address("<RECEIVER_ADDRESS>");
-
-// Transferring the nft
-await nftContract.methods
-      .transfer({
-        to: receiverAddress,
+    // Burning the nft
+    const burnRes: Transaction = await nftContract.methods
+      .burn({
         sendGasTo: providerAddress,
-        callbacks: [],
+        callbackTo: new Address("0:0000000000000000000000000000000000000000000000000000000000000000"),
+        callbackPayload: "",
       })
       .send({
         from: providerAddress,
         amount: String(2 * 10 ** 9),
         bounce: true,
       });
-
-    // fetching the nft contract data
-    const nftContractData = await nftContract.methods
-      .getInfo({ answerId: 0 })
-      .call();
-
-    // Validating the transfer operation
-    if (nftContractData.owner.toString() == receiverAddress.toString()) {
-      console.log `Nft number ${nftContractData.id} transferred to ${receiverAddress}`;
-    } else {
-      console.log("Transferring Nft failed");
-    }
 ````
 
 :::
@@ -112,18 +83,18 @@ await nftContract.methods
 
 <div class="action">
 
-## Step 2: Transfer the NFT
+## Step 2: Burn an NFT
 
 <div :class="llAction">
 
 Use this command to find the nfts using indexing:
 
 ```shell
-npx locklift run -s ./scripts/03-find-nft-by-index.ts
+npx locklift run -s ./scripts/05-burn-nft.ts
 ```
-<ImgContainer src= '/transferNft.png' width="100%" altText="deployTip3Output" />
+<ImgContainer src= '/burning-nft.png' width="100%" altText="deployTip3Output" />
 
-Congratulations, you have could find the your owned nfts using the indexing functionality 🎉
+Congratulations, you have successfully burnt an TIP4 Nft  🎉
 
 </div>
 
@@ -134,11 +105,7 @@ Congratulations, you have could find the your owned nfts using the indexing func
 
 <input ref="actionNftAddress" type="text" class="action Ain" />
 
-<p style="margin-bottom: 0;">Receiver Address</p>
-
-<input ref="actionReceiverAddress" type="text" class="action Ain" />
-
-<button @click="_transferNft" class="deployTokenBut" > Transfer Nft </button>
+<button @click="_burnNft" class="deployTokenBut" > Burn Nft </button>
 
 <p id="output-p" :class="EIPdis"><loading :text="loadingText"/></p>
 
@@ -154,7 +121,7 @@ import { defineComponent, ref, onMounted } from "vue";
 import {toast} from "/src/helpers/toast";
 import ImgContainer from "../../../.vitepress/theme/components/shared/BKDImgContainer.vue"
 import loading from "../../../.vitepress/theme/components/shared/BKDLoading.vue"
-import { transferNft } from "../../scripts/transferNft";
+import { burnNft } from "../../scripts/burnNft";
 
 export default defineComponent({
   name: "deployToken",
@@ -178,7 +145,7 @@ export default defineComponent({
 
 
 
-async function _transferNft(){
+async function _burnNft(){
         this.loadingText = ""
         if (
             this.$refs.actionNftAddress.value == ''
@@ -188,17 +155,8 @@ async function _transferNft(){
             this.loadingText = "Failed"
             return
         }
-        if (
-            this.$refs.actionReceiverAddress.value == ''
-
-        ){
-            toast("Receiver address field is required !", 0)
-            this.loadingText = "Failed"
-            return
-        }
-        let  deployTokenRes = await transferNft(
+        let  deployTokenRes = await burnNft(
             this.$refs.actionNftAddress.value,
-            this.$refs.actionReceiverAddress.value
         )
 
         // Rendering the output
@@ -221,7 +179,7 @@ async function _transferNft(){
      }
   }
 return {
-        _transferNft,
+        _burnNft,
         codeBlockSwitchHandler
     };
   }

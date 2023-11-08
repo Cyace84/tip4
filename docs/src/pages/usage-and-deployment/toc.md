@@ -14,26 +14,26 @@ The code samples presented in this section have been developed using tools such 
    </a>
   </div>
   <div class="bridge-section-row">
-    <a href="/usageAndDeployment/deployingCollection.html">
+    <a href="/usageAndDeployment/deploying-collection.html">
       <span class="bridge-section">Deploying Collection</span>
    </a>
-    <a href="/usageAndDeployment/mintingNft.html">
+    <a href="/usageAndDeployment/minting-nft.html">
       <span class="bridge-section">Minting Nft</span>
     </a>
   </div>
   <div class="bridge-section-row">
-    <a href="/usageAndDeployment/findingNftByIndexes.html">
+    <a href="/usageAndDeployment/finding-nft.html">
       <span class="bridge-section">Find Nft by Indexes</span>
     </a>
-    <a href="/usageAndDeployment/transferringNft.html">
+    <a href="/usageAndDeployment/transferring-nft.html">
       <span class="bridge-section">Transferring Nfts</span>
     </a>
   </div>
     <div class="bridge-section-row">
-    <a href="/usageAndDeployment/burningNft.html">
+    <a href="/usageAndDeployment/burning-nft.html">
       <span class="bridge-section">Burning Nfts</span>
     </a>
-    <a href="/usageAndDeployment/upgradeableNft.html">
+    <a href="/usageAndDeployment/upgradeable-nft.html">
       <span class="bridge-section">Upgradeable Nft</span>
     </a>
 </div>

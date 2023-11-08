@@ -83,7 +83,7 @@ Use this command and deploy account:
 ```shell
 npx locklift run -s ./scripts/00-deploy-account.ts  
 ```
-<ImgContainer src= '/deployAccOutput.png' width="100%"  altText="deployAccountOutput" />
+<ImgContainer src= '/deployAccOutput.png' width="100%"  altText="deploy-accountOutput" />
 
 <script lang="ts" >
 import { defineComponent, ref, onMounted } from "vue";

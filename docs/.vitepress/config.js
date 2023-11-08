@@ -52,33 +52,32 @@ module.exports = {
     "src/pages/specification/tip4_6.md": "specification/tip4_6.md",
     "src/pages/specification/tip6.md": "specification/tip6.md",
 
-    "src/pages/gettingStarted/toc.md": "gettingStarted/toc.md",
-    "src/pages/gettingStarted/basicProjectSetup.md":
-      "gettingStarted/basicProjectSetup.md",
-    "src/pages/gettingStarted/lockliftConfigSetup.md":
-      "gettingStarted/lockliftConfigSetup.md",
-    "src/pages/gettingStarted/localEnvironment.md":
-      "gettingStarted/localEnvironment.md",
-    "src/pages/gettingStarted/deployAccount.md":
-      "gettingStarted/deployAccount.md",
+    "src/pages/getting-started/toc.md": "getting-started/toc.md",
+    "src/pages/getting-started/basic-project-setup.md":
+      "getting-started/basic-project-setup.md",
+    "src/pages/getting-started/locklift-config-setup.md":
+      "getting-started/locklift-config-setup.md",
+    "src/pages/getting-started/local-environment.md":
+      "getting-started/local-environment.md",
+    "src/pages/getting-started/deploy-account.md":
+      "getting-started/deploy-account.md",
 
-    "src/pages/usageAndDeployment/toc.md": "usageAndDeployment/toc.md",
-    "src/pages/usageAndDeployment/prerequisites.md":
-      "usageAndDeployment/prerequisites.md",
-    "src/pages/usageAndDeployment/deployingCollection.md":
-      "usageAndDeployment/deployingCollection.md",
-    "src/pages/usageAndDeployment/mintingNft.md":
-      "usageAndDeployment/mintingNft.md",
-    "src/pages/usageAndDeployment/findingNftByIndexes.md":
-      "usageAndDeployment/findingNftByIndexes.md",
-    "src/pages/usageAndDeployment/transferringNft.md":
-      "usageAndDeployment/transferringNft.md",
-    "src/pages/usageAndDeployment/burningNft.md":
-      "usageAndDeployment/burningNft.md",
-    "src/pages/usageAndDeployment/upgradeableNft.md":
-      "usageAndDeployment/upgradeableNft.md",
-    "src/pages/apiReferences.md": "apiReferences.md",
-    "src/pages/FAQ.md": "FAQ.md",
+    "src/pages/usage-and-deployment/toc.md": "usage-and-deployment/toc.md",
+    "src/pages/usage-and-deployment/prerequisites.md":
+      "usage-and-deployment/prerequisites.md",
+    "src/pages/usage-and-deployment/deploying-collection.md":
+      "usage-and-deployment/deploying-collection.md",
+    "src/pages/usage-and-deployment/minting-nft.md":
+      "usage-and-deployment/minting-nft.md",
+    "src/pages/usage-and-deployment/finding-nft.md":
+      "usage-and-deployment/finding-nft.md",
+    "src/pages/usage-and-deployment/transferring-nft.md":
+      "usage-and-deployment/transferring-nft.md",
+    "src/pages/usage-and-deployment/burning-nft.md":
+      "usage-and-deployment/burning-nft.md",
+    "src/pages/usage-and-deployment/upgradeable-nft.md":
+      "usage-and-deployment/upgradeable-nft.md",
+    "src/pages/api-references.md": "api-references.md",
   },
 
   themeConfig: {
@@ -160,7 +159,7 @@ module.exports = {
       {
         text: "Getting Started",
         collapsable: false,
-        link: "/gettingStarted/toc.md",
+        link: "/getting-started/toc.md",
         items: [
           {
             text: "Setup",
@@ -169,74 +168,68 @@ module.exports = {
               {
                 text: "Basic Project Setup",
                 collapsable: false,
-                link: "/gettingStarted/basicProjectSetup.md",
+                link: "/getting-started/basic-project-setup.md",
               },
               {
                 text: "Locklift Config Setup",
                 collapsable: false,
-                link: "/gettingStarted/lockliftConfigSetup.md",
+                link: "/getting-started/locklift-config-setup.md",
               },
             ],
           },
           {
             text: "Local Environment",
             collapsable: false,
-            link: "/gettingStarted/localEnvironment.md",
+            link: "/getting-started/local-environment.md",
           },
           {
             text: "Deploy Account",
             collapsable: false,
-            link: "/gettingStarted/deployAccount.md",
+            link: "/getting-started/deploy-account.md",
           },
         ],
       },
       {
         text: "Usage and Deployment",
         collapsable: false,
-        link: "/usageAndDeployment/toc.md",
+        link: "/usage-and-deployment/toc.md",
         items: [
           {
             text: "Prerequisites",
             collapsable: false,
-            link: "/usageAndDeployment/prerequisites.md",
+            link: "/usage-and-deployment/prerequisites.md",
           },
           {
             text: "Deploying Collection",
             collapsable: false,
-            link: "/usageAndDeployment/deployingCollection.md",
+            link: "/usage-and-deployment/deploying-collection.md",
           },
           {
             text: "Minting Nft",
             collapsable: false,
-            link: "/usageAndDeployment/mintingNft.md",
+            link: "/usage-and-deployment/minting-nft.md",
           },
           {
             text: "Finding Nft by Indexes",
             collapsable: false,
-            link: "/usageAndDeployment/findingNftByIndexes.md",
+            link: "/usage-and-deployment/finding-nft.md",
           },
           {
             text: "Transferring Nft",
             collapsable: false,
-            link: "/usageAndDeployment/transferringNft.md",
+            link: "/usage-and-deployment/transferring-nft.md",
           },
           {
             text: "Burning Nft",
             collapsable: false,
-            link: "/usageAndDeployment/burningNft.md",
+            link: "/usage-and-deployment/burning-nft.md",
           },
           {
             text: "Upgradeable Nft",
             collapsable: false,
-            link: "/usageAndDeployment/upgradeableNft.md",
+            link: "/usage-and-deployment/upgradeable-nft.md",
           },
         ],
-      },
-      { text: "FAQ", collapsable: false, link: "FAQ.md" },
-      {
-        text: "API Reference",
-        collapsable: false,
-        link: "apiReferences.md",
       },
     ],
 

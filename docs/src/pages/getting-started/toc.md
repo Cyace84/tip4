@@ -5,18 +5,18 @@ In this section we will walk through on how to deploy an Account smart contract 
 
 <div class="sections-container">
   <div class="bridge-section-row">
-    <a href="/gettingStarted/basicProjectSetup.html">
+    <a href="/getting-started/basic-project-setup.html">
       <span class="bridge-section">Basic Project Setup</span>
     </a>
-    <a href="/gettingStarted/lockliftConfigSetup.html">
+    <a href="/getting-started/locklift-config-setup.html">
       <span class="bridge-section">Locklift Config Setup</span>
     </a>
   </div>
   <div class="bridge-section-row">
-    <a href="/gettingStarted/localEnvironment.html">
+    <a href="/getting-started/local-environment.html">
       <span class="bridge-section">Local Environment</span>
     </a>
-    <a href="/gettingStarted/deployAccount.html">
+    <a href="/getting-started/deploy-account.html">
       <span class="bridge-section">Deploy Account</span>
     </a>
   </div>

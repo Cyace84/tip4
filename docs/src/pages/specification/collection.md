@@ -14,6 +14,6 @@ For example, when it comes to minting NFTs, the [TIP-4_1 collection](https://git
 
 In this documentation, we will be utilizing the  `CollectionWithRoyalty`  contract as it supports the royalty functionality. However, individual users have the flexibility to choose either version based on their preferred approach.
 
-- Please refer to the [`Deploying Collection`](..//usageAndDeployment/deployingCollection.md) section to find out how to deploy and use the `CollectionWithRoyalty` contract.
+- Please refer to the [`Deploying Collection`](..//usage-and-deployment/deploying-collection.md) section to find out how to deploy and use the `CollectionWithRoyalty` contract.
 
 :::

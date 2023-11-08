@@ -2,7 +2,7 @@
 
 ## Packages
 
-In order to perform the operations mentioned in this documentation using  [`everscale-inpage-provider`](https://provider-docs.broxus.com/) , the target contracts artifacts, including the contract tvc and code, are required. These artifacts can be obtained using the `locklift build` command, which generates the necessary files which we can provide them by simply copying and pasting the these required files from the build folder as we generated them earlier in [Locklift Config Setup](../gettingStarted/lockliftConfigSetup.md#step-3-build-the-artifacts).
+In order to perform the operations mentioned in this documentation using  [`everscale-inpage-provider`](https://provider-docs.broxus.com/) , the target contracts artifacts, including the contract tvc and code, are required. These artifacts can be obtained using the `locklift build` command, which generates the necessary files which we can provide them by simply copying and pasting the these required files from the build folder as we generated them earlier in [Locklift Config Setup](../getting-started/locklift-config-setup.md#step-3-build-the-artifacts).
 
 ::: tip
 

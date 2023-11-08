@@ -108,7 +108,7 @@ The code sample below utilizes the state of the previously written script in the
 
 It fetches two type of the Index contracts, one of them is created and can be fetched to locate all of the nft contracts and the other one is used to find out if there is any nft ids owned by the user from a specific collection contract.
 
-Add the following lines of code to the [previously written script](./mintingNft.md#step-2-write-minting-script) in the minting nft's section.
+Add the following lines of code to the [previously written script](./minting-nft.md#step-2-write-minting-script) in the minting nft's section.
 
 ::: info
 Before we start to write our scripts we need to make sure that there is a file named `03-find-nft-by-index.ts` in the `script` folder in the project root.
@@ -120,7 +120,7 @@ Before we start to write our scripts we need to make sure that there is a file n
 
 The code sample below is utilized to perform the mentioned operations using `everscale-inpage-provider` tool.
 
-add the following lines of code to the [previously written script](./mintingNft.md#step-2-write-minting-script) in the minting nft's section.
+add the following lines of code to the [previously written script](./minting-nft.md#step-2-write-minting-script) in the minting nft's section.
 
 </span>
 

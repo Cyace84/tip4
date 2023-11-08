@@ -12,6 +12,6 @@ When it comes to indexing functionality, the `NFT` contract must implement the m
 
 In this documentation, we will be utilizing the  `NftWithRoyalty`  contract as it supports the royalty functionality. However, individual users have the flexibility to choose either version based on their preferred approach.
 
-- Please refer to the [`Minting Nft`](../usageAndDeployment/mintingNft.md) section to find out how to mint and use the `NftWithRoyalty` contract.
+- Please refer to the [`Minting Nft`](../usage-and-deployment/minting-nft.md) section to find out how to mint and use the `NftWithRoyalty` contract.
 
 :::

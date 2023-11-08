@@ -10,7 +10,7 @@ These mentioned collection contracts will provide us with the foundational funct
 
 ### Build the Contracts Artifacts
 
-run the command below into your terminal to build the mentioned contracts in the [Locklift Config Setup](../gettingStarted/lockliftConfigSetup.md) artifacts in your `locklift project`:
+run the command below into your terminal to build the mentioned contracts in the [Locklift Config Setup](../getting-started/locklift-config-setup.md) artifacts in your `locklift project`:
 
 ````shell
 

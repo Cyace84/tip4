@@ -18,13 +18,13 @@ This workflow allows for a more organized management of various aspects, includi
 - Ownership management of NFTs
 
 ### TIP-4 Concept Simple Scheme
-<ImgContainer src= '/tip4scheme.png' width="100%" altText="deployAccountOutput" />
+<ImgContainer src= '/tip4scheme.png' width="100%" altText="deploy-accountOutput" />
 
 ## Difference with ERC-721
 In contrast to TIP-4, ERC-721 is typically a monolithic smart contract that stores mappings showing token ownership based on token IDs. Token metadata can also be stored within this contract, either in a separate mapping or through tokenURI. However, this approach significantly increases the contract's byte code and occupied state, resulting in higher computational requirements and gas fees.
 
 ### ERC-721 Concept Simple Scheme
-<ImgContainer src= '/erc721scheme.png' width="100%" altText="deployAccountOutput"/>
+<ImgContainer src= '/erc721scheme.png' width="100%" altText="deploy-accountOutput"/>
 
 <script lang="ts" >
 import { defineComponent, ref, onMounted } from "vue";
