@@ -23,9 +23,9 @@ const NAV = [
         link: "https://tip-3-docs-javadyakuza.vercel.app/",
       },
       {
-        text: "TIP-4 Docs",
-        link: "/",
-      },
+        text: "StEver Docs",
+        link: "https://st-ever-docs.netlify.app/",
+      }
     ],
   },
   { text: "Feedback", link: FEEDBACK_URL },
