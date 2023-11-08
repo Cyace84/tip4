@@ -1,1 +1,0 @@
-import{d as e}from"./index.3140ef9b.js";async function a(t,r){if(r.length<66||r.length>66||r.substring(0,2)!="0:")return!1;try{return await t.getBalance(new e.Address(r)),!0}catch{return!1}}export{a as i};
