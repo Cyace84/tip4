@@ -1,0 +1,11 @@
+## Salting
+The `salting` operation is when we grab some special and unique value that we desire and integrate them into the current contract code to build a new code for a contract.
+
+The workflow is followed by the steps below:
+
+1. storing the slat values into a [TvmBuilder](https://github.com/tonlabs/TON-Solidity-Compiler/blob/master/API.md#tvmbuilder) type variable using [TvmBuilder.store()](https://github.com/tonlabs/TON-Solidity-Compiler/blob/master/API.md#tvmbuilderstore) instruction.
+
+2. building the new code for the contract using the old contract code and the salted values stored in the TvmBuilder using [tvm.setCodeSalt()](https://github.com/tonlabs/TON-Solidity-Compiler/blob/master/API.md#tvmsetcodesalt) instruction.
+
+We can generate the new and specific code hash for the newly built code and use that to query the blockchain data using off-chain tools like [locklift](https://docs.locklift.io/) or [everscale-inpage-provider](https://provider-docs.broxus.com/).
+
